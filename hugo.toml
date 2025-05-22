@@ -1,0 +1,72 @@
+baseURL = "ostring.github.io"
+languageCode = "en"
+DefaultContentLanguage = "en"
+title = "Website of OString"
+
+# theme as hugo module
+# theme = "github.com/lxndrblz/anatole"
+# theme as git submodule
+theme = "anatole"
+
+# 菜单配置
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Articles"
+    url = "/posts/"
+    weight = 2
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 3
+
+
+summarylength = 10
+enableEmoji = true
+enableRobotsTXT = true
+
+
+[frontmatter]
+  title = ["title", "h1"]  # 优先使用front matter的title，否则用第一个h1标题
+  date = ["date", ":fileModTime"]  # 使用文件修改时间作为日期
+
+
+# Syntax highlighting
+pygmentsUseClasses = true   
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+
+# Localized dates requires Hugo version 0.87.0
+localizedDates = false
+
+[markup]
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+        unsafe=true
+
+[taxonomies]
+    category = "categories"
+    series = "series"
+    tag = "tags"
+
+[related]
+  includeNewer = true
+  threshold = 80
+  toLower = true
+[[related.indices]]
+  name = 'keywords'
+  weight = 100
+[[related.indices]]
+  name = 'tags'
+  weight = 80
+
+[services]
+# Enable Disqus.Disqus.Shortname
+  [services.disqus]
+    #shortname = 'your-disqus-shortname'
+# Google Analytics
+  [services.googleAnalytics]
+    #ID = 'G-MEASUREMENT_ID'

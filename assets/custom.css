@@ -1,0 +1,9 @@
+/* 自定义字体 */
+body {
+    font-family: 'Inter', sans-serif;
+  }
+  
+/* 自定义链接颜色 */
+a {
+color: #165DFF;
+}
