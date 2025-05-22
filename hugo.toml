@@ -2,6 +2,7 @@ baseURL = "https://ostring.github.io"
 languageCode = "en"
 DefaultContentLanguage = "en"
 title = "Website of OString"
+publishDir = "docs"
 
 # theme as hugo module
 # theme = "github.com/lxndrblz/anatole"

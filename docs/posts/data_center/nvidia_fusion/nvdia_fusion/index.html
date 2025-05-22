@@ -1,0 +1,450 @@
+<!doctype html>
+<html
+  dir="ltr"
+  lang="en"
+  data-theme=""
+  
+    class="html theme--light"
+  
+><head>
+  <meta charset="utf-8" />
+  <title>
+    OString
+
+    
+
+  </title>
+
+  <meta name="generator" content="Hugo 0.147.4"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="author" content="OString" />
+  <meta
+    name="description"
+    content="Welcome to OString&#39;s Website"
+  />
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/scss/main.min.8d4fad7e6916ad2e291e8d97ada157c70350d6d7150fea137e7243340967befb.css"
+      integrity="sha256-jU&#43;tfmkWrS4pHo2XraFXxwNQ1tcVD&#43;oTfnJDNAlnvvs="
+      crossorigin="anonymous"
+      type="text/css"
+    />
+  
+
+  
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.73ccfdf28df555e11009c13c20ced067af3cb021504cba43644c705930428b00.css"
+    integrity="sha256-c8z98o31VeEQCcE8IM7QZ688sCFQTLpDZExwWTBCiwA="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/fontawesome.min.137b1cf3cea9a8adb7884343a9a5ddddf4280f59153f74dc782fb7f7bf0d0519.css"
+    integrity="sha256-E3sc886pqK23iENDqaXd3fQoD1kVP3TceC&#43;3978NBRk="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/solid.min.e65dc5b48fb5f39b142360c57c3a215744c94e56c755c929cc3e88fe12aab4d3.css"
+    integrity="sha256-5l3FtI&#43;185sUI2DFfDohV0TJTlbHVckpzD6I/hKqtNM="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/regular.min.6f4f16d58da1c82c0c3a3436e021a3d39b4742f741192c546e73e947eacfd92f.css"
+    integrity="sha256-b08W1Y2hyCwMOjQ24CGj05tHQvdBGSxUbnPpR&#43;rP2S8="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/brands.min.e10425ad768bc98ff1fb272a0ac8420f9d1ba22f0612c08ff1010c95080ffe7e.css"
+    integrity="sha256-4QQlrXaLyY/x&#43;ycqCshCD50boi8GEsCP8QEMlQgP/n4="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+
+  <link rel="canonical" href="https://ostring.github.io/posts/data_center/nvidia_fusion/nvdia_fusion/" />
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js"
+    integrity="sha256-&#43;RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.8724ddf9268dee451060f191961647573c7f592fbccc6d858746236b3f915813.js"
+      integrity="sha256-hyTd&#43;SaN7kUQYPGRlhZHVzx/WS&#43;8zG2Fh0Yjaz&#43;RWBM="
+      crossorigin="anonymous"
+    ></script>
+  
+
+  
+
+  
+
+  
+
+
+  
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Website of OString">
+  <meta name="twitter:description" content="Nvidia Fusion Jenson Huang 今天抛出了绣球，接下来第一个问题：其他厂商家的黄花闺女能否看的上。 另一个问题：如果有一天真的成家了，亲家之间是否会闹的鸡飞狗跳？ 这颗绣球就是今天刚刚在computex 上发布的 Nvidia Fusion。英伟达发布了一系列围绕数据中心和企业级 AI 计划的公告，其中包括新推出的 NVLink Fusion 计划。
+先回答第一个问题 从公开的消息看，目前接下这颗绣球的有几家厂商：
+英伟达已为该计划聚集了众多合作伙伴，包括高通和富士通，它们将把这项技术集成到各自的 CPU 中。NVLink Fusion 还将扩展至定制 AI 加速器领域，因此英伟达已吸引包括 Marvell、联发科在内的多家芯片合作伙伴，以及芯片软件设计公司新思科技（Synopsys）和楷登电子（Cadence）加入 NVLink Fusion 生态系统。
+高通最近证实，其正在将自有定制服务器 CPU 推向市场，尽管细节仍不明确，但该公司与 NVLink 生态系统的合作将使其新 CPU 能够搭乘英伟达快速扩张的 AI 生态系统的顺风车。
+富士通也一直在致力于将其搭载 3D 堆叠 CPU 核心和内存的 144 核 Monaka CPU 推向市场。富士通 CTO Vivek Mahajan 表示：“富士通的下一代处理器 FUJITSU-MONAKA 是一款基于 Arm 架构的 2 纳米 CPU，旨在实现极高的能效。将我们的技术与英伟达架构直接连接，标志着我们在通过世界领先的计算技术推动 AI 发展的愿景中迈出了重要一步，为新型可扩展、自主且可持续的 AI 系统铺平了道路。”
+从目前来看，Nvlink 可撬动的生态还只局限在Die2Die 的范围，在Die2Die 互联的选择上，Nvlink 不是唯一选择，另外也不是最优解。联发科已经和NVdia 有过深入合作，之前的GB10现在看来已经试水了Nvlink fusion生态合作模式，由联发科基于Arm SoC CPU 的功底，结合Blackwell 的GPU 通过Nvlink 互联。另外一家Marvell，基本是全开放生态，各种联盟都来者不拒，本就是CSP chip Maker，工具箱越丰富越好。说白了，通过联发科的合作先打个窝，吸引其他厂商，在D2D 范围内还处于刚起步的状态。">
+
+
+
+  
+  <meta property="og:url" content="https://ostring.github.io/posts/data_center/nvidia_fusion/nvdia_fusion/">
+  <meta property="og:site_name" content="Website of OString">
+  <meta property="og:title" content="Website of OString">
+  <meta property="og:description" content="Nvidia Fusion Jenson Huang 今天抛出了绣球，接下来第一个问题：其他厂商家的黄花闺女能否看的上。 另一个问题：如果有一天真的成家了，亲家之间是否会闹的鸡飞狗跳？ 这颗绣球就是今天刚刚在computex 上发布的 Nvidia Fusion。英伟达发布了一系列围绕数据中心和企业级 AI 计划的公告，其中包括新推出的 NVLink Fusion 计划。
+先回答第一个问题 从公开的消息看，目前接下这颗绣球的有几家厂商：
+英伟达已为该计划聚集了众多合作伙伴，包括高通和富士通，它们将把这项技术集成到各自的 CPU 中。NVLink Fusion 还将扩展至定制 AI 加速器领域，因此英伟达已吸引包括 Marvell、联发科在内的多家芯片合作伙伴，以及芯片软件设计公司新思科技（Synopsys）和楷登电子（Cadence）加入 NVLink Fusion 生态系统。
+高通最近证实，其正在将自有定制服务器 CPU 推向市场，尽管细节仍不明确，但该公司与 NVLink 生态系统的合作将使其新 CPU 能够搭乘英伟达快速扩张的 AI 生态系统的顺风车。
+富士通也一直在致力于将其搭载 3D 堆叠 CPU 核心和内存的 144 核 Monaka CPU 推向市场。富士通 CTO Vivek Mahajan 表示：“富士通的下一代处理器 FUJITSU-MONAKA 是一款基于 Arm 架构的 2 纳米 CPU，旨在实现极高的能效。将我们的技术与英伟达架构直接连接，标志着我们在通过世界领先的计算技术推动 AI 发展的愿景中迈出了重要一步，为新型可扩展、自主且可持续的 AI 系统铺平了道路。”
+从目前来看，Nvlink 可撬动的生态还只局限在Die2Die 的范围，在Die2Die 互联的选择上，Nvlink 不是唯一选择，另外也不是最优解。联发科已经和NVdia 有过深入合作，之前的GB10现在看来已经试水了Nvlink fusion生态合作模式，由联发科基于Arm SoC CPU 的功底，结合Blackwell 的GPU 通过Nvlink 互联。另外一家Marvell，基本是全开放生态，各种联盟都来者不拒，本就是CSP chip Maker，工具箱越丰富越好。说白了，通过联发科的合作先打个窝，吸引其他厂商，在D2D 范围内还处于刚起步的状态。">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-05-22T22:22:52+08:00">
+    <meta property="article:modified_time" content="2025-05-22T22:22:52+08:00">
+
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "posts",
+        "name": "",
+        "headline": "",
+        "alternativeHeadline": "",
+        "description": "
+      
+        \u003ch1 id=\u0022nvidia-fusion\u0022\u003eNvidia Fusion\u003c\/h1\u003e\n\u003cp\u003eJenson Huang 今天抛出了绣球，接下来第一个问题：其他厂商家的黄花闺女能否看的上。\n另一个问题：如果有一天真的成家了，亲家之间是否会闹的鸡飞狗跳？\n这颗绣球就是今天刚刚在computex 上发布的 Nvidia Fusion。英伟达发布了一系列围绕数据中心和企业级 AI 计划的公告，其中包括新推出的 NVLink Fusion 计划。\u003c\/p\u003e\n\u003cp\u003e\u003cimg src=\u00221.png\u0022 alt=\u0022\u0022\u003e\u003c\/p\u003e\n\u003ch2 id=\u0022先回答第一个问题\u0022\u003e先回答第一个问题\u003c\/h2\u003e\n\u003cp\u003e从公开的消息看，目前接下这颗绣球的有几家厂商：\u003c\/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e英伟达已为该计划聚集了众多合作伙伴，包括高通和富士通，它们将把这项技术集成到各自的 CPU 中。NVLink Fusion 还将扩展至定制 AI 加速器领域，因此英伟达已吸引包括 Marvell、联发科在内的多家芯片合作伙伴，以及芯片软件设计公司新思科技（Synopsys）和楷登电子（Cadence）加入 NVLink Fusion 生态系统。\u003c\/p\u003e\u003c\/blockquote\u003e\n\u003cblockquote\u003e\n\u003cp\u003e高通最近证实，其正在将自有定制服务器 CPU 推向市场，尽管细节仍不明确，但该公司与 NVLink 生态系统的合作将使其新 CPU 能够搭乘英伟达快速扩张的 AI 生态系统的顺风车。\u003c\/p\u003e\u003c\/blockquote\u003e\n\u003cblockquote\u003e\n\u003cp\u003e富士通也一直在致力于将其搭载 3D 堆叠 CPU 核心和内存的 144 核 Monaka CPU 推向市场。富士通 CTO Vivek Mahajan 表示：“富士通的下一代处理器 FUJITSU-MONAKA 是一款基于 Arm 架构的 2 纳米 CPU，旨在实现极高的能效。将我们的技术与英伟达架构直接连接，标志着我们在通过世界领先的计算技术推动 AI 发展的愿景中迈出了重要一步，为新型可扩展、自主且可持续的 AI 系统铺平了道路。”\u003c\/p\u003e\u003c\/blockquote\u003e\n\u003cp\u003e从目前来看，Nvlink 可撬动的生态还只局限在Die2Die 的范围，在Die2Die 互联的选择上，Nvlink 不是唯一选择，另外也不是最优解。联发科已经和NVdia 有过深入合作，之前的\u003ccode\u003eGB10\u003c\/code\u003e现在看来已经试水了Nvlink fusion生态合作模式，由联发科基于Arm SoC CPU 的功底，结合Blackwell 的GPU 通过Nvlink 互联。另外一家Marvell，基本是全开放生态，各种联盟都来者不拒，本就是CSP chip Maker，工具箱越丰富越好。说白了，通过联发科的合作先打个窝，吸引其他厂商，在D2D 范围内还处于刚起步的状态。\u003c\/p\u003e
+
+
+      
+
+
+    ",
+        "license": "",
+        
+        "inLanguage": "en",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/ostring.github.io\/posts\/data_center\/nvidia_fusion\/nvdia_fusion\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "OString"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "OString"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "OString"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "OString"
+        },
+        "dateCreated": "2025-05-22T22:22:52.66Z",
+        "datePublished": "2025-05-22T22:22:52.00Z",
+        "dateModified": "2025-05-22T22:22:52.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "OString",
+            "url": "https://ostring.github.io/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/ostring.github.io\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+      ]
+
+    ,
+        "url" : "https:\/\/ostring.github.io\/posts\/data_center\/nvidia_fusion\/nvdia_fusion\/",
+        "wordCount" : "277",
+        "genre" : [ ],
+        "keywords" : [ ]
+    }
+  </script>
+
+
+</head>
+<body class="body">
+    <div class="wrapper">
+      <aside
+        
+          class="wrapper__sidebar"
+        
+      ><div
+  class="sidebar
+    animated fadeInDown
+  "
+>
+  <div class="sidebar__content">
+    <div class="sidebar__introduction">
+      <img
+        class="sidebar__introduction-profileimage"
+        src="/images/profile.jpg"
+        alt="profile picture"
+      />
+      
+        <div class="sidebar__introduction-title">
+          <a href="/"></a>
+        </div>
+      
+      <div class="sidebar__introduction-description">
+        <p>Welcome to OString's Website</p>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      
+    </ul>
+  </div><footer class="footer footer__sidebar">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        OString
+        2025
+      
+    </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script></div>
+</aside>
+      <main
+        
+          class="wrapper__main"
+        
+      >
+        <header class="header"><div
+  class="
+    animated fadeInDown
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+  </a>
+  <nav class="nav">
+    <ul class="nav__list" id="navMenu">
+      
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/"
+              
+              title=""
+              >Home</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/posts/data_center/"
+              
+              title=""
+              >DataCenter</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/posts/tech_news/"
+              
+              title=""
+              >TechNews</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/about/"
+              
+              title=""
+              >About</a
+            >
+          </li>
+        
+
+      
+    </ul>
+    <ul class="nav__list nav__list--end">
+      
+      
+        <li class="nav__list-item">
+          <div class="themeswitch">
+            <a title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </li>
+      
+    </ul>
+  </nav>
+</div>
+</header>
+  <div
+    class="post 
+      animated fadeInDown
+    "
+  >
+    
+    <div class="post__content">
+      
+        <h1></h1>
+      
+      <h1 id="nvidia-fusion">Nvidia Fusion</h1>
+<p>Jenson Huang 今天抛出了绣球，接下来第一个问题：其他厂商家的黄花闺女能否看的上。
+另一个问题：如果有一天真的成家了，亲家之间是否会闹的鸡飞狗跳？
+这颗绣球就是今天刚刚在computex 上发布的 Nvidia Fusion。英伟达发布了一系列围绕数据中心和企业级 AI 计划的公告，其中包括新推出的 NVLink Fusion 计划。</p>
+<p><img src="1.png" alt=""></p>
+<h2 id="先回答第一个问题">先回答第一个问题</h2>
+<p>从公开的消息看，目前接下这颗绣球的有几家厂商：</p>
+<blockquote>
+<p>英伟达已为该计划聚集了众多合作伙伴，包括高通和富士通，它们将把这项技术集成到各自的 CPU 中。NVLink Fusion 还将扩展至定制 AI 加速器领域，因此英伟达已吸引包括 Marvell、联发科在内的多家芯片合作伙伴，以及芯片软件设计公司新思科技（Synopsys）和楷登电子（Cadence）加入 NVLink Fusion 生态系统。</p></blockquote>
+<blockquote>
+<p>高通最近证实，其正在将自有定制服务器 CPU 推向市场，尽管细节仍不明确，但该公司与 NVLink 生态系统的合作将使其新 CPU 能够搭乘英伟达快速扩张的 AI 生态系统的顺风车。</p></blockquote>
+<blockquote>
+<p>富士通也一直在致力于将其搭载 3D 堆叠 CPU 核心和内存的 144 核 Monaka CPU 推向市场。富士通 CTO Vivek Mahajan 表示：“富士通的下一代处理器 FUJITSU-MONAKA 是一款基于 Arm 架构的 2 纳米 CPU，旨在实现极高的能效。将我们的技术与英伟达架构直接连接，标志着我们在通过世界领先的计算技术推动 AI 发展的愿景中迈出了重要一步，为新型可扩展、自主且可持续的 AI 系统铺平了道路。”</p></blockquote>
+<p>从目前来看，Nvlink 可撬动的生态还只局限在Die2Die 的范围，在Die2Die 互联的选择上，Nvlink 不是唯一选择，另外也不是最优解。联发科已经和NVdia 有过深入合作，之前的<code>GB10</code>现在看来已经试水了Nvlink fusion生态合作模式，由联发科基于Arm SoC CPU 的功底，结合Blackwell 的GPU 通过Nvlink 互联。另外一家Marvell，基本是全开放生态，各种联盟都来者不拒，本就是CSP chip Maker，工具箱越丰富越好。说白了，通过联发科的合作先打个窝，吸引其他厂商，在D2D 范围内还处于刚起步的状态。</p>
+<blockquote>
+<p>NVIDIA GB10 Grace Blackwell 超级芯片：应用于 NVIDIA 的个人 AI 超级计算机 NVIDIA® Project DIGITS。由 Blackwell GPU 和 Grace CPU 组成，其中 Grace CPU 有 20 个 Arm 核心，配备 128GB LPDDR5X 内存和 4TB NVMe SSD，能运行超 2000 亿参数的大语言模型，两台 Project DIGITS 叠加可支持处理 4050 亿参数的大语言模型。由英伟达与联发科联合打造。联发科在基于 Arm 架构的 SoC 设计领域经验丰富，为 GB10 带来出色的能效和连接性能 ，助力其适用于桌面环境</p></blockquote>
+<p>再扩展到AI 加速器领域，这里指的就是ASIC 之间的C2C（Chip2Chip） 互联，也是老黄这次极力推销的。这里只从技术的角度来分析，在C2C 互联范围，可能遇到哪些问题。</p>
+<h2 id="再回答第二个问题">再回答第二个问题</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>┌──────────────┐
+</span></span><span style="display:flex;"><span>│ NVLink 协议   │ ← 高级事务层（共享内存，一致性，GPU atomic）
+</span></span><span style="display:flex;"><span>├──────────────┤
+</span></span><span style="display:flex;"><span>│ NVLink Link  │  ← 可靠链路协议（flow control, retry）
+</span></span><span style="display:flex;"><span>├──────────────┤
+</span></span><span style="display:flex;"><span>│ Nvlink PHY   │  ← PAM4 PHY，支持 D2D/C2C 高速通信
+</span></span><span style="display:flex;"><span>└──────────────┘
+</span></span></code></pre></div><p>NVLink 是封闭生态</p>
+<ul>
+<li>NVLink 并非开放标准，不像 PCIe、CXL 或 Ethernet 等是 industry standard。</li>
+<li>NVIDIA 没有公开 NVLink 的完整物理/协议/IP 规范。</li>
+<li>所以目前 只有 NVIDIA 自家的 GPU（如 H100）、CPU（Grace）、NVSwitch、DPU（BlueField）等芯片可以原生支持 NVLink。</li>
+<li>第三方芯片厂商无法直接适配 NVLink，除非与 NVIDIA 达成深度合作。</li>
+</ul>
+<p>对比开放标准，UCIE 和UALINK，其中UCIE 主要用于Die2Die 互联，UALINK 主要用于C2C 互联，而NVLink 则是两者的结合。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>UCIE
+</span></span><span style="display:flex;"><span>┌─────────────────────┐
+</span></span><span style="display:flex;"><span>│ Protocol Adapter     │ ← 支持 PCIe, CXL, AMBA AXI 等协议适配
+</span></span><span style="display:flex;"><span>├─────────────────────┤
+</span></span><span style="display:flex;"><span>│ Die-to-Die Adapter   │ ← 统一的物理接口 + 接收控制协议（类似 PIPE）
+</span></span><span style="display:flex;"><span>├─────────────────────┤
+</span></span><span style="display:flex;"><span>│ PHY                  │ ← 支持 NRZ/PAM4，Short/Long Reach，兼容多制程封装
+</span></span><span style="display:flex;"><span>└─────────────────────┘
+</span></span></code></pre></div><p>PHY 的层面，都是通过差分线来实现高速串行通信SerDes，Nvlink 与其他标准的差别只在于调制方式，目前包括PCIe 1.0 - PCIe 5.0 PHY采用不归零调制（Non-Return-to-Zero，NRZ），调制方式简单，信息编码效率较低，物理层模型信号实现难度较低，只有到PCIE-Gen6 才开始采用PAM4 调制方式，PAM4 调制方式是一种基于相位调制（Phase Modulation，PM）的调制方式，它将数字信号转换为模拟信号，从而实现高速串行通信。PAM4 调制方式具有较高的信息编码效率和抗干扰能力，适用于高速数据传输和通信领域。在物理层由于Nvlink 的封闭，要和PCIE 阵营在phy 层面首先要进行适配，SerDes 工艺成熟度信号完整性要求高（如低抖动、低 BER）。</p>
+<p>链路层方面，需要支持 NVLink 的 packet format、ack/nack、重传机制实现 flow control，在这个层级主要是对齐封包，做好协议前向和后向兼容，每一项单独开一份协议spec 都不为过。</p>
+<p>事务层协议方面，需要支持统一虚拟地址空间（UVA）实现 cache coherence（如 NVIDIA 的 MESI-like 协议）支持 memory atomics、RMA-like 机制。</p>
+<p>最后的最后，交付到cuda 工程师手中，目前NVIDIA 的驱动与 CUDA 都是闭源，任何第三方硬件即使“连上了”，也无法在软件上被 CUDA 识别和使用。</p>
+<h1 id="最后">最后</h1>
+<p>对Nvidia 走这一步棋其实有点迷惑，三大护城河：NvLink 互联/CUDA/GPU 的传统就是闭源，如果NvLink 开了一道口子，是否意味着其感受到了威胁，是H 家的CloudMatrix 384 光互连，还是UALink 联盟（虽然好久没有消息了），未知。从今天的发布会来看，还只是个引子，另外UALink 和UCIE 的开放联盟能否经历的起这个考验，抵抗教主的这番引诱，我们后续拭目以待。</p>
+</div>
+    <div class="post__footer">
+      
+
+      
+    </div>
+
+    
+  </div>
+
+      </main>
+    </div><footer class="footer footer__base">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        OString
+        2025
+      
+    </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script></body>
+</html>

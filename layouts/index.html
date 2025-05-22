@@ -50,4 +50,25 @@
       {{ end }}
     </div>
   </div>
+
+  <!-- 所有文章 -->
+  <div class="post animated fadeInDown">
+    <div class="post__content">
+      <h2>所有文章</h2>
+      {{ range .Site.RegularPages.ByDate.Reverse }}
+        <div class="post-entry">
+          <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          <div class="post-meta">
+            <span class="post__footer-date">
+              {{ .Date.Format "2006-01-02" }}
+            </span>
+            {{ with .Params.tags }}
+              {{ partial "taxonomy/tags.html" . }}
+            {{ end }}
+          </div>
+          <p>{{ .Summary }}</p>
+        </div>
+      {{ end }}
+    </div>
+  </div>
 {{ end }}
