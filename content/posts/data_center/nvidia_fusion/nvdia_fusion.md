@@ -6,7 +6,7 @@ Jenson Huang 今天抛出了绣球，接下来第一个问题：其他厂商家�
 另一个问题：如果有一天真的成家了，亲家之间是否会闹的鸡飞狗跳？
 这颗绣球就是今天刚刚在computex 上发布的 Nvidia Fusion。英伟达发布了一系列围绕数据中心和企业级 AI 计划的公告，其中包括新推出的 NVLink Fusion 计划。
 
-![](1.png)
+![](nvlink_fusion.png)
 
 
 ## 先回答第一个问题

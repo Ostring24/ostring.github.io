@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>DataCenter on Website of OString</title>
-    <link>https://ostring.github.io/posts/data_center/</link>
+    <link>http://localhost:1313/posts/data_center/</link>
     <description>Recent content in DataCenter on Website of OString</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 22 May 2025 22:16:08 +0800</lastBuildDate><atom:link href="https://ostring.github.io/posts/data_center/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 22 May 2025 22:16:08 +0800</lastBuildDate><atom:link href="http://localhost:1313/posts/data_center/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://ostring.github.io/posts/data_center/nvidia_fusion/nvdia_fusion/</link>
-      <pubDate>Thu, 22 May 2025 22:22:52 +0800</pubDate>
+      <link>http://localhost:1313/posts/data_center/nvidia_fusion/nvdia_fusion/</link>
+      <pubDate>Fri, 23 May 2025 11:46:26 +0800</pubDate>
       
-      <guid>https://ostring.github.io/posts/data_center/nvidia_fusion/nvdia_fusion/</guid>
+      <guid>http://localhost:1313/posts/data_center/nvidia_fusion/nvdia_fusion/</guid>
       
         <description>&lt;h1 id=&#34;nvidia-fusion&#34;&gt;Nvidia Fusion&lt;/h1&gt;
 &lt;p&gt;Jenson Huang 今天抛出了绣球，接下来第一个问题：其他厂商家的黄花闺女能否看的上。
 另一个问题：如果有一天真的成家了，亲家之间是否会闹的鸡飞狗跳？
 这颗绣球就是今天刚刚在computex 上发布的 Nvidia Fusion。英伟达发布了一系列围绕数据中心和企业级 AI 计划的公告，其中包括新推出的 NVLink Fusion 计划。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;nvlink_fusion.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;先回答第一个问题&#34;&gt;先回答第一个问题&lt;/h2&gt;
 &lt;p&gt;从公开的消息看，目前接下这颗绣球的有几家厂商：&lt;/p&gt;
 &lt;blockquote&gt;
@@ -33,10 +33,10 @@
     
     <item>
       <title></title>
-      <link>https://ostring.github.io/posts/data_center/server_cooling_evolution/server_cooling_evolution/</link>
+      <link>http://localhost:1313/posts/data_center/server_cooling_evolution/server_cooling_evolution/</link>
       <pubDate>Thu, 22 May 2025 22:12:04 +0800</pubDate>
       
-      <guid>https://ostring.github.io/posts/data_center/server_cooling_evolution/server_cooling_evolution/</guid>
+      <guid>http://localhost:1313/posts/data_center/server_cooling_evolution/server_cooling_evolution/</guid>
       
         <description>&lt;h1 id=&#34;服务器散热进化史&#34;&gt;服务器散热进化史&lt;/h1&gt;
 &lt;h3 id=&#34;液冷方案崛起&#34;&gt;液冷方案崛起&lt;/h3&gt;

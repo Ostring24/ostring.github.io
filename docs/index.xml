@@ -2,17 +2,149 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Website of OString</title>
-    <link>https://ostring.github.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Website of OString</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 22 May 2025 23:09:29 +0800</lastBuildDate><atom:link href="https://ostring.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 29 May 2025 09:31:47 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://ostring.github.io/posts/tech_news/2025_5takeaway_computex/2025_computex_5takeaway/</link>
+      <link>http://localhost:1313/posts/tech_news/amd_buy_silicon_photonic_startup/</link>
+      <pubDate>Thu, 29 May 2025 09:31:47 +0800</pubDate>
+      
+      <guid>http://localhost:1313/posts/tech_news/amd_buy_silicon_photonic_startup/</guid>
+      
+        <description>&lt;h1 id=&#34;amd-收购硅光子初创公司&#34;&gt;AMD 收购硅光子初创公司&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&#34;2025-05-29-09-16-40.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;AMD 已收购 Enosemi，这是一家设计定制材料以支持硅光子产品开发的初创公司。该交易于周三宣布，具体条款未披露。
+公司官网上的介绍&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Enosemi’s core design IP accelerates time-to-market, reduces risk, and lowers cost for our partners across markets including communications, computing, consumer, and med-tech. The Enosemi team has industry-leading product experience coming from shipping real products to market in volume.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;硅光子技术利用光（光子）传输数据，提供了一种比传统电通信更快、更高效的替代方案。AMD 及其他芯片制造商对此技术的兴趣日益浓厚。据报道，去年年底，AMD 与几家台湾初创公司合作进行硅光子研发。&lt;/p&gt;
+&lt;p&gt;AMD 表示[https://www.amd.com/en/blogs/2025/amd-acquires-enosemi-to-accelerate-co-packaged-optics-innovation.html]，对 Enosemi 的收购将“加速其针对人工智能系统的共封装光学创新”。&lt;/p&gt;
+&lt;p&gt;AMD 技术与工程高级副总裁 Brian Amick 在一篇博客文章中写道：“随着人工智能模型变得越来越大、越来越复杂，对更快、更高效数据传输的需求正在加速。” “Enosemi 作为我们的外部开发合作伙伴，在光子学领域与我们进行了合作，此次收购扩展了这一成功的合作关系。现在，作为 AMD 的一部分，该团队将帮助我们立即扩展能力，以支持和开发各种面向下一代人工智能系统的光子学和共封装光学解决方案。”&lt;/p&gt;
+&lt;p&gt;Enosemi 总部位于硅谷，致力于构建和交付光子集成电路——这种微芯片包含两个或多个形成功能电路的光子组件。Enosemi 由一群科技企业家于 2023 年创立，其中包括 Ari Novack 和 Matthew Streshinsky（两人均具有半导体工程背景），其产品包括光互连等，可将计算和网络组件集成到数据中心内部。
+&lt;img src=&#34;2025-05-29-09-21-05.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/posts/tech_news/google_deepmind_hassabis/3_the_man_who_a_g_i_-pilled_google_zh/</link>
+      <pubDate>Wed, 28 May 2025 15:30:01 +0800</pubDate>
+      
+      <guid>http://localhost:1313/posts/tech_news/google_deepmind_hassabis/3_the_man_who_a_g_i_-pilled_google_zh/</guid>
+      
+        <description>&lt;h1 id=&#34;google-deepmind-ceo-最新采访agi-正在来临&#34;&gt;Google Deepmind CEO 最新采访：AGI 正在来临&lt;/h1&gt;
+&lt;p&gt;原文作者&lt;strong&gt;作者：凯文·罗斯和凯西·牛顿&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;OString 整理并编译&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;最近Google I/O大会上放出的Veo3 又杀死比赛的趋势，据说硅谷很多startup 都有关门的危险，这篇Deepmind &amp;amp; GoogleAI 的一号位的采访显得尤为及时，看下他的观点。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;em&gt;谷歌 DeepMind 首席执行官德米斯·哈萨比斯表示，“我们非常接近”人类水平的人工智能。之后，一切皆有可能。&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;_page_17_Picture_4.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;作者：凯文·罗斯和凯西·牛顿&lt;/strong&gt; &lt;em&gt;我们共同主持 Hard Fork 播客。&lt;/em&gt; 2025 年 5 月 23 日下午 07:00&lt;/p&gt;
+&lt;p&gt;几年前，大多数谷歌高管不谈论 A.G.I.，即人工通用智能，这是业内对人类水平人工智能系统的术语。即使他们认为 A.G.I. 在技术上可能实现，这个想法也显得过于遥远，几乎不值得讨论。&lt;/p&gt;
+&lt;p&gt;但本周，&lt;a href=&#34;#page-104-0&#34;&gt;在谷歌年度开发者大会上，&lt;/a&gt; A.G.I. 的氛围弥漫。该公司宣布了一系列与谷歌 Gemini A.I. 模型相关的新版本，包括旨在让用户编写 A.I. 生成的电子邮件、创建 A.I. 生成的视频和歌曲，以及在旗舰搜索引擎上与 A.I. 机器人聊天的功能。谷歌的领导者们纷纷猜测更强大的系统何时到来，并预测随着 A.I. 工具变得更加强大和自主，未来将发生深刻的变化。&lt;/p&gt;
+&lt;p&gt;让谷歌&amp;quot;A.G.I. 入脑&amp;quot;的最大功臣是德米斯·哈萨比斯——这是业内对人们沉迷于 A.G.I. 即将到来的概念的简写。&lt;/p&gt;
+&lt;p&gt;哈萨比斯先生是谷歌 DeepMind 的首席执行官，多年来一直梦想着 A.G.I.。2014 年，他通过收购自己共同创立的人工智能初创公司 DeepMind 加入谷歌，哈萨比斯先生是少数几个认真对待 A.G.I. 可能性的 A.I. 领导者之一。&lt;/p&gt;
+&lt;p&gt;如今，他是越来越多竞相构建 A.G.I. 的科技领导者之一，同时也致力于开发其他未达到通用智能水平，但本身同样令人印象深刻的 A.I. 产品。去年，哈萨比斯先生和他的谷歌 DeepMind 同事约翰·M· jumper &lt;a href=&#34;https://www.nytimes.com/2024/10/09/science/nobel-prize-chemistry.html&#34;&gt;因其在 AlphaFold 方面的工作而获得诺贝尔化学奖，&lt;/a&gt; AlphaFold 是一种能够预测蛋白质三维结构的人工智能系统。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/posts/tech_news/mistral_ai/what_is_mistral_ai__zh/</link>
+      <pubDate>Mon, 26 May 2025 22:54:15 +0800</pubDate>
+      
+      <guid>http://localhost:1313/posts/tech_news/mistral_ai/what_is_mistral_ai__zh/</guid>
+      
+        <description>&lt;h1 id=&#34;快被遗忘的mistral-ai-的最新动向跟踪&#34;&gt;&lt;strong&gt;快被遗忘的Mistral AI 的最新动向跟踪&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&#34;./image.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Mistral AI 自 2023 年创立以来，已筹集了大量资金，其雄心壮志是“将前沿 AI 掌握在每个人手中”。虽然这并非直接针对 OpenAI，但该口号旨在强调该公司对 AI 开放性的倡导。最近Mistral AI 似乎淡出了视野，没有太多动静。&lt;/p&gt;
+&lt;p&gt;最初Mistral AI 出圈是因为其开源并支持MOE模型的创新，最近重新follow 了一下该公司的动向。&lt;/p&gt;
+&lt;p&gt;其 ChatGPT 的替代品，聊天助手 Le Chat，现在也已&lt;a href=&#34;https://techcrunch.com/2025/02/06/mistral-releases-its-ai-assistant-on-ios-and-android/&#34;&gt;在 iOS 和 Android 上提供&lt;/a&gt;。在移动版本发布后的两周内，它达到了 &lt;a href=&#34;https://techcrunch.com/2025/02/19/mistrals-le-chat-tops-1m-downloads-in-just-14-days/&#34;&gt;100 万次下载&lt;/a&gt;，甚至在 iOS App Store 上占据了法国免费下载榜首。&lt;/p&gt;
+&lt;p&gt;除此之外，Mistral AI 还提供了一系列模型，其中包括：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://techcrunch.com/2024/07/24/mistral-releases-large-2-meta-openai-ai-models/&#34;&gt;Mistral Large 2&lt;/a&gt;，主要的语言大模型，取代了 &lt;a href=&#34;https://techcrunch.com/2024/02/26/mistral-ai-releases-new-model-to-rival-gpt-4-and-its-own-chat-assistant/&#34;&gt;Mistral&lt;/a&gt; &lt;a href=&#34;https://techcrunch.com/2024/02/26/mistral-ai-releases-new-model-to-rival-gpt-4-and-its-own-chat-assistant/&#34;&gt;Large&lt;/a&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://mistral.ai/en/news/pixtral-large&#34;&gt;Pixtral Large&lt;/a&gt;，&lt;a href=&#34;https://techcrunch.com/2024/11/18/mistral-unveils-new-ai-models-and-chat-features/&#34;&gt;于 2024 年推出&lt;/a&gt;，是 &lt;a href=&#34;https://techcrunch.com/2024/09/11/mistral-releases-pixtral-its-first-multimodal-model/&#34;&gt;Pixtral 系列&lt;/a&gt; &lt;a href=&#34;https://techcrunch.com/2024/09/11/mistral-releases-pixtral-its-first-multimodal-model/&#34;&gt;多模态模型&lt;/a&gt;的新成员。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://techcrunch.com/2025/05/07/mistral-claims-its-newest-ai-model-delivers-leading-performance-for-the-price/&#34;&gt;Mistral Medium 3&lt;/a&gt;，于 2025 年 5 月发布，承诺在不牺牲性能的情况下提供效率，最适合编码和 STEM 任务。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://techcrunch.com/2025/05/21/mistrals-new-devstral-model-was-designed-for-coding/&#34;&gt;Devstral&lt;/a&gt;，一种专为编码设计的 AI 模型，并以 Apache 2.0 许可证公开提供，这意味着可以不受限制地用于商业用途。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://techcrunch.com/2024/05/29/mistral-releases-its-first-generative-ai-model-for-code/&#34;&gt;Codestral&lt;/a&gt;，一种早期的代码生成 AI 模型，但其许可证禁止商业应用。&lt;/li&gt;
+&lt;li&gt;“Les Ministraux”，一系列&lt;a href=&#34;https://techcrunch.com/2024/10/16/mistral-releases-new-ai-models-optimized-for-edge-devices/&#34;&gt;针对手机等边缘设备优化的&lt;/a&gt;模型。&lt;/li&gt;
+&lt;li&gt;Mistral Saba，&lt;a href=&#34;https://techcrunch.com/2025/02/17/mistral-releases-regional-model-focused-on-arabic-language-and-culture/&#34;&gt;专注于阿拉伯语&lt;/a&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;2025 年 3 月，该公司&lt;a href=&#34;https://techcrunch.com/2025/03/06/mistrals-new-ocr-api-turns-any-pdf-document-into-an-ai-ready-markdown-file/&#34;&gt;推出了 Mistral OCR&lt;/a&gt;，这是一种光学字符识别 (OCR) API，可以将任何 PDF 转换为文本文件，以便 AI 模型更易于提取信息。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/posts/tech_news/ai_agent/manus/</link>
+      <pubDate>Sun, 25 May 2025 21:04:47 +0800</pubDate>
+      
+      <guid>http://localhost:1313/posts/tech_news/ai_agent/manus/</guid>
+      
+        <description>&lt;p&gt;&lt;img src=&#34;2025-05-25-21-04-45.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/posts/tech_news/ai_illumination/a_illumination/</link>
+      <pubDate>Sun, 25 May 2025 20:41:52 +0800</pubDate>
+      
+      <guid>http://localhost:1313/posts/tech_news/ai_illumination/a_illumination/</guid>
+      
+        <description>&lt;p&gt;image.png&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;2025-05-25-20-38-32.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;ai-幻觉&#34;&gt;AI 幻觉&lt;/h1&gt;
+&lt;p&gt;Agent最近势头正兴，但似乎所有人已经把model 当成一个可靠的Agent/助手来使用，最终呈现效果挺惊艳，惊艳的外表下，很少看到其生成内容准确性的评估，人类都是视觉动物，更关注HTML/CSS的视觉效果。最近试用了fellou/扣子空间/manus/flowith /skywork这些市面上流行的智能体（朋友给力，第一时间给到码），这里不谈使用体验，只从大面上看Task执行过程，以及最终生成效果。总体上这些通用智能体执行成功率都不算高，中间可能有AI幻觉觉的原因。成功的结果看，视觉设计都足以打动人心，超出预期，执行过程的任务拆解和分配都符合预期，这个过程可以认为是AI 幻觉得到抑制。最终生成的内容看，基本通过web检索得到了对齐。这种担忧其实不光是我本人，&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;谷歌DeepMind首席执行官德米斯·哈萨比斯（Demis Hassabis）本周称，当前AI模型存在太多“漏洞”，连明显问题都会答错。例如，本月初，一位代表Anthropic的律师在法庭文件中使用Claude生成引用文献时，AI因“幻觉”编造内容，迫使该律师当庭道歉。p所以AI 幻觉是否还是通用智能AGI，更具体一点，眼下通用智能体的障碍。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h1 id=&#34;人类幻觉其实超出ai幻觉&#34;&gt;人类幻觉其实超出AI幻觉&lt;/h1&gt;
+&lt;p&gt;最近Claude 发布了opus4和sonet4旗舰模型，Anthropic首席执行官达里奥·阿莫代伊（Dario Amodei）在公司首届开发者活动“Code with Claude”的新闻发布会上称：如今的AI模型“幻觉”（即编造内容并当作真实信息呈现）的发生率低于人类。他认为，AI幻觉并非Anthropic实现AGI（人类水平或更强的人工智能）之路上的限制。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“这取决于测量方式，但我怀疑AI模型的幻觉频率可能比人类低，只是它们产生幻觉的方式更出人意料。”Authropic作为行业内对AGI最乐观的领导者之一，他去年在一篇广泛传播的论文中预测AGI可能最早于2026年到来，并在发布会上表示正看到相关进展“全面推进”，认为AI发展“没有明显障碍”。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h1 id=&#34;agent-实验&#34;&gt;Agent 实验&lt;/h1&gt;
+&lt;p&gt;目前难以验证Amodei的说法，主要原因是大多数幻觉基准测试是让AI模型相互竞争（交叉验证），而非将模型与人类进行对比。不过，目前的检索增强技术似乎有助于降低幻觉发生率，比如让AI模型能够访问网页搜索功能。另外，像OpenAI的GPT - 4.5等一些AI模型，在基准测试中的幻觉率明显低于早期系统。在Agent这类应用中，出现幻觉其实是致命的，个人猜测agent执行流成功率不高就是这个原因，比如使用skywork下发一段prompt：Agent工作原理和技术解析。中间执行还挺顺利，包括和用户的交互。但是呢，之后直接撂挑子不干了，llm 报错：手动摊手🤷
+最后目前的处理AI幻觉的方法总感觉治标不治本，如果单次对话，这类幻觉确实如Anthropic CEO所说，幻觉在可控范围，但是如果需要做到Agent 通用智能体，MCP之间的token 指令准确度的要求又上升一个台阶。目前我的做法Agent 用LLM一般都在最后一个环节做summary，其他环节尽可能AI生成代码，使用代码处理，保证中间结果准确，同时最后问题定位也方便。否则面对智能体的报错，毫无办法。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;2025-05-25-20-40-40.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;2025-05-25-20-40-50.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;最后&#34;&gt;最后&lt;/h1&gt;
+&lt;p&gt;目前的处理AI幻觉的方法总感觉治标不治本，如果单次对话，这类幻觉确实如Anthropic CEO所说，幻觉在可控范围，但是如果需要做到Agent 通用智能体，MCP之间的token 指令准确度的要求又上升一个台阶。目前我的做法Agent 用LLM一般都在最后一个环节做summary，其他环节尽可能AI生成代码，使用代码处理，保证中间结果准确，同时最后问题定位也方便。否则面对智能体的报错，毫无办法。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/posts/data_center/nvidia_fusion/nvdia_fusion/</link>
+      <pubDate>Fri, 23 May 2025 11:46:26 +0800</pubDate>
+      
+      <guid>http://localhost:1313/posts/data_center/nvidia_fusion/nvdia_fusion/</guid>
+      
+        <description>&lt;h1 id=&#34;nvidia-fusion&#34;&gt;Nvidia Fusion&lt;/h1&gt;
+&lt;p&gt;Jenson Huang 今天抛出了绣球，接下来第一个问题：其他厂商家的黄花闺女能否看的上。
+另一个问题：如果有一天真的成家了，亲家之间是否会闹的鸡飞狗跳？
+这颗绣球就是今天刚刚在computex 上发布的 Nvidia Fusion。英伟达发布了一系列围绕数据中心和企业级 AI 计划的公告，其中包括新推出的 NVLink Fusion 计划。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;nvlink_fusion.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;先回答第一个问题&#34;&gt;先回答第一个问题&lt;/h2&gt;
+&lt;p&gt;从公开的消息看，目前接下这颗绣球的有几家厂商：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;英伟达已为该计划聚集了众多合作伙伴，包括高通和富士通，它们将把这项技术集成到各自的 CPU 中。NVLink Fusion 还将扩展至定制 AI 加速器领域，因此英伟达已吸引包括 Marvell、联发科在内的多家芯片合作伙伴，以及芯片软件设计公司新思科技（Synopsys）和楷登电子（Cadence）加入 NVLink Fusion 生态系统。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;高通最近证实，其正在将自有定制服务器 CPU 推向市场，尽管细节仍不明确，但该公司与 NVLink 生态系统的合作将使其新 CPU 能够搭乘英伟达快速扩张的 AI 生态系统的顺风车。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;富士通也一直在致力于将其搭载 3D 堆叠 CPU 核心和内存的 144 核 Monaka CPU 推向市场。富士通 CTO Vivek Mahajan 表示：“富士通的下一代处理器 FUJITSU-MONAKA 是一款基于 Arm 架构的 2 纳米 CPU，旨在实现极高的能效。将我们的技术与英伟达架构直接连接，标志着我们在通过世界领先的计算技术推动 AI 发展的愿景中迈出了重要一步，为新型可扩展、自主且可持续的 AI 系统铺平了道路。”&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;从目前来看，Nvlink 可撬动的生态还只局限在Die2Die 的范围，在Die2Die 互联的选择上，Nvlink 不是唯一选择，另外也不是最优解。联发科已经和NVdia 有过深入合作，之前的&lt;code&gt;GB10&lt;/code&gt;现在看来已经试水了Nvlink fusion生态合作模式，由联发科基于Arm SoC CPU 的功底，结合Blackwell 的GPU 通过Nvlink 互联。另外一家Marvell，基本是全开放生态，各种联盟都来者不拒，本就是CSP chip Maker，工具箱越丰富越好。说白了，通过联发科的合作先打个窝，吸引其他厂商，在D2D 范围内还处于刚起步的状态。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/posts/tech_news/2025_5takeaway_computex/2025_computex_5takeaway/</link>
       <pubDate>Thu, 22 May 2025 23:09:29 +0800</pubDate>
       
-      <guid>https://ostring.github.io/posts/tech_news/2025_5takeaway_computex/2025_computex_5takeaway/</guid>
+      <guid>http://localhost:1313/posts/tech_news/2025_5takeaway_computex/2025_computex_5takeaway/</guid>
       
         <description>&lt;h1 id=&#34;2025台北国际电脑展亚洲最大ai科技展的五大看点&#34;&gt;&lt;strong&gt;2025台北国际电脑展：亚洲最大AI科技展的五大看点&lt;/strong&gt;&lt;/h1&gt;
 &lt;p&gt;&lt;img src=&#34;./_page_135_Picture_0.jpeg&#34; alt=&#34;&#34;&gt;
@@ -53,34 +185,10 @@
     
     <item>
       <title></title>
-      <link>https://ostring.github.io/posts/data_center/nvidia_fusion/nvdia_fusion/</link>
-      <pubDate>Thu, 22 May 2025 22:22:52 +0800</pubDate>
-      
-      <guid>https://ostring.github.io/posts/data_center/nvidia_fusion/nvdia_fusion/</guid>
-      
-        <description>&lt;h1 id=&#34;nvidia-fusion&#34;&gt;Nvidia Fusion&lt;/h1&gt;
-&lt;p&gt;Jenson Huang 今天抛出了绣球，接下来第一个问题：其他厂商家的黄花闺女能否看的上。
-另一个问题：如果有一天真的成家了，亲家之间是否会闹的鸡飞狗跳？
-这颗绣球就是今天刚刚在computex 上发布的 Nvidia Fusion。英伟达发布了一系列围绕数据中心和企业级 AI 计划的公告，其中包括新推出的 NVLink Fusion 计划。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;先回答第一个问题&#34;&gt;先回答第一个问题&lt;/h2&gt;
-&lt;p&gt;从公开的消息看，目前接下这颗绣球的有几家厂商：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;英伟达已为该计划聚集了众多合作伙伴，包括高通和富士通，它们将把这项技术集成到各自的 CPU 中。NVLink Fusion 还将扩展至定制 AI 加速器领域，因此英伟达已吸引包括 Marvell、联发科在内的多家芯片合作伙伴，以及芯片软件设计公司新思科技（Synopsys）和楷登电子（Cadence）加入 NVLink Fusion 生态系统。&lt;/p&gt;&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;高通最近证实，其正在将自有定制服务器 CPU 推向市场，尽管细节仍不明确，但该公司与 NVLink 生态系统的合作将使其新 CPU 能够搭乘英伟达快速扩张的 AI 生态系统的顺风车。&lt;/p&gt;&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;富士通也一直在致力于将其搭载 3D 堆叠 CPU 核心和内存的 144 核 Monaka CPU 推向市场。富士通 CTO Vivek Mahajan 表示：“富士通的下一代处理器 FUJITSU-MONAKA 是一款基于 Arm 架构的 2 纳米 CPU，旨在实现极高的能效。将我们的技术与英伟达架构直接连接，标志着我们在通过世界领先的计算技术推动 AI 发展的愿景中迈出了重要一步，为新型可扩展、自主且可持续的 AI 系统铺平了道路。”&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;从目前来看，Nvlink 可撬动的生态还只局限在Die2Die 的范围，在Die2Die 互联的选择上，Nvlink 不是唯一选择，另外也不是最优解。联发科已经和NVdia 有过深入合作，之前的&lt;code&gt;GB10&lt;/code&gt;现在看来已经试水了Nvlink fusion生态合作模式，由联发科基于Arm SoC CPU 的功底，结合Blackwell 的GPU 通过Nvlink 互联。另外一家Marvell，基本是全开放生态，各种联盟都来者不拒，本就是CSP chip Maker，工具箱越丰富越好。说白了，通过联发科的合作先打个窝，吸引其他厂商，在D2D 范围内还处于刚起步的状态。&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://ostring.github.io/posts/data_center/server_cooling_evolution/server_cooling_evolution/</link>
+      <link>http://localhost:1313/posts/data_center/server_cooling_evolution/server_cooling_evolution/</link>
       <pubDate>Thu, 22 May 2025 22:12:04 +0800</pubDate>
       
-      <guid>https://ostring.github.io/posts/data_center/server_cooling_evolution/server_cooling_evolution/</guid>
+      <guid>http://localhost:1313/posts/data_center/server_cooling_evolution/server_cooling_evolution/</guid>
       
         <description>&lt;h1 id=&#34;服务器散热进化史&#34;&gt;服务器散热进化史&lt;/h1&gt;
 &lt;h3 id=&#34;液冷方案崛起&#34;&gt;液冷方案崛起&lt;/h3&gt;
@@ -182,10 +290,10 @@
     
     <item>
       <title></title>
-      <link>https://ostring.github.io/about/me/</link>
+      <link>http://localhost:1313/about/me/</link>
       <pubDate>Thu, 22 May 2025 17:59:33 +0800</pubDate>
       
-      <guid>https://ostring.github.io/about/me/</guid>
+      <guid>http://localhost:1313/about/me/</guid>
       
         <description>&lt;p&gt;this is my about page.&lt;/p&gt;</description>
       
