@@ -1,0 +1,655 @@
+<!doctype html>
+<html
+  dir="ltr"
+  lang="en"
+  data-theme=""
+  
+    class="html theme--light"
+  
+><head>
+  <meta charset="utf-8" />
+  <title>
+    OString
+
+    
+
+  </title>
+
+  <meta name="generator" content="Hugo 0.152.2"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="author" content="OString" />
+  <meta
+    name="description"
+    content="Welcome to OString&#39;s Website"
+  />
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/scss/main.min.8d4fad7e6916ad2e291e8d97ada157c70350d6d7150fea137e7243340967befb.css"
+      integrity="sha256-jU&#43;tfmkWrS4pHo2XraFXxwNQ1tcVD&#43;oTfnJDNAlnvvs="
+      crossorigin="anonymous"
+      type="text/css"
+    />
+  
+
+  
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.73ccfdf28df555e11009c13c20ced067af3cb021504cba43644c705930428b00.css"
+    integrity="sha256-c8z98o31VeEQCcE8IM7QZ688sCFQTLpDZExwWTBCiwA="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/fontawesome.min.137b1cf3cea9a8adb7884343a9a5ddddf4280f59153f74dc782fb7f7bf0d0519.css"
+    integrity="sha256-E3sc886pqK23iENDqaXd3fQoD1kVP3TceC&#43;3978NBRk="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/solid.min.e65dc5b48fb5f39b142360c57c3a215744c94e56c755c929cc3e88fe12aab4d3.css"
+    integrity="sha256-5l3FtI&#43;185sUI2DFfDohV0TJTlbHVckpzD6I/hKqtNM="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/regular.min.6f4f16d58da1c82c0c3a3436e021a3d39b4742f741192c546e73e947eacfd92f.css"
+    integrity="sha256-b08W1Y2hyCwMOjQ24CGj05tHQvdBGSxUbnPpR&#43;rP2S8="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/brands.min.e10425ad768bc98ff1fb272a0ac8420f9d1ba22f0612c08ff1010c95080ffe7e.css"
+    integrity="sha256-4QQlrXaLyY/x&#43;ycqCshCD50boi8GEsCP8QEMlQgP/n4="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+
+  <link rel="canonical" href="https://ostring.github.io/posts/edge_computing/edge_deploy_survey/" />
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js"
+    integrity="sha256-&#43;RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.8724ddf9268dee451060f191961647573c7f592fbccc6d858746236b3f915813.js"
+      integrity="sha256-hyTd&#43;SaN7kUQYPGRlhZHVzx/WS&#43;8zG2Fh0Yjaz&#43;RWBM="
+      crossorigin="anonymous"
+    ></script>
+  
+
+  
+
+  
+
+  
+
+
+  
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Website of OString">
+  <meta name="twitter:description" content="边缘端部署 一、部署效果最好的边缘模型（按任务场景） 应用领域 模型名称 优势 设备适配 视觉分类/检测 MobileNetV2/V3 高速、轻量，广泛适配 MCU / NPU / GPU EfficientNet-Lite 高精度低功耗 Edge TPU / 手机 YOLOv5-Nano / YOLOv6-N 轻量检测，部署广泛 Jetson / RK3588 PP-YOLOe Tiny 高精度低计算量（百度） ARM &#43; NPU 语音识别 / 唤醒 DS-CNN / Keyword Spotting Model (KWS) 用于离线语音命令 Cortex-M4 / -M7 Whisper Tiny / DistilWhisper 多语种识别（适配 GPU/NPU） Edge AI SoC 多模态推理 MobileSAM / TinySAM 适用于边缘设备的图像分割 Jetson / RK3588 / NPU 自然语言处理（NLP） DistilBERT / TinyBERT / MobileBERT 微调灵活，适合分类、意图识别 边缘服务器 / 高性能 MCU 嵌入式场景（超低功耗） TinyML models（如 uTensor、TFLM） 量化后仅占数百KB STM32 / K210 / Cortex-M 二、边缘部署效果最好的平台（硬件&#43;软件一体） 平台 描述 推荐部署框架 代表芯片 NVIDIA Jetson 系列 强大 GPU &#43; CUDA &#43; TensorRT，适合视觉、机器人 TensorRT, DeepStream Jetson Nano / Orin / Xavier Google Coral 支持 Edge TPU（INT8 模型） TensorFlow Lite &#43; Edge TPU Compiler Coral Dev Board Qualcomm QCS/QCM 系列 Snapdragon AI 引擎（Hexagon DSP） SNPE（Snapdragon SDK） QCS610 / 8250 Rockchip RK3588 / RV1106 高性价比 NPU SoC（支持 INT8/FP16） RKNN Toolkit / ONNX RK3588 / RV1126 Kneron / Horizon Robotics 面向安防、车载，低功耗 AI 芯片 Kneron SDK / BPU SDK KL720 / 旭日X3 Sipeed Maix / Kendryte RISC-V &#43; NPU（TinyML场景） KPU, nncase, TFLM K210 / K510 ARM Cortex-M 系列 超低功耗 MCU &#43; TinyML TensorFlow Lite Micro / CMSIS-NN STM32, nRF52 三、部署工具链推荐（跨平台） 工具 适用模型 特点 TensorFlow Lite / Lite Micro TFLite / TinyML 支持量化，适配 Android、MCU、TPU ONNX Runtime &#43; NNAPI / DirectML ONNX 模型 跨平台通用，适配 Edge AI 芯片 TensorRT NVIDIA 模型 高性能优化，支持 FP16/INT8 加速 TVM / Apache Relay 任意模型 编译优化，适配异构硬件 OpenVINO Intel 硬件 支持 CPU、VPU（Myriad X）、FPGA Edge Impulse KWS / TinyML 分类 可视化模型训练 &#43; MCU 部署 四、部署案例示意 🎯 示例：人脸检测模型部署比较 硬件平台 使用模型 平均延迟 功耗 工具链 Jetson Nano YOLOv5s ~30ms 5-10W TensorRT RK3588 PP-YOLOe Tiny ~25ms 3-5W RKNN Toolkit STM32F746 DS-CNN KWS ~50ms 0.5W TFLite Micro 五、实践建议 用大模型训练，用小模型部署（知识蒸馏 &#43; 量化） 使用 TensorFlow Lite / ONNX 导出部署模型 利用平台 SDK 工具链做 INT8 / FP16 优化 结合 Edge Impulse、TVM 等工具生成边缘可执行模型 持续关注芯片厂商的工具链更新（如 RKNN、SNPE、TensorRT 版本） 如你有特定应用场景（如安防、医疗穿戴、工业边缘设备），可进一步定制推荐模型和部署策略。">
+
+
+
+  
+  <meta property="og:url" content="https://ostring.github.io/posts/edge_computing/edge_deploy_survey/">
+  <meta property="og:site_name" content="Website of OString">
+  <meta property="og:title" content="Website of OString">
+  <meta property="og:description" content="边缘端部署 一、部署效果最好的边缘模型（按任务场景） 应用领域 模型名称 优势 设备适配 视觉分类/检测 MobileNetV2/V3 高速、轻量，广泛适配 MCU / NPU / GPU EfficientNet-Lite 高精度低功耗 Edge TPU / 手机 YOLOv5-Nano / YOLOv6-N 轻量检测，部署广泛 Jetson / RK3588 PP-YOLOe Tiny 高精度低计算量（百度） ARM &#43; NPU 语音识别 / 唤醒 DS-CNN / Keyword Spotting Model (KWS) 用于离线语音命令 Cortex-M4 / -M7 Whisper Tiny / DistilWhisper 多语种识别（适配 GPU/NPU） Edge AI SoC 多模态推理 MobileSAM / TinySAM 适用于边缘设备的图像分割 Jetson / RK3588 / NPU 自然语言处理（NLP） DistilBERT / TinyBERT / MobileBERT 微调灵活，适合分类、意图识别 边缘服务器 / 高性能 MCU 嵌入式场景（超低功耗） TinyML models（如 uTensor、TFLM） 量化后仅占数百KB STM32 / K210 / Cortex-M 二、边缘部署效果最好的平台（硬件&#43;软件一体） 平台 描述 推荐部署框架 代表芯片 NVIDIA Jetson 系列 强大 GPU &#43; CUDA &#43; TensorRT，适合视觉、机器人 TensorRT, DeepStream Jetson Nano / Orin / Xavier Google Coral 支持 Edge TPU（INT8 模型） TensorFlow Lite &#43; Edge TPU Compiler Coral Dev Board Qualcomm QCS/QCM 系列 Snapdragon AI 引擎（Hexagon DSP） SNPE（Snapdragon SDK） QCS610 / 8250 Rockchip RK3588 / RV1106 高性价比 NPU SoC（支持 INT8/FP16） RKNN Toolkit / ONNX RK3588 / RV1126 Kneron / Horizon Robotics 面向安防、车载，低功耗 AI 芯片 Kneron SDK / BPU SDK KL720 / 旭日X3 Sipeed Maix / Kendryte RISC-V &#43; NPU（TinyML场景） KPU, nncase, TFLM K210 / K510 ARM Cortex-M 系列 超低功耗 MCU &#43; TinyML TensorFlow Lite Micro / CMSIS-NN STM32, nRF52 三、部署工具链推荐（跨平台） 工具 适用模型 特点 TensorFlow Lite / Lite Micro TFLite / TinyML 支持量化，适配 Android、MCU、TPU ONNX Runtime &#43; NNAPI / DirectML ONNX 模型 跨平台通用，适配 Edge AI 芯片 TensorRT NVIDIA 模型 高性能优化，支持 FP16/INT8 加速 TVM / Apache Relay 任意模型 编译优化，适配异构硬件 OpenVINO Intel 硬件 支持 CPU、VPU（Myriad X）、FPGA Edge Impulse KWS / TinyML 分类 可视化模型训练 &#43; MCU 部署 四、部署案例示意 🎯 示例：人脸检测模型部署比较 硬件平台 使用模型 平均延迟 功耗 工具链 Jetson Nano YOLOv5s ~30ms 5-10W TensorRT RK3588 PP-YOLOe Tiny ~25ms 3-5W RKNN Toolkit STM32F746 DS-CNN KWS ~50ms 0.5W TFLite Micro 五、实践建议 用大模型训练，用小模型部署（知识蒸馏 &#43; 量化） 使用 TensorFlow Lite / ONNX 导出部署模型 利用平台 SDK 工具链做 INT8 / FP16 优化 结合 Edge Impulse、TVM 等工具生成边缘可执行模型 持续关注芯片厂商的工具链更新（如 RKNN、SNPE、TensorRT 版本） 如你有特定应用场景（如安防、医疗穿戴、工业边缘设备），可进一步定制推荐模型和部署策略。">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-06-17T15:11:13+08:00">
+    <meta property="article:modified_time" content="2025-06-17T15:11:13+08:00">
+
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "posts",
+        "name": "",
+        "headline": "",
+        "alternativeHeadline": "",
+        "description": "
+      
+        \u003ch1 id=\u0022边缘端部署\u0022\u003e边缘端部署\u003c\/h1\u003e\n\u003ch2 id=\u0022一部署效果最好的边缘模型按任务场景\u0022\u003e一、部署效果最好的边缘模型（按任务场景）\u003c\/h2\u003e\n\u003ctable\u003e\n  \u003cthead\u003e\n      \u003ctr\u003e\n          \u003cth\u003e应用领域\u003c\/th\u003e\n          \u003cth\u003e模型名称\u003c\/th\u003e\n          \u003cth\u003e优势\u003c\/th\u003e\n          \u003cth\u003e设备适配\u003c\/th\u003e\n      \u003c\/tr\u003e\n  \u003c\/thead\u003e\n  \u003ctbody\u003e\n      \u003ctr\u003e\n          \u003ctd\u003e\u003cstrong\u003e视觉分类\/检测\u003c\/strong\u003e\u003c\/td\u003e\n          \u003ctd\u003eMobileNetV2\/V3\u003c\/td\u003e\n          \u003ctd\u003e高速、轻量，广泛适配\u003c\/td\u003e\n          \u003ctd\u003eMCU \/ NPU \/ GPU\u003c\/td\u003e\n      \u003c\/tr\u003e\n      \u003ctr\u003e\n          \u003ctd\u003e\u003c\/td\u003e\n          \u003ctd\u003eEfficientNet-Lite\u003c\/td\u003e\n          \u003ctd\u003e高精度低功耗\u003c\/td\u003e\n          \u003ctd\u003eEdge TPU \/ 手机\u003c\/td\u003e\n      \u003c\/tr\u003e\n      \u003ctr\u003e\n          \u003ctd\u003e\u003c\/td\u003e\n          \u003ctd\u003eYOLOv5-Nano \/ YOLOv6-N\u003c\/td\u003e\n          \u003ctd\u003e轻量检测，部署广泛\u003c\/td\u003e\n          \u003ctd\u003eJetson \/ RK3588\u003c\/td\u003e\n      \u003c\/tr\u003e\n      \u003ctr\u003e\n          \u003ctd\u003e\u003c\/td\u003e\n          \u003ctd\u003ePP-YOLOe Tiny\u003c\/td\u003e\n          \u003ctd\u003e高精度低计算量（百度）\u003c\/td\u003e\n          \u003ctd\u003eARM \u002b NPU\u003c\/td\u003e\n      \u003c\/tr\u003e\n      \u003ctr\u003e\n          \u003ctd\u003e\u003cstrong\u003e语音识别 \/ 唤醒\u003c\/strong\u003e\u003c\/td\u003e\n          \u003ctd\u003eDS-CNN \/ Keyword Spotting Model (KWS)\u003c\/td\u003e\n          \u003ctd\u003e用于离线语音命令\u003c\/td\u003e\n          \u003ctd\u003eCortex-M4 \/ -M7\u003c\/td\u003e\n      \u003c\/tr\u003e\n      \u003ctr\u003e\n          \u003ctd\u003e\u003c\/td\u003e\n          \u003ctd\u003eWhisper Tiny \/ DistilWhisper\u003c\/td\u003e\n          \u003ctd\u003e多语种识别（适配 GPU\/NPU）\u003c\/td\u003e\n          \u003ctd\u003eEdge AI SoC\u003c\/td\u003e\n      \u003c\/tr\u003e\n      \u003ctr\u003e\n          \u003ctd\u003e\u003cstrong\u003e多模态推理\u003c\/strong\u003e\u003c\/td\u003e\n          \u003ctd\u003eMobileSAM \/ TinySAM\u003c\/td\u003e\n          \u003ctd\u003e适用于边缘设备的图像分割\u003c\/td\u003e\n          \u003ctd\u003eJetson \/ RK3588 \/ NPU\u003c\/td\u003e\n      \u003c\/tr\u003e\n      \u003ctr\u003e\n          \u003ctd\u003e\u003cstrong\u003e自然语言处理（NLP）\u003c\/strong\u003e\u003c\/td\u003e\n          \u003ctd\u003eDistilBERT \/ TinyBERT \/ MobileBERT\u003c\/td\u003e\n          \u003ctd\u003e微调灵活，适合分类、意图识别\u003c\/td\u003e\n          \u003ctd\u003e边缘服务器 \/ 高性能 MCU\u003c\/td\u003e\n      \u003c\/tr\u003e\n      \u003ctr\u003e\n          \u003ctd\u003e\u003cstrong\u003e嵌入式场景（超低功耗）\u003c\/strong\u003e\u003c\/td\u003e\n          \u003ctd\u003eTinyML models（如 uTensor、TFLM）\u003c\/td\u003e\n          \u003ctd\u003e量化后仅占数百KB\u003c\/td\u003e\n          \u003ctd\u003eSTM32 \/ K210 \/ Cortex-M\u003c\/td\u003e\n      \u003c\/tr\u003e\n  \u003c\/tbody\u003e\n\u003c\/table\u003e\n\u003chr\u003e\n\u003ch2 id=\u0022二边缘部署效果最好的平台硬件软件一体\u0022\u003e二、边缘部署效果最好的平台（硬件\u002b软件一体）\u003c\/h2\u003e\n\u003ctable\u003e\n  \u003cthead\u003e\n      \u003ctr\u003e\n          \u003cth\u003e平台\u003c\/th\u003e\n          \u003cth\u003e描述\u003c\/th\u003e\n          \u003cth\u003e推荐部署框架\u003c\/th\u003e\n          \u003cth\u003e代表芯片\u003c\/th\u003e\n      \u003c\/tr\u003e\n  \u003c\/thead\u003e\n  \u003ctbody\u003e\n      \u003ctr\u003e\n          \u003ctd\u003e\u003cstrong\u003eNVIDIA Jetson 系列\u003c\/strong\u003e\u003c\/td\u003e\n          \u003ctd\u003e强大 GPU \u002b CUDA \u002b TensorRT，适合视觉、机器人\u003c\/td\u003e\n          \u003ctd\u003eTensorRT, DeepStream\u003c\/td\u003e\n          \u003ctd\u003eJetson Nano \/ Orin \/ Xavier\u003c\/td\u003e\n      \u003c\/tr\u003e\n      \u003ctr\u003e\n          \u003ctd\u003e\u003cstrong\u003eGoogle Coral\u003c\/strong\u003e\u003c\/td\u003e\n          \u003ctd\u003e支持 Edge TPU（INT8 模型）\u003c\/td\u003e\n          \u003ctd\u003eTensorFlow Lite \u002b Edge TPU Compiler\u003c\/td\u003e\n          \u003ctd\u003eCoral Dev Board\u003c\/td\u003e\n      \u003c\/tr\u003e\n      \u003ctr\u003e\n          \u003ctd\u003e\u003cstrong\u003eQualcomm QCS\/QCM 系列\u003c\/strong\u003e\u003c\/td\u003e\n          \u003ctd\u003eSnapdragon AI 引擎（Hexagon DSP）\u003c\/td\u003e\n          \u003ctd\u003eSNPE（Snapdragon SDK）\u003c\/td\u003e\n          \u003ctd\u003eQCS610 \/ 8250\u003c\/td\u003e\n      \u003c\/tr\u003e\n      \u003ctr\u003e\n          \u003ctd\u003e\u003cstrong\u003eRockchip RK3588 \/ RV1106\u003c\/strong\u003e\u003c\/td\u003e\n          \u003ctd\u003e高性价比 NPU SoC（支持 INT8\/FP16）\u003c\/td\u003e\n          \u003ctd\u003eRKNN Toolkit \/ ONNX\u003c\/td\u003e\n          \u003ctd\u003eRK3588 \/ RV1126\u003c\/td\u003e\n      \u003c\/tr\u003e\n      \u003ctr\u003e\n          \u003ctd\u003e\u003cstrong\u003eKneron \/ Horizon Robotics\u003c\/strong\u003e\u003c\/td\u003e\n          \u003ctd\u003e面向安防、车载，低功耗 AI 芯片\u003c\/td\u003e\n          \u003ctd\u003eKneron SDK \/ BPU SDK\u003c\/td\u003e\n          \u003ctd\u003eKL720 \/ 旭日X3\u003c\/td\u003e\n      \u003c\/tr\u003e\n      \u003ctr\u003e\n          \u003ctd\u003e\u003cstrong\u003eSipeed Maix \/ Kendryte\u003c\/strong\u003e\u003c\/td\u003e\n          \u003ctd\u003eRISC-V \u002b NPU（TinyML场景）\u003c\/td\u003e\n          \u003ctd\u003eKPU, nncase, TFLM\u003c\/td\u003e\n          \u003ctd\u003eK210 \/ K510\u003c\/td\u003e\n      \u003c\/tr\u003e\n      \u003ctr\u003e\n          \u003ctd\u003e\u003cstrong\u003eARM Cortex-M 系列\u003c\/strong\u003e\u003c\/td\u003e\n          \u003ctd\u003e超低功耗 MCU \u002b TinyML\u003c\/td\u003e\n          \u003ctd\u003eTensorFlow Lite Micro \/ CMSIS-NN\u003c\/td\u003e\n          \u003ctd\u003eSTM32, nRF52\u003c\/td\u003e\n      \u003c\/tr\u003e\n  \u003c\/tbody\u003e\n\u003c\/table\u003e\n\u003chr\u003e\n\u003ch2 id=\u0022三部署工具链推荐跨平台\u0022\u003e三、部署工具链推荐（跨平台）\u003c\/h2\u003e\n\u003ctable\u003e\n  \u003cthead\u003e\n      \u003ctr\u003e\n          \u003cth\u003e工具\u003c\/th\u003e\n          \u003cth\u003e适用模型\u003c\/th\u003e\n          \u003cth\u003e特点\u003c\/th\u003e\n      \u003c\/tr\u003e\n  \u003c\/thead\u003e\n  \u003ctbody\u003e\n      \u003ctr\u003e\n          \u003ctd\u003eTensorFlow Lite \/ Lite Micro\u003c\/td\u003e\n          \u003ctd\u003eTFLite \/ TinyML\u003c\/td\u003e\n          \u003ctd\u003e支持量化，适配 Android、MCU、TPU\u003c\/td\u003e\n      \u003c\/tr\u003e\n      \u003ctr\u003e\n          \u003ctd\u003eONNX Runtime \u002b NNAPI \/ DirectML\u003c\/td\u003e\n          \u003ctd\u003eONNX 模型\u003c\/td\u003e\n          \u003ctd\u003e跨平台通用，适配 Edge AI 芯片\u003c\/td\u003e\n      \u003c\/tr\u003e\n      \u003ctr\u003e\n          \u003ctd\u003eTensorRT\u003c\/td\u003e\n          \u003ctd\u003eNVIDIA 模型\u003c\/td\u003e\n          \u003ctd\u003e高性能优化，支持 FP16\/INT8 加速\u003c\/td\u003e\n      \u003c\/tr\u003e\n      \u003ctr\u003e\n          \u003ctd\u003eTVM \/ Apache Relay\u003c\/td\u003e\n          \u003ctd\u003e任意模型\u003c\/td\u003e\n          \u003ctd\u003e编译优化，适配异构硬件\u003c\/td\u003e\n      \u003c\/tr\u003e\n      \u003ctr\u003e\n          \u003ctd\u003eOpenVINO\u003c\/td\u003e\n          \u003ctd\u003eIntel 硬件\u003c\/td\u003e\n          \u003ctd\u003e支持 CPU、VPU（Myriad X）、FPGA\u003c\/td\u003e\n      \u003c\/tr\u003e\n      \u003ctr\u003e\n          \u003ctd\u003eEdge Impulse\u003c\/td\u003e\n          \u003ctd\u003eKWS \/ TinyML 分类\u003c\/td\u003e\n          \u003ctd\u003e可视化模型训练 \u002b MCU 部署\u003c\/td\u003e\n      \u003c\/tr\u003e\n  \u003c\/tbody\u003e\n\u003c\/table\u003e\n\u003chr\u003e\n\u003ch2 id=\u0022四部署案例示意\u0022\u003e四、部署案例示意\u003c\/h2\u003e\n\u003ch3 id=\u0022-示例人脸检测模型部署比较\u0022\u003e🎯 示例：人脸检测模型部署比较\u003c\/h3\u003e\n\u003ctable\u003e\n  \u003cthead\u003e\n      \u003ctr\u003e\n          \u003cth\u003e硬件平台\u003c\/th\u003e\n          \u003cth\u003e使用模型\u003c\/th\u003e\n          \u003cth\u003e平均延迟\u003c\/th\u003e\n          \u003cth\u003e功耗\u003c\/th\u003e\n          \u003cth\u003e工具链\u003c\/th\u003e\n      \u003c\/tr\u003e\n  \u003c\/thead\u003e\n  \u003ctbody\u003e\n      \u003ctr\u003e\n          \u003ctd\u003eJetson Nano\u003c\/td\u003e\n          \u003ctd\u003eYOLOv5s\u003c\/td\u003e\n          \u003ctd\u003e~30ms\u003c\/td\u003e\n          \u003ctd\u003e5-10W\u003c\/td\u003e\n          \u003ctd\u003eTensorRT\u003c\/td\u003e\n      \u003c\/tr\u003e\n      \u003ctr\u003e\n          \u003ctd\u003eRK3588\u003c\/td\u003e\n          \u003ctd\u003ePP-YOLOe Tiny\u003c\/td\u003e\n          \u003ctd\u003e~25ms\u003c\/td\u003e\n          \u003ctd\u003e3-5W\u003c\/td\u003e\n          \u003ctd\u003eRKNN Toolkit\u003c\/td\u003e\n      \u003c\/tr\u003e\n      \u003ctr\u003e\n          \u003ctd\u003eSTM32F746\u003c\/td\u003e\n          \u003ctd\u003eDS-CNN KWS\u003c\/td\u003e\n          \u003ctd\u003e~50ms\u003c\/td\u003e\n          \u003ctd\u003e0.5W\u003c\/td\u003e\n          \u003ctd\u003eTFLite Micro\u003c\/td\u003e\n      \u003c\/tr\u003e\n  \u003c\/tbody\u003e\n\u003c\/table\u003e\n\u003chr\u003e\n\u003ch2 id=\u0022五实践建议\u0022\u003e五、实践建议\u003c\/h2\u003e\n\u003col\u003e\n\u003cli\u003e\u003cstrong\u003e用大模型训练，用小模型部署\u003c\/strong\u003e（知识蒸馏 \u002b 量化）\u003c\/li\u003e\n\u003cli\u003e使用 TensorFlow Lite \/ ONNX 导出部署模型\u003c\/li\u003e\n\u003cli\u003e利用平台 SDK 工具链做 INT8 \/ FP16 优化\u003c\/li\u003e\n\u003cli\u003e结合 Edge Impulse、TVM 等工具生成边缘可执行模型\u003c\/li\u003e\n\u003cli\u003e持续关注芯片厂商的工具链更新（如 RKNN、SNPE、TensorRT 版本）\u003c\/li\u003e\n\u003c\/ol\u003e\n\u003chr\u003e\n\u003cp\u003e如你有特定应用场景（如安防、医疗穿戴、工业边缘设备），可进一步定制推荐模型和部署策略。\u003c\/p\u003e
+
+
+      
+
+
+    ",
+        "license": "",
+        
+        "inLanguage": "en",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/ostring.github.io\/posts\/edge_computing\/edge_deploy_survey\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "OString"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "OString"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "OString"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "OString"
+        },
+        "dateCreated": "2025-06-17T15:11:13.15Z",
+        "datePublished": "2025-06-17T15:11:13.00Z",
+        "dateModified": "2025-06-17T15:11:13.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "OString",
+            "url": "https://ostring.github.io/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/ostring.github.io\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+      ]
+
+    ,
+        "url" : "https:\/\/ostring.github.io\/posts\/edge_computing\/edge_deploy_survey\/",
+        "wordCount" : "386",
+        "genre" : [ ],
+        "keywords" : [ ]
+    }
+  </script>
+
+
+</head>
+<body class="body">
+    <div class="wrapper">
+      <aside
+        
+          class="wrapper__sidebar"
+        
+      ><div
+  class="sidebar
+    animated fadeInDown
+  "
+>
+  <div class="sidebar__content">
+    <div class="sidebar__introduction">
+      <img
+        class="sidebar__introduction-profileimage"
+        src="/images/profile.jpg"
+        alt="profile picture"
+      />
+      
+        <div class="sidebar__introduction-title">
+          <a href="/"></a>
+        </div>
+      
+      <div class="sidebar__introduction-description">
+        <p>Welcome to OString's Website</p>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      
+    </ul>
+  </div><footer class="footer footer__sidebar">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        OString
+        2025
+      
+    </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.9531b4a2217a70c5a1fce89c1f81c9ebbdd586708fcd4130b417320c7230c8d6.js"
+    integrity="sha256-lTG0oiF6cMWh/OicH4HJ673VhnCPzUEwtBcyDHIwyNY="
+    crossorigin="anonymous"
+  ></script></div>
+</aside>
+      <main
+        
+          class="wrapper__main"
+        
+      >
+        <header class="header"><div
+  class="
+    animated fadeInDown
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+  </a>
+  <nav class="nav">
+    <ul class="nav__list" id="navMenu">
+      
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/"
+              
+              title=""
+              >Home</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/posts/data_center/"
+              
+              title=""
+              >DataCenter</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/posts/tech_news/"
+              
+              title=""
+              >TechNews</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/about/"
+              
+              title=""
+              >About</a
+            >
+          </li>
+        
+
+      
+    </ul>
+    <ul class="nav__list nav__list--end">
+      
+      
+        <li class="nav__list-item">
+          <div class="themeswitch">
+            <a title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </li>
+      
+    </ul>
+  </nav>
+</div>
+</header>
+  <div
+    class="post 
+      animated fadeInDown
+    "
+  >
+    
+    <div class="post__content">
+      
+        <h1></h1>
+      
+      <h1 id="边缘端部署">边缘端部署</h1>
+<h2 id="一部署效果最好的边缘模型按任务场景">一、部署效果最好的边缘模型（按任务场景）</h2>
+<table>
+  <thead>
+      <tr>
+          <th>应用领域</th>
+          <th>模型名称</th>
+          <th>优势</th>
+          <th>设备适配</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>视觉分类/检测</strong></td>
+          <td>MobileNetV2/V3</td>
+          <td>高速、轻量，广泛适配</td>
+          <td>MCU / NPU / GPU</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>EfficientNet-Lite</td>
+          <td>高精度低功耗</td>
+          <td>Edge TPU / 手机</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>YOLOv5-Nano / YOLOv6-N</td>
+          <td>轻量检测，部署广泛</td>
+          <td>Jetson / RK3588</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>PP-YOLOe Tiny</td>
+          <td>高精度低计算量（百度）</td>
+          <td>ARM + NPU</td>
+      </tr>
+      <tr>
+          <td><strong>语音识别 / 唤醒</strong></td>
+          <td>DS-CNN / Keyword Spotting Model (KWS)</td>
+          <td>用于离线语音命令</td>
+          <td>Cortex-M4 / -M7</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>Whisper Tiny / DistilWhisper</td>
+          <td>多语种识别（适配 GPU/NPU）</td>
+          <td>Edge AI SoC</td>
+      </tr>
+      <tr>
+          <td><strong>多模态推理</strong></td>
+          <td>MobileSAM / TinySAM</td>
+          <td>适用于边缘设备的图像分割</td>
+          <td>Jetson / RK3588 / NPU</td>
+      </tr>
+      <tr>
+          <td><strong>自然语言处理（NLP）</strong></td>
+          <td>DistilBERT / TinyBERT / MobileBERT</td>
+          <td>微调灵活，适合分类、意图识别</td>
+          <td>边缘服务器 / 高性能 MCU</td>
+      </tr>
+      <tr>
+          <td><strong>嵌入式场景（超低功耗）</strong></td>
+          <td>TinyML models（如 uTensor、TFLM）</td>
+          <td>量化后仅占数百KB</td>
+          <td>STM32 / K210 / Cortex-M</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="二边缘部署效果最好的平台硬件软件一体">二、边缘部署效果最好的平台（硬件+软件一体）</h2>
+<table>
+  <thead>
+      <tr>
+          <th>平台</th>
+          <th>描述</th>
+          <th>推荐部署框架</th>
+          <th>代表芯片</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>NVIDIA Jetson 系列</strong></td>
+          <td>强大 GPU + CUDA + TensorRT，适合视觉、机器人</td>
+          <td>TensorRT, DeepStream</td>
+          <td>Jetson Nano / Orin / Xavier</td>
+      </tr>
+      <tr>
+          <td><strong>Google Coral</strong></td>
+          <td>支持 Edge TPU（INT8 模型）</td>
+          <td>TensorFlow Lite + Edge TPU Compiler</td>
+          <td>Coral Dev Board</td>
+      </tr>
+      <tr>
+          <td><strong>Qualcomm QCS/QCM 系列</strong></td>
+          <td>Snapdragon AI 引擎（Hexagon DSP）</td>
+          <td>SNPE（Snapdragon SDK）</td>
+          <td>QCS610 / 8250</td>
+      </tr>
+      <tr>
+          <td><strong>Rockchip RK3588 / RV1106</strong></td>
+          <td>高性价比 NPU SoC（支持 INT8/FP16）</td>
+          <td>RKNN Toolkit / ONNX</td>
+          <td>RK3588 / RV1126</td>
+      </tr>
+      <tr>
+          <td><strong>Kneron / Horizon Robotics</strong></td>
+          <td>面向安防、车载，低功耗 AI 芯片</td>
+          <td>Kneron SDK / BPU SDK</td>
+          <td>KL720 / 旭日X3</td>
+      </tr>
+      <tr>
+          <td><strong>Sipeed Maix / Kendryte</strong></td>
+          <td>RISC-V + NPU（TinyML场景）</td>
+          <td>KPU, nncase, TFLM</td>
+          <td>K210 / K510</td>
+      </tr>
+      <tr>
+          <td><strong>ARM Cortex-M 系列</strong></td>
+          <td>超低功耗 MCU + TinyML</td>
+          <td>TensorFlow Lite Micro / CMSIS-NN</td>
+          <td>STM32, nRF52</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="三部署工具链推荐跨平台">三、部署工具链推荐（跨平台）</h2>
+<table>
+  <thead>
+      <tr>
+          <th>工具</th>
+          <th>适用模型</th>
+          <th>特点</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>TensorFlow Lite / Lite Micro</td>
+          <td>TFLite / TinyML</td>
+          <td>支持量化，适配 Android、MCU、TPU</td>
+      </tr>
+      <tr>
+          <td>ONNX Runtime + NNAPI / DirectML</td>
+          <td>ONNX 模型</td>
+          <td>跨平台通用，适配 Edge AI 芯片</td>
+      </tr>
+      <tr>
+          <td>TensorRT</td>
+          <td>NVIDIA 模型</td>
+          <td>高性能优化，支持 FP16/INT8 加速</td>
+      </tr>
+      <tr>
+          <td>TVM / Apache Relay</td>
+          <td>任意模型</td>
+          <td>编译优化，适配异构硬件</td>
+      </tr>
+      <tr>
+          <td>OpenVINO</td>
+          <td>Intel 硬件</td>
+          <td>支持 CPU、VPU（Myriad X）、FPGA</td>
+      </tr>
+      <tr>
+          <td>Edge Impulse</td>
+          <td>KWS / TinyML 分类</td>
+          <td>可视化模型训练 + MCU 部署</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="四部署案例示意">四、部署案例示意</h2>
+<h3 id="-示例人脸检测模型部署比较">🎯 示例：人脸检测模型部署比较</h3>
+<table>
+  <thead>
+      <tr>
+          <th>硬件平台</th>
+          <th>使用模型</th>
+          <th>平均延迟</th>
+          <th>功耗</th>
+          <th>工具链</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Jetson Nano</td>
+          <td>YOLOv5s</td>
+          <td>~30ms</td>
+          <td>5-10W</td>
+          <td>TensorRT</td>
+      </tr>
+      <tr>
+          <td>RK3588</td>
+          <td>PP-YOLOe Tiny</td>
+          <td>~25ms</td>
+          <td>3-5W</td>
+          <td>RKNN Toolkit</td>
+      </tr>
+      <tr>
+          <td>STM32F746</td>
+          <td>DS-CNN KWS</td>
+          <td>~50ms</td>
+          <td>0.5W</td>
+          <td>TFLite Micro</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="五实践建议">五、实践建议</h2>
+<ol>
+<li><strong>用大模型训练，用小模型部署</strong>（知识蒸馏 + 量化）</li>
+<li>使用 TensorFlow Lite / ONNX 导出部署模型</li>
+<li>利用平台 SDK 工具链做 INT8 / FP16 优化</li>
+<li>结合 Edge Impulse、TVM 等工具生成边缘可执行模型</li>
+<li>持续关注芯片厂商的工具链更新（如 RKNN、SNPE、TensorRT 版本）</li>
+</ol>
+<hr>
+<p>如你有特定应用场景（如安防、医疗穿戴、工业边缘设备），可进一步定制推荐模型和部署策略。</p>
+<h1 id="-边缘智能--aiot-领域高质量-survey-论文汇总">📚 边缘智能 / AIoT 领域高质量 Survey 论文汇总</h1>
+<table>
+  <thead>
+      <tr>
+          <th>序号</th>
+          <th>论文标题</th>
+          <th>作者</th>
+          <th>发布时间</th>
+          <th>下载链接</th>
+          <th>主题与亮点</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td>^<a href="%7B%22attribution%22:%7B%22attributableIndex%22:%220-1%22%7D%7D"><strong>Empowering Edge Intelligence: A Comprehensive Survey on On‑Device AI Models</strong></a></td>
+          <td>^<a href="%7B%22attribution%22:%7B%22attributableIndex%22:%220-2%22%7D%7D">Xubin Wang 等</a></td>
+          <td>^<a href="%7B%22attribution%22:%7B%22attributableIndex%22:%220-3%22%7D%7D">2025‑03‑08</a></td>
+          <td>^[<a href="https://arxiv.org/pdf/2503.06027">PDF (arXiv)</a>]({&ldquo;attribution&rdquo;:{&ldquo;attributableIndex&rdquo;:&ldquo;0-4&rdquo;}})</td>
+          <td>^<a href="%7B%22attribution%22:%7B%22attributableIndex%22:%220-5%22%7D%7D">系统梳理 on-device AI 核心难点：模型压缩、预处理、硬件加速与基础模型影响</a>  <a href="https://arxiv.org/abs/2503.06027?utm_source=chatgpt.com">oai_citation:0‡arxiv.org</a></td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td><strong>Optimizing Edge AI: A Comprehensive Survey on Data, Model, and System Strategies</strong></td>
+          <td>Xubin Wang &amp; Weijia Jia</td>
+          <td>2025‑01‑04</td>
+          <td><a href="https://arxiv.org/pdf/2501.03265">PDF (arXiv)</a></td>
+          <td>提出“数据-模型-系统”三元优化框架，覆盖清洗、量化、推理加速</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td><strong>On Accelerating Edge AI: Optimizing Resource‑Constrained Environments</strong></td>
+          <td>Jacob Sander 等</td>
+          <td>2025‑01‑25</td>
+          <td><a href="https://arxiv.org/abs/2501.15014">PDF (arXiv)</a></td>
+          <td>聚焦深度模型剪枝、NAS、编译框架（TVM/TensorRT/OpenVINO）</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td><strong>Onboard Optimization and Learning: A Survey</strong></td>
+          <td>Monirul Islam Pavel 等</td>
+          <td>2025‑05‑07</td>
+          <td><a href="https://arxiv.org/abs/2505.08793">PDF (arXiv)</a></td>
+          <td>重点关注边缘设备实时<strong>在线训练</strong>与推理：适应性、协作学习、安全性</td>
+      </tr>
+  </tbody>
+</table>
+</div>
+    <div class="post__footer">
+      
+
+      
+    </div>
+
+    
+  </div>
+
+      </main>
+    </div><footer class="footer footer__base">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        OString
+        2025
+      
+    </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.9531b4a2217a70c5a1fce89c1f81c9ebbdd586708fcd4130b417320c7230c8d6.js"
+    integrity="sha256-lTG0oiF6cMWh/OicH4HJ673VhnCPzUEwtBcyDHIwyNY="
+    crossorigin="anonymous"
+  ></script></body>
+</html>

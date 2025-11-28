@@ -2,52 +2,85 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/posts/tech_news/amd_buy_silicon_photonic_startup/</loc>
-    <lastmod>2025-05-29T09:31:47+08:00</lastmod>
+    <loc>https://ostring.github.io/posts/invest/ai_agents/nber_agent_suvery/</loc>
+    <lastmod>2025-11-23T14:43:55+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-05-29T09:31:47+08:00</lastmod>
+    <loc>https://ostring.github.io/posts/</loc>
+    <lastmod>2025-11-23T14:43:55+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2025-05-29T09:31:47+08:00</lastmod>
+    <loc>https://ostring.github.io/</loc>
+    <lastmod>2025-11-23T14:43:55+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/tech_news/google_deepmind_hassabis/3_the_man_who_a_g_i_-pilled_google_zh/</loc>
-    <lastmod>2025-05-28T15:30:01+08:00</lastmod>
+    <loc>https://ostring.github.io/posts/solution/rag/</loc>
+    <lastmod>2025-11-23T14:36:48+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/tech_news/mistral_ai/what_is_mistral_ai__zh/</loc>
-    <lastmod>2025-05-26T22:54:15+08:00</lastmod>
+    <loc>https://ostring.github.io/posts/tech_news/2025_0530_deepseek_newupdate/</loc>
+    <lastmod>2025-06-17T15:13:08+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/tech_news/ai_agent/manus/</loc>
-    <lastmod>2025-05-25T21:04:47+08:00</lastmod>
+    <loc>https://ostring.github.io/posts/edge_computing/edge_deploy_survey/</loc>
+    <lastmod>2025-06-17T15:11:13+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/tech_news/</loc>
-    <lastmod>2025-05-25T21:03:37+08:00</lastmod>
+    <loc>https://ostring.github.io/posts/solution/search_recommendation_adv/</loc>
+    <lastmod>2025-06-17T15:11:13+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/tech_news/ai_illumination/a_illumination/</loc>
-    <lastmod>2025-05-25T20:41:52+08:00</lastmod>
+    <loc>https://ostring.github.io/posts/tech_news/apple_intellegence_2025/apple_intellegence/</loc>
+    <lastmod>2025-06-17T15:11:13+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/data_center/nvidia_fusion/nvdia_fusion/</loc>
-    <lastmod>2025-05-23T11:46:26+08:00</lastmod>
+    <loc>https://ostring.github.io/posts/tech_news/apple_wwdc2025/16_everything_apple_plans_to_show_at_its_ios_26-focus_zh/</loc>
+    <lastmod>2025-06-17T15:11:13+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/tech_news/2025_5takeaway_computex/2025_computex_5takeaway/</loc>
-    <lastmod>2025-05-22T23:09:29+08:00</lastmod>
+    <loc>https://ostring.github.io/posts/tech_news/openai_gpto3pro/gpto3_pro/</loc>
+    <lastmod>2025-06-11T14:10:27+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/data_center/</loc>
-    <lastmod>2025-05-22T22:16:08+08:00</lastmod>
+    <loc>https://ostring.github.io/posts/invest/gpu_industry_company/gpu_invest/</loc>
+    <lastmod>2025-06-11T11:44:22+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/data_center/server_cooling_evolution/server_cooling_evolution/</loc>
-    <lastmod>2025-05-22T22:12:04+08:00</lastmod>
+    <loc>https://ostring.github.io/posts/invest/cursor/cursor_analysis/</loc>
+    <lastmod>2025-06-11T11:12:28+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/me/</loc>
-    <lastmod>2025-05-22T17:59:33+08:00</lastmod>
+    <loc>https://ostring.github.io/posts/data_center/interconnnect_protocol/cxl/</loc>
+    <lastmod>2025-06-06T11:59:04+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
-    <lastmod>2025-05-22T17:59:33+08:00</lastmod>
+    <loc>https://ostring.github.io/about/me/</loc>
+    <lastmod>2025-05-30T17:16:10+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://ostring.github.io/posts/data_center/nvidia_fusion/nvdia_fusion/</loc>
+    <lastmod>2025-05-30T17:16:10+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/series/</loc>
+    <loc>https://ostring.github.io/posts/data_center/server_cooling_evolution/server_cooling_evolution/</loc>
+    <lastmod>2025-05-30T17:16:10+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://ostring.github.io/posts/tech_news/2025_5takeaway_computex/2025_computex_5takeaway/</loc>
+    <lastmod>2025-05-30T17:16:10+08:00</lastmod>
+  </url><url>
+    <loc>https://ostring.github.io/posts/tech_news/ai_agent/manus/</loc>
+    <lastmod>2025-05-30T17:16:10+08:00</lastmod>
+  </url><url>
+    <loc>https://ostring.github.io/posts/tech_news/ai_illumination/a_illumination/</loc>
+    <lastmod>2025-05-30T17:16:10+08:00</lastmod>
+  </url><url>
+    <loc>https://ostring.github.io/posts/tech_news/amd_buy_silicon_photonic_startup/</loc>
+    <lastmod>2025-05-30T17:16:10+08:00</lastmod>
+  </url><url>
+    <loc>https://ostring.github.io/posts/tech_news/google_deepmind_hassabis/3_the_man_who_a_g_i_-pilled_google_zh/</loc>
+    <lastmod>2025-05-30T17:16:10+08:00</lastmod>
+  </url><url>
+    <loc>https://ostring.github.io/posts/tech_news/mistral_ai/what_is_mistral_ai__zh/</loc>
+    <lastmod>2025-05-30T17:16:10+08:00</lastmod>
+  </url><url>
+    <loc>https://ostring.github.io/about/</loc>
+    <lastmod>2025-05-30T17:16:10+08:00</lastmod>
+  </url><url>
+    <loc>https://ostring.github.io/posts/data_center/</loc>
+    <lastmod>2025-05-30T17:16:10+08:00</lastmod>
+  </url><url>
+    <loc>https://ostring.github.io/posts/tech_news/</loc>
+    <lastmod>2025-05-30T17:16:10+08:00</lastmod>
+  </url><url>
+    <loc>https://ostring.github.io/categories/</loc>
+  </url><url>
+    <loc>https://ostring.github.io/series/</loc>
+  </url><url>
+    <loc>https://ostring.github.io/tags/</loc>
   </url>
 </urlset>

@@ -1,0 +1,528 @@
+<!doctype html>
+<html
+  dir="ltr"
+  lang="en"
+  data-theme=""
+  
+    class="html theme--light"
+  
+><head>
+  <meta charset="utf-8" />
+  <title>
+    OString
+
+    
+
+  </title>
+
+  <meta name="generator" content="Hugo 0.152.2"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="author" content="OString" />
+  <meta
+    name="description"
+    content="Welcome to OString&#39;s Website"
+  />
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/scss/main.min.8d4fad7e6916ad2e291e8d97ada157c70350d6d7150fea137e7243340967befb.css"
+      integrity="sha256-jU&#43;tfmkWrS4pHo2XraFXxwNQ1tcVD&#43;oTfnJDNAlnvvs="
+      crossorigin="anonymous"
+      type="text/css"
+    />
+  
+
+  
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.73ccfdf28df555e11009c13c20ced067af3cb021504cba43644c705930428b00.css"
+    integrity="sha256-c8z98o31VeEQCcE8IM7QZ688sCFQTLpDZExwWTBCiwA="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/fontawesome.min.137b1cf3cea9a8adb7884343a9a5ddddf4280f59153f74dc782fb7f7bf0d0519.css"
+    integrity="sha256-E3sc886pqK23iENDqaXd3fQoD1kVP3TceC&#43;3978NBRk="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/solid.min.e65dc5b48fb5f39b142360c57c3a215744c94e56c755c929cc3e88fe12aab4d3.css"
+    integrity="sha256-5l3FtI&#43;185sUI2DFfDohV0TJTlbHVckpzD6I/hKqtNM="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/regular.min.6f4f16d58da1c82c0c3a3436e021a3d39b4742f741192c546e73e947eacfd92f.css"
+    integrity="sha256-b08W1Y2hyCwMOjQ24CGj05tHQvdBGSxUbnPpR&#43;rP2S8="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/brands.min.e10425ad768bc98ff1fb272a0ac8420f9d1ba22f0612c08ff1010c95080ffe7e.css"
+    integrity="sha256-4QQlrXaLyY/x&#43;ycqCshCD50boi8GEsCP8QEMlQgP/n4="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+
+  <link rel="canonical" href="https://ostring.github.io/posts/tech_news/2025_0530_deepseek_newupdate/" />
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js"
+    integrity="sha256-&#43;RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.8724ddf9268dee451060f191961647573c7f592fbccc6d858746236b3f915813.js"
+      integrity="sha256-hyTd&#43;SaN7kUQYPGRlhZHVzx/WS&#43;8zG2Fh0Yjaz&#43;RWBM="
+      crossorigin="anonymous"
+    ></script>
+  
+
+  
+
+  
+
+  
+
+
+  
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Website of OString">
+  <meta name="twitter:description" content="DeepSeek 对国产芯片的价值 DeepSeek 又更新了，0528的版本在代码生成和幻觉消除方面有了比较大的提升：
+更新后的 R1 模型在数学、编程与通用逻辑等多个基准测评中取得了当前国内所有模型中首屈一指的优异成绩，并且在整体表现上已接近其他国际顶尖模型，如 o3 与 Gemini-2.5-Pro。
+DeepSeek 带来了什么 模型架构上的确定性，带来了软硬件一体化设计的确定性 在早年间，传统CV/NLP 模型，芯片厂商本着好料用在刀刃上原则，最大化晶体管的利用率，为了支持所谓的主流模型，大多数芯片厂商在初期照着bert 和 resnet 规划conv2d,conv1d 的卷积算力，以及匹配的带宽，数据流的设计也是偏重于卷积，算力分配上基本也都是以dense 算力为主。再到后来，llama 系列的开源，Transformer 结构模型慢慢收敛，算力分配上又慢慢向mutmul 等算子进行建模。
+除了底层算力配比的层面，在软件架构的层面，以往cv 类模型和想在llm 模型相比, 在上层架构上没有太多玩法，基本还是参考TensorRT 的做法，通过图编译的模式，在图层做大面积的fusion，甚至做整图fusion，一招鲜，吃遍天，这类模型通过这种方式基本能打满理论芯片的性能。
+切到Transformer 类模型后，其对算力和带宽在prefill 和decode阶段的不同偏重，又引申出P-D 分离等上层框架的适配工作，比如vLLM/SG-lang等，这些在芯片公司需要有一个独立框架团队类做支撑。
+DeepSeek 从DeepSeek V3 开始，包括后来的R1初版以及最新的0528 版本，都还是复用一套base架构，这种模型架构上的确 定性给国产芯片的软硬件一体化指明了优化方向。最近DeepSeek 发表的论文“Insights into DeepSeek-V3: Scaling Challenges and Reflections on Hardware for AI Architectures”[https://arxiv.org/pdf/2505.09343] 从模型结构探索的角度，给未来芯片设计包括系统设计提供了方向，其中重要的是以下几点：
+发展更精确的低精度计算单元，以支持高效的模型训练和推理。
+实现规模扩展（scale-up）与规模扩张（scale-out）的融合，提升系统的灵活性和可扩展性。
+创新低延迟通信结构，满足大规模模型对高速数据传输的需求。
+关于这几点，论文中DeepSeek 都有自己从模型结构上设计的思考，同时也有具体实践，包括DeepEP 和MLA 算子的详细实现。
+模型的确定性，带来了市场落地的确定性 同样是开源模型，为什么llama 没有做到DeepSeek 这么大的影响，llama 系列也是开源模型，同时架构也基本完全开放，我想主要有以下几点：
+DeepSeek 不光是开源模型，在开源模型的基础上，释放了大量一线实践的成果，包括上面提到的算子层面，以及系统架构层面，这让广大的上游芯片厂商放心也安心，因为这些都是实实在在可以落地的分析，对比LLaMa，除了模型权重，基本无相关落地的实践guideline，在LLaMa-3 发布后，还有大量翻车的测试结果，也暴露出其对自身模型信心不足；
+LLaMA（1、2、3）使用的是 Meta 研究许可证（Meta Research License），其商用默认不支持，需要特殊许可，而DeepSeek 商用无限制，是真正的开源模型，这也让下游的众多客户可以放开拳脚；">
+
+
+
+  
+  <meta property="og:url" content="https://ostring.github.io/posts/tech_news/2025_0530_deepseek_newupdate/">
+  <meta property="og:site_name" content="Website of OString">
+  <meta property="og:title" content="Website of OString">
+  <meta property="og:description" content="DeepSeek 对国产芯片的价值 DeepSeek 又更新了，0528的版本在代码生成和幻觉消除方面有了比较大的提升：
+更新后的 R1 模型在数学、编程与通用逻辑等多个基准测评中取得了当前国内所有模型中首屈一指的优异成绩，并且在整体表现上已接近其他国际顶尖模型，如 o3 与 Gemini-2.5-Pro。
+DeepSeek 带来了什么 模型架构上的确定性，带来了软硬件一体化设计的确定性 在早年间，传统CV/NLP 模型，芯片厂商本着好料用在刀刃上原则，最大化晶体管的利用率，为了支持所谓的主流模型，大多数芯片厂商在初期照着bert 和 resnet 规划conv2d,conv1d 的卷积算力，以及匹配的带宽，数据流的设计也是偏重于卷积，算力分配上基本也都是以dense 算力为主。再到后来，llama 系列的开源，Transformer 结构模型慢慢收敛，算力分配上又慢慢向mutmul 等算子进行建模。
+除了底层算力配比的层面，在软件架构的层面，以往cv 类模型和想在llm 模型相比, 在上层架构上没有太多玩法，基本还是参考TensorRT 的做法，通过图编译的模式，在图层做大面积的fusion，甚至做整图fusion，一招鲜，吃遍天，这类模型通过这种方式基本能打满理论芯片的性能。
+切到Transformer 类模型后，其对算力和带宽在prefill 和decode阶段的不同偏重，又引申出P-D 分离等上层框架的适配工作，比如vLLM/SG-lang等，这些在芯片公司需要有一个独立框架团队类做支撑。
+DeepSeek 从DeepSeek V3 开始，包括后来的R1初版以及最新的0528 版本，都还是复用一套base架构，这种模型架构上的确 定性给国产芯片的软硬件一体化指明了优化方向。最近DeepSeek 发表的论文“Insights into DeepSeek-V3: Scaling Challenges and Reflections on Hardware for AI Architectures”[https://arxiv.org/pdf/2505.09343] 从模型结构探索的角度，给未来芯片设计包括系统设计提供了方向，其中重要的是以下几点：
+发展更精确的低精度计算单元，以支持高效的模型训练和推理。
+实现规模扩展（scale-up）与规模扩张（scale-out）的融合，提升系统的灵活性和可扩展性。
+创新低延迟通信结构，满足大规模模型对高速数据传输的需求。
+关于这几点，论文中DeepSeek 都有自己从模型结构上设计的思考，同时也有具体实践，包括DeepEP 和MLA 算子的详细实现。
+模型的确定性，带来了市场落地的确定性 同样是开源模型，为什么llama 没有做到DeepSeek 这么大的影响，llama 系列也是开源模型，同时架构也基本完全开放，我想主要有以下几点：
+DeepSeek 不光是开源模型，在开源模型的基础上，释放了大量一线实践的成果，包括上面提到的算子层面，以及系统架构层面，这让广大的上游芯片厂商放心也安心，因为这些都是实实在在可以落地的分析，对比LLaMa，除了模型权重，基本无相关落地的实践guideline，在LLaMa-3 发布后，还有大量翻车的测试结果，也暴露出其对自身模型信心不足；
+LLaMA（1、2、3）使用的是 Meta 研究许可证（Meta Research License），其商用默认不支持，需要特殊许可，而DeepSeek 商用无限制，是真正的开源模型，这也让下游的众多客户可以放开拳脚；">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-06-17T15:13:08+08:00">
+    <meta property="article:modified_time" content="2025-06-17T15:13:08+08:00">
+
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "posts",
+        "name": "",
+        "headline": "",
+        "alternativeHeadline": "",
+        "description": "
+      
+        \u003ch1 id=\u0022deepseek-对国产芯片的价值\u0022\u003eDeepSeek 对国产芯片的价值\u003c\/h1\u003e\n\u003cp\u003eDeepSeek 又更新了，0528的版本在代码生成和幻觉消除方面有了比较大的提升：\u003c\/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e更新后的 R1 模型在数学、编程与通用逻辑等多个基准测评中取得了当前国内所有模型中首屈一指的优异成绩，并且在整体表现上已接近其他国际顶尖模型，如 o3 与 Gemini-2.5-Pro。\u003c\/p\u003e\n\u003c\/blockquote\u003e\n\u003cp\u003e\u003cimg src=\u00222025-05-30-15-16-53.png\u0022 alt=\u0022\u0022\u003e\u003c\/p\u003e\n\u003ch1 id=\u0022deepseek-带来了什么\u0022\u003eDeepSeek 带来了什么\u003c\/h1\u003e\n\u003ch2 id=\u0022模型架构上的确定性带来了软硬件一体化设计的确定性\u0022\u003e模型架构上的确定性，带来了软硬件一体化设计的确定性\u003c\/h2\u003e\n\u003cp\u003e在早年间，传统CV\/NLP 模型，芯片厂商本着好料用在刀刃上原则，最大化晶体管的利用率，为了支持所谓的主流模型，大多数芯片厂商在初期照着\u003ccode\u003ebert\u003c\/code\u003e 和 \u003ccode\u003eresnet\u003c\/code\u003e 规划\u003ccode\u003econv2d\u003c\/code\u003e,\u003ccode\u003econv1d\u003c\/code\u003e 的卷积算力，以及匹配的带宽，数据流的设计也是偏重于卷积，算力分配上基本也都是以dense 算力为主。再到后来，\u003ccode\u003ellama\u003c\/code\u003e 系列的开源，Transformer 结构模型慢慢收敛，算力分配上又慢慢向\u003ccode\u003emutmul\u003c\/code\u003e 等算子进行建模。\u003c\/p\u003e\n\u003cp\u003e除了底层算力配比的层面，在软件架构的层面，以往\u003ccode\u003ecv\u003c\/code\u003e 类模型和想在\u003ccode\u003ellm\u003c\/code\u003e 模型相比, 在上层架构上没有太多玩法，基本还是参考TensorRT 的做法，通过图编译的模式，在图层做大面积的fusion，甚至做整图fusion，一招鲜，吃遍天，这类模型通过这种方式基本能打满理论芯片的性能。\u003c\/p\u003e\n\u003cp\u003e切到\u003ccode\u003eTransformer\u003c\/code\u003e 类模型后，其对算力和带宽在\u003ccode\u003eprefill\u003c\/code\u003e 和\u003ccode\u003edecode\u003c\/code\u003e阶段的不同偏重，又引申出\u003ccode\u003eP-D 分离\u003c\/code\u003e等上层框架的适配工作，比如\u003ccode\u003evLLM\/SG-lang\u003c\/code\u003e等，这些在芯片公司需要有一个独立框架团队类做支撑。\u003c\/p\u003e\n\u003cp\u003eDeepSeek 从DeepSeek V3 开始，包括后来的R1初版以及最新的0528 版本，都还是复用一套base架构，这种模型架构上的确\n定性给国产芯片的软硬件一体化指明了优化方向。最近DeepSeek 发表的论文“Insights into DeepSeek-V3: Scaling Challenges and Reflections on Hardware for AI Architectures”[https:\/\/arxiv.org\/pdf\/2505.09343]\n从模型结构探索的角度，给未来芯片设计包括系统设计提供了方向，其中重要的是以下几点：\u003c\/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e发展更精确的低精度计算单元，以支持高效的模型训练和推理。\u003c\/p\u003e\n\u003c\/blockquote\u003e\n\u003cblockquote\u003e\n\u003cp\u003e实现规模扩展（scale-up）与规模扩张（scale-out）的融合，提升系统的灵活性和可扩展性。\u003c\/p\u003e\n\u003c\/blockquote\u003e\n\u003cblockquote\u003e\n\u003cp\u003e创新低延迟通信结构，满足大规模模型对高速数据传输的需求。\u003c\/p\u003e\n\u003c\/blockquote\u003e\n\u003cp\u003e关于这几点，论文中DeepSeek 都有自己从模型结构上设计的思考，同时也有具体实践，包括\u003ccode\u003eDeepEP\u003c\/code\u003e 和\u003ccode\u003eMLA\u003c\/code\u003e 算子的详细实现。\u003c\/p\u003e\n\u003ch2 id=\u0022模型的确定性带来了市场落地的确定性\u0022\u003e模型的确定性，带来了市场落地的确定性\u003c\/h2\u003e\n\u003cp\u003e同样是开源模型，为什么\u003ccode\u003ellama\u003c\/code\u003e 没有做到DeepSeek 这么大的影响，\u003ccode\u003ellama\u003c\/code\u003e 系列也是开源模型，同时架构也基本完全开放，我想主要有以下几点：\u003c\/p\u003e\n\u003col\u003e\n\u003cli\u003e\n\u003cp\u003eDeepSeek 不光是开源模型，在开源模型的基础上，释放了大量一线实践的成果，包括上面提到的算子层面，以及系统架构层面，这让广大的上游芯片厂商放心也安心，因为这些都是实实在在可以落地的分析，对比LLaMa，除了模型权重，基本无相关落地的实践guideline，在LLaMa-3 发布后，还有大量翻车的测试结果，也暴露出其对自身模型信心不足；\u003c\/p\u003e\n\u003c\/li\u003e\n\u003cli\u003e\n\u003cp\u003eLLaMA（1、2、3）使用的是 Meta 研究许可证（Meta Research License），其商用默认不支持，需要特殊许可，而DeepSeek 商用无限制，是真正的开源模型，这也让下游的众多客户可以放开拳脚；\u003c\/p\u003e
+
+
+      
+
+
+    ",
+        "license": "",
+        
+        "inLanguage": "en",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/ostring.github.io\/posts\/tech_news\/2025_0530_deepseek_newupdate\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "OString"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "OString"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "OString"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "OString"
+        },
+        "dateCreated": "2025-06-17T15:13:08.90Z",
+        "datePublished": "2025-06-17T15:13:08.00Z",
+        "dateModified": "2025-06-17T15:13:08.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "OString",
+            "url": "https://ostring.github.io/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/ostring.github.io\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+      ]
+
+    ,
+        "url" : "https:\/\/ostring.github.io\/posts\/tech_news\/2025_0530_deepseek_newupdate\/",
+        "wordCount" : "152",
+        "genre" : [ ],
+        "keywords" : [ ]
+    }
+  </script>
+
+
+</head>
+<body class="body">
+    <div class="wrapper">
+      <aside
+        
+          class="wrapper__sidebar"
+        
+      ><div
+  class="sidebar
+    animated fadeInDown
+  "
+>
+  <div class="sidebar__content">
+    <div class="sidebar__introduction">
+      <img
+        class="sidebar__introduction-profileimage"
+        src="/images/profile.jpg"
+        alt="profile picture"
+      />
+      
+        <div class="sidebar__introduction-title">
+          <a href="/"></a>
+        </div>
+      
+      <div class="sidebar__introduction-description">
+        <p>Welcome to OString's Website</p>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      
+    </ul>
+  </div><footer class="footer footer__sidebar">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        OString
+        2025
+      
+    </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.9531b4a2217a70c5a1fce89c1f81c9ebbdd586708fcd4130b417320c7230c8d6.js"
+    integrity="sha256-lTG0oiF6cMWh/OicH4HJ673VhnCPzUEwtBcyDHIwyNY="
+    crossorigin="anonymous"
+  ></script></div>
+</aside>
+      <main
+        
+          class="wrapper__main"
+        
+      >
+        <header class="header"><div
+  class="
+    animated fadeInDown
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+  </a>
+  <nav class="nav">
+    <ul class="nav__list" id="navMenu">
+      
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/"
+              
+              title=""
+              >Home</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/posts/data_center/"
+              
+              title=""
+              >DataCenter</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/posts/tech_news/"
+              
+              title=""
+              >TechNews</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/about/"
+              
+              title=""
+              >About</a
+            >
+          </li>
+        
+
+      
+    </ul>
+    <ul class="nav__list nav__list--end">
+      
+      
+        <li class="nav__list-item">
+          <div class="themeswitch">
+            <a title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </li>
+      
+    </ul>
+  </nav>
+</div>
+</header>
+  <div
+    class="post 
+      animated fadeInDown
+    "
+  >
+    
+    <div class="post__content">
+      
+        <h1></h1>
+      
+      <h1 id="deepseek-对国产芯片的价值">DeepSeek 对国产芯片的价值</h1>
+<p>DeepSeek 又更新了，0528的版本在代码生成和幻觉消除方面有了比较大的提升：</p>
+<blockquote>
+<p>更新后的 R1 模型在数学、编程与通用逻辑等多个基准测评中取得了当前国内所有模型中首屈一指的优异成绩，并且在整体表现上已接近其他国际顶尖模型，如 o3 与 Gemini-2.5-Pro。</p>
+</blockquote>
+<p><img src="2025-05-30-15-16-53.png" alt=""></p>
+<h1 id="deepseek-带来了什么">DeepSeek 带来了什么</h1>
+<h2 id="模型架构上的确定性带来了软硬件一体化设计的确定性">模型架构上的确定性，带来了软硬件一体化设计的确定性</h2>
+<p>在早年间，传统CV/NLP 模型，芯片厂商本着好料用在刀刃上原则，最大化晶体管的利用率，为了支持所谓的主流模型，大多数芯片厂商在初期照着<code>bert</code> 和 <code>resnet</code> 规划<code>conv2d</code>,<code>conv1d</code> 的卷积算力，以及匹配的带宽，数据流的设计也是偏重于卷积，算力分配上基本也都是以dense 算力为主。再到后来，<code>llama</code> 系列的开源，Transformer 结构模型慢慢收敛，算力分配上又慢慢向<code>mutmul</code> 等算子进行建模。</p>
+<p>除了底层算力配比的层面，在软件架构的层面，以往<code>cv</code> 类模型和想在<code>llm</code> 模型相比, 在上层架构上没有太多玩法，基本还是参考TensorRT 的做法，通过图编译的模式，在图层做大面积的fusion，甚至做整图fusion，一招鲜，吃遍天，这类模型通过这种方式基本能打满理论芯片的性能。</p>
+<p>切到<code>Transformer</code> 类模型后，其对算力和带宽在<code>prefill</code> 和<code>decode</code>阶段的不同偏重，又引申出<code>P-D 分离</code>等上层框架的适配工作，比如<code>vLLM/SG-lang</code>等，这些在芯片公司需要有一个独立框架团队类做支撑。</p>
+<p>DeepSeek 从DeepSeek V3 开始，包括后来的R1初版以及最新的0528 版本，都还是复用一套base架构，这种模型架构上的确
+定性给国产芯片的软硬件一体化指明了优化方向。最近DeepSeek 发表的论文“Insights into DeepSeek-V3: Scaling Challenges and Reflections on Hardware for AI Architectures”[https://arxiv.org/pdf/2505.09343]
+从模型结构探索的角度，给未来芯片设计包括系统设计提供了方向，其中重要的是以下几点：</p>
+<blockquote>
+<p>发展更精确的低精度计算单元，以支持高效的模型训练和推理。</p>
+</blockquote>
+<blockquote>
+<p>实现规模扩展（scale-up）与规模扩张（scale-out）的融合，提升系统的灵活性和可扩展性。</p>
+</blockquote>
+<blockquote>
+<p>创新低延迟通信结构，满足大规模模型对高速数据传输的需求。</p>
+</blockquote>
+<p>关于这几点，论文中DeepSeek 都有自己从模型结构上设计的思考，同时也有具体实践，包括<code>DeepEP</code> 和<code>MLA</code> 算子的详细实现。</p>
+<h2 id="模型的确定性带来了市场落地的确定性">模型的确定性，带来了市场落地的确定性</h2>
+<p>同样是开源模型，为什么<code>llama</code> 没有做到DeepSeek 这么大的影响，<code>llama</code> 系列也是开源模型，同时架构也基本完全开放，我想主要有以下几点：</p>
+<ol>
+<li>
+<p>DeepSeek 不光是开源模型，在开源模型的基础上，释放了大量一线实践的成果，包括上面提到的算子层面，以及系统架构层面，这让广大的上游芯片厂商放心也安心，因为这些都是实实在在可以落地的分析，对比LLaMa，除了模型权重，基本无相关落地的实践guideline，在LLaMa-3 发布后，还有大量翻车的测试结果，也暴露出其对自身模型信心不足；</p>
+</li>
+<li>
+<p>LLaMA（1、2、3）使用的是 Meta 研究许可证（Meta Research License），其商用默认不支持，需要特殊许可，而DeepSeek 商用无限制，是真正的开源模型，这也让下游的众多客户可以放开拳脚；</p>
+</li>
+</ol>
+<table>
+  <thead>
+      <tr>
+          <th>对比项目</th>
+          <th>LLaMA（Meta）</th>
+          <th>DeepSeek（DeepSeek-AI）</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>开源协议类型</strong></td>
+          <td>Meta Research License</td>
+          <td>Apache License 2.0</td>
+      </tr>
+      <tr>
+          <td><strong>是否允许商用</strong></td>
+          <td>❌ 否</td>
+          <td>✅ 是</td>
+      </tr>
+      <tr>
+          <td><strong>是否允许修改</strong></td>
+          <td>✅ 是（限于研究目的）</td>
+          <td>✅ 是（无限制）</td>
+      </tr>
+      <tr>
+          <td><strong>是否允许再分发</strong></td>
+          <td>❌ 否</td>
+          <td>✅ 是</td>
+      </tr>
+      <tr>
+          <td><strong>适用对象</strong></td>
+          <td>限定组织（学术、政府、授权企业）</td>
+          <td>所有个人和组织</td>
+      </tr>
+      <tr>
+          <td><strong>适用场景</strong></td>
+          <td>科研、技术验证</td>
+          <td>商业部署、产品集成、科研</td>
+      </tr>
+      <tr>
+          <td><strong>许可门槛</strong></td>
+          <td>高（需申请并获批）</td>
+          <td>低（直接下载和使用）</td>
+      </tr>
+      <tr>
+          <td><strong>典型限制条款</strong></td>
+          <td>不得商用，不得再分发，需注明用途</td>
+          <td>遵守 Apache 2.0 条款，无额外限制</td>
+      </tr>
+      <tr>
+          <td><strong>是否真正开源</strong></td>
+          <td>🚫 半开源（开放获取）</td>
+          <td>✅ 真正开源</td>
+      </tr>
+  </tbody>
+</table>
+<ol start="3">
+<li>从DeepSeek R1-0528 的release来看，只是在后训练上做了调整，但是模型结构和V3 完全保持不变，对于芯片厂商来说，是最大的利好，不需要额外的适配，更新模型checkpoint，实现用户体验的无痛升级，这种大方向的稳定幸福感，带来了稳定的市场落地的确定性；</li>
+</ol>
+<h1 id="deepseek-们">DeepSeek 们</h1>
+<p>DeepSeek 代表的是国产技术流的自信心的提升，从之前公开的梁文峰暗涌访谈对话来看，有几点印象深刻：</p>
+<ol>
+<li>
+<p>资金方面：本身就是做量化，外加每年固定的慈善捐款（做开源本质上也是慈善）可以转化，另外，除夕夜前夕发布多模态大模型，美股芯片相关股大跌（硬伟大全家桶系列），据传有提前做空，如果属实，这一顿操作下来，资金反哺Deepseek 自身的AI 基建，“没有枪，没有炮，敌人给我们造”；</p>
+</li>
+<li>
+<p>人才和组织方面：AGI/ASI 是世界性难题，自然而然的可以吸引到顶尖人才，目前人才梯队主要是Top3 的应届毕业生和博士实习生，从算法创新的角度，这些人才储备足以形成算法创新的储备，另外在资金充裕的情况下，不急于做技术货币化，文化组织自发形成一个扁平的松散架构（原始创新必备，从google初期pageRank 的创新，到Apple 的车库文化造就apple I，再到openAI nonprofit 的初心，推出GPT系列），形成无形的护城河，这部分的竞争力的沉淀已经上升到另一个维度，具备世界级公司的视野和高度；</p>
+</li>
+<li>
+<p>芯片供应链：这是对谈中梁总<strong>唯一信心不足</strong>的地方，从公开的论文和技术报告来看，Deepseek 的训练和推理部署芯片供应链主要还是N卡GPU，没有看到国产芯片，这部分是空白；</p>
+</li>
+<li>
+<p>原始创新：关于什么才是原始创新没有一个定论，Deepseek 也在遭遇OAI 蒸馏其数据的质疑，OAI从最开始的认可赞赏，到现在的分析甚至是恼羞成怒，其实本质就是关于什么是原始创新的争论，这个质疑在最近也基本不攻自破；</p>
+</li>
+</ol>
+<p>如果按照这个趋势，模型大厂通过软硬件一体优化的思维，提炼用户需求，传导到上游的国产芯片厂商，最终形成创新的闭环，完全可以打造一个高效的DeepSeek machine（DeepSeek Asic+ DeepSeek System），结合这两天Jenson Huang 对Cloud-Matrix 的评价, 我对这一点愈发有信心。</p>
+<p>后面打算写一篇国产芯片对接DeepSeek 所需要做的工作，正在整理中。</p>
+</div>
+    <div class="post__footer">
+      
+
+      
+    </div>
+
+    
+  </div>
+
+      </main>
+    </div><footer class="footer footer__base">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        OString
+        2025
+      
+    </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.9531b4a2217a70c5a1fce89c1f81c9ebbdd586708fcd4130b417320c7230c8d6.js"
+    integrity="sha256-lTG0oiF6cMWh/OicH4HJ673VhnCPzUEwtBcyDHIwyNY="
+    crossorigin="anonymous"
+  ></script></body>
+</html>

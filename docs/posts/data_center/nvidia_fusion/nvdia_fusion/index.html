@@ -6,7 +6,7 @@
   
     class="html theme--light"
   
-><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+><head>
   <meta charset="utf-8" />
   <title>
     OString
@@ -15,7 +15,7 @@
 
   </title>
 
-  <meta name="generator" content="Hugo 0.147.4"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="generator" content="Hugo 0.152.2"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
   <meta name="author" content="OString" />
   <meta
     name="description"
@@ -81,7 +81,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 
-  <link rel="canonical" href="http://localhost:1313/posts/data_center/nvidia_fusion/nvdia_fusion/" />
+  <link rel="canonical" href="https://ostring.github.io/posts/data_center/nvidia_fusion/nvdia_fusion/" />
   
   
   
@@ -125,7 +125,7 @@
 
 
   
-  <meta property="og:url" content="http://localhost:1313/posts/data_center/nvidia_fusion/nvdia_fusion/">
+  <meta property="og:url" content="https://ostring.github.io/posts/data_center/nvidia_fusion/nvdia_fusion/">
   <meta property="og:site_name" content="Website of OString">
   <meta property="og:title" content="Website of OString">
   <meta property="og:description" content="Nvidia Fusion Jenson Huang 今天抛出了绣球，接下来第一个问题：其他厂商家的黄花闺女能否看的上。 另一个问题：如果有一天真的成家了，亲家之间是否会闹的鸡飞狗跳？ 这颗绣球就是今天刚刚在computex 上发布的 Nvidia Fusion。英伟达发布了一系列围绕数据中心和企业级 AI 计划的公告，其中包括新推出的 NVLink Fusion 计划。
@@ -137,8 +137,8 @@
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2025-05-23T11:46:26+08:00">
-    <meta property="article:modified_time" content="2025-05-23T11:46:26+08:00">
+    <meta property="article:published_time" content="2025-05-30T17:16:10+08:00">
+    <meta property="article:modified_time" content="2025-05-30T17:16:10+08:00">
 
 
 
@@ -156,7 +156,7 @@
         "alternativeHeadline": "",
         "description": "
       
-        \u003ch1 id=\u0022nvidia-fusion\u0022\u003eNvidia Fusion\u003c\/h1\u003e\n\u003cp\u003eJenson Huang 今天抛出了绣球，接下来第一个问题：其他厂商家的黄花闺女能否看的上。\n另一个问题：如果有一天真的成家了，亲家之间是否会闹的鸡飞狗跳？\n这颗绣球就是今天刚刚在computex 上发布的 Nvidia Fusion。英伟达发布了一系列围绕数据中心和企业级 AI 计划的公告，其中包括新推出的 NVLink Fusion 计划。\u003c\/p\u003e\n\u003cp\u003e\u003cimg src=\u0022nvlink_fusion.png\u0022 alt=\u0022\u0022\u003e\u003c\/p\u003e\n\u003ch2 id=\u0022先回答第一个问题\u0022\u003e先回答第一个问题\u003c\/h2\u003e\n\u003cp\u003e从公开的消息看，目前接下这颗绣球的有几家厂商：\u003c\/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e英伟达已为该计划聚集了众多合作伙伴，包括高通和富士通，它们将把这项技术集成到各自的 CPU 中。NVLink Fusion 还将扩展至定制 AI 加速器领域，因此英伟达已吸引包括 Marvell、联发科在内的多家芯片合作伙伴，以及芯片软件设计公司新思科技（Synopsys）和楷登电子（Cadence）加入 NVLink Fusion 生态系统。\u003c\/p\u003e\u003c\/blockquote\u003e\n\u003cblockquote\u003e\n\u003cp\u003e高通最近证实，其正在将自有定制服务器 CPU 推向市场，尽管细节仍不明确，但该公司与 NVLink 生态系统的合作将使其新 CPU 能够搭乘英伟达快速扩张的 AI 生态系统的顺风车。\u003c\/p\u003e\u003c\/blockquote\u003e\n\u003cblockquote\u003e\n\u003cp\u003e富士通也一直在致力于将其搭载 3D 堆叠 CPU 核心和内存的 144 核 Monaka CPU 推向市场。富士通 CTO Vivek Mahajan 表示：“富士通的下一代处理器 FUJITSU-MONAKA 是一款基于 Arm 架构的 2 纳米 CPU，旨在实现极高的能效。将我们的技术与英伟达架构直接连接，标志着我们在通过世界领先的计算技术推动 AI 发展的愿景中迈出了重要一步，为新型可扩展、自主且可持续的 AI 系统铺平了道路。”\u003c\/p\u003e\u003c\/blockquote\u003e\n\u003cp\u003e从目前来看，Nvlink 可撬动的生态还只局限在Die2Die 的范围，在Die2Die 互联的选择上，Nvlink 不是唯一选择，另外也不是最优解。联发科已经和NVdia 有过深入合作，之前的\u003ccode\u003eGB10\u003c\/code\u003e现在看来已经试水了Nvlink fusion生态合作模式，由联发科基于Arm SoC CPU 的功底，结合Blackwell 的GPU 通过Nvlink 互联。另外一家Marvell，基本是全开放生态，各种联盟都来者不拒，本就是CSP chip Maker，工具箱越丰富越好。说白了，通过联发科的合作先打个窝，吸引其他厂商，在D2D 范围内还处于刚起步的状态。\u003c\/p\u003e
+        \u003ch1 id=\u0022nvidia-fusion\u0022\u003eNvidia Fusion\u003c\/h1\u003e\n\u003cp\u003eJenson Huang 今天抛出了绣球，接下来第一个问题：其他厂商家的黄花闺女能否看的上。\n另一个问题：如果有一天真的成家了，亲家之间是否会闹的鸡飞狗跳？\n这颗绣球就是今天刚刚在computex 上发布的 Nvidia Fusion。英伟达发布了一系列围绕数据中心和企业级 AI 计划的公告，其中包括新推出的 NVLink Fusion 计划。\u003c\/p\u003e\n\u003cp\u003e\u003cimg src=\u0022nvlink_fusion.png\u0022 alt=\u0022\u0022\u003e\u003c\/p\u003e\n\u003ch2 id=\u0022先回答第一个问题\u0022\u003e先回答第一个问题\u003c\/h2\u003e\n\u003cp\u003e从公开的消息看，目前接下这颗绣球的有几家厂商：\u003c\/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e英伟达已为该计划聚集了众多合作伙伴，包括高通和富士通，它们将把这项技术集成到各自的 CPU 中。NVLink Fusion 还将扩展至定制 AI 加速器领域，因此英伟达已吸引包括 Marvell、联发科在内的多家芯片合作伙伴，以及芯片软件设计公司新思科技（Synopsys）和楷登电子（Cadence）加入 NVLink Fusion 生态系统。\u003c\/p\u003e\n\u003c\/blockquote\u003e\n\u003cblockquote\u003e\n\u003cp\u003e高通最近证实，其正在将自有定制服务器 CPU 推向市场，尽管细节仍不明确，但该公司与 NVLink 生态系统的合作将使其新 CPU 能够搭乘英伟达快速扩张的 AI 生态系统的顺风车。\u003c\/p\u003e\n\u003c\/blockquote\u003e\n\u003cblockquote\u003e\n\u003cp\u003e富士通也一直在致力于将其搭载 3D 堆叠 CPU 核心和内存的 144 核 Monaka CPU 推向市场。富士通 CTO Vivek Mahajan 表示：“富士通的下一代处理器 FUJITSU-MONAKA 是一款基于 Arm 架构的 2 纳米 CPU，旨在实现极高的能效。将我们的技术与英伟达架构直接连接，标志着我们在通过世界领先的计算技术推动 AI 发展的愿景中迈出了重要一步，为新型可扩展、自主且可持续的 AI 系统铺平了道路。”\u003c\/p\u003e\n\u003c\/blockquote\u003e\n\u003cp\u003e从目前来看，Nvlink 可撬动的生态还只局限在Die2Die 的范围，在Die2Die 互联的选择上，Nvlink 不是唯一选择，另外也不是最优解。联发科已经和NVdia 有过深入合作，之前的\u003ccode\u003eGB10\u003c\/code\u003e现在看来已经试水了Nvlink fusion生态合作模式，由联发科基于Arm SoC CPU 的功底，结合Blackwell 的GPU 通过Nvlink 互联。另外一家Marvell，基本是全开放生态，各种联盟都来者不拒，本就是CSP chip Maker，工具箱越丰富越好。说白了，通过联发科的合作先打个窝，吸引其他厂商，在D2D 范围内还处于刚起步的状态。\u003c\/p\u003e
 
 
       
@@ -169,7 +169,7 @@
         "isFamilyFriendly": "true",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "http:\/\/localhost:1313\/posts\/data_center\/nvidia_fusion\/nvdia_fusion\/"
+            "@id": "https:\/\/ostring.github.io\/posts\/data_center\/nvidia_fusion\/nvdia_fusion\/"
         },
         "author" : {
             "@type": "Person",
@@ -187,16 +187,16 @@
             "@type": "Person",
             "name": "OString"
         },
-        "dateCreated": "2025-05-23T11:46:26.59Z",
-        "datePublished": "2025-05-23T11:46:26.00Z",
-        "dateModified": "2025-05-23T11:46:26.00Z",
+        "dateCreated": "2025-05-30T17:16:10.24Z",
+        "datePublished": "2025-05-30T17:16:10.00Z",
+        "dateModified": "2025-05-30T17:16:10.00Z",
         "publisher":{
             "@type":"Organization",
             "name": "OString",
-            "url": "http://localhost:1313/",
+            "url": "https://ostring.github.io/",
             "logo": {
                 "@type": "ImageObject",
-                "url": "http:\/\/localhost:1313\/favicon-32x32.png",
+                "url": "https:\/\/ostring.github.io\/favicon-32x32.png",
                 "width":"32",
                 "height":"32"
             }
@@ -206,7 +206,7 @@
       ]
 
     ,
-        "url" : "http:\/\/localhost:1313\/posts\/data_center\/nvidia_fusion\/nvdia_fusion\/",
+        "url" : "https:\/\/ostring.github.io\/posts\/data_center\/nvidia_fusion\/nvdia_fusion\/",
         "wordCount" : "277",
         "genre" : [ ],
         "keywords" : [ ]
@@ -260,8 +260,8 @@
   
   <script
     type="text/javascript"
-    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
-    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    src="/js/medium-zoom.min.9531b4a2217a70c5a1fce89c1f81c9ebbdd586708fcd4130b417320c7230c8d6.js"
+    integrity="sha256-lTG0oiF6cMWh/OicH4HJ673VhnCPzUEwtBcyDHIwyNY="
     crossorigin="anonymous"
   ></script></div>
 </aside>
@@ -378,14 +378,18 @@
 <h2 id="先回答第一个问题">先回答第一个问题</h2>
 <p>从公开的消息看，目前接下这颗绣球的有几家厂商：</p>
 <blockquote>
-<p>英伟达已为该计划聚集了众多合作伙伴，包括高通和富士通，它们将把这项技术集成到各自的 CPU 中。NVLink Fusion 还将扩展至定制 AI 加速器领域，因此英伟达已吸引包括 Marvell、联发科在内的多家芯片合作伙伴，以及芯片软件设计公司新思科技（Synopsys）和楷登电子（Cadence）加入 NVLink Fusion 生态系统。</p></blockquote>
+<p>英伟达已为该计划聚集了众多合作伙伴，包括高通和富士通，它们将把这项技术集成到各自的 CPU 中。NVLink Fusion 还将扩展至定制 AI 加速器领域，因此英伟达已吸引包括 Marvell、联发科在内的多家芯片合作伙伴，以及芯片软件设计公司新思科技（Synopsys）和楷登电子（Cadence）加入 NVLink Fusion 生态系统。</p>
+</blockquote>
 <blockquote>
-<p>高通最近证实，其正在将自有定制服务器 CPU 推向市场，尽管细节仍不明确，但该公司与 NVLink 生态系统的合作将使其新 CPU 能够搭乘英伟达快速扩张的 AI 生态系统的顺风车。</p></blockquote>
+<p>高通最近证实，其正在将自有定制服务器 CPU 推向市场，尽管细节仍不明确，但该公司与 NVLink 生态系统的合作将使其新 CPU 能够搭乘英伟达快速扩张的 AI 生态系统的顺风车。</p>
+</blockquote>
 <blockquote>
-<p>富士通也一直在致力于将其搭载 3D 堆叠 CPU 核心和内存的 144 核 Monaka CPU 推向市场。富士通 CTO Vivek Mahajan 表示：“富士通的下一代处理器 FUJITSU-MONAKA 是一款基于 Arm 架构的 2 纳米 CPU，旨在实现极高的能效。将我们的技术与英伟达架构直接连接，标志着我们在通过世界领先的计算技术推动 AI 发展的愿景中迈出了重要一步，为新型可扩展、自主且可持续的 AI 系统铺平了道路。”</p></blockquote>
+<p>富士通也一直在致力于将其搭载 3D 堆叠 CPU 核心和内存的 144 核 Monaka CPU 推向市场。富士通 CTO Vivek Mahajan 表示：“富士通的下一代处理器 FUJITSU-MONAKA 是一款基于 Arm 架构的 2 纳米 CPU，旨在实现极高的能效。将我们的技术与英伟达架构直接连接，标志着我们在通过世界领先的计算技术推动 AI 发展的愿景中迈出了重要一步，为新型可扩展、自主且可持续的 AI 系统铺平了道路。”</p>
+</blockquote>
 <p>从目前来看，Nvlink 可撬动的生态还只局限在Die2Die 的范围，在Die2Die 互联的选择上，Nvlink 不是唯一选择，另外也不是最优解。联发科已经和NVdia 有过深入合作，之前的<code>GB10</code>现在看来已经试水了Nvlink fusion生态合作模式，由联发科基于Arm SoC CPU 的功底，结合Blackwell 的GPU 通过Nvlink 互联。另外一家Marvell，基本是全开放生态，各种联盟都来者不拒，本就是CSP chip Maker，工具箱越丰富越好。说白了，通过联发科的合作先打个窝，吸引其他厂商，在D2D 范围内还处于刚起步的状态。</p>
 <blockquote>
-<p>NVIDIA GB10 Grace Blackwell 超级芯片：应用于 NVIDIA 的个人 AI 超级计算机 NVIDIA® Project DIGITS。由 Blackwell GPU 和 Grace CPU 组成，其中 Grace CPU 有 20 个 Arm 核心，配备 128GB LPDDR5X 内存和 4TB NVMe SSD，能运行超 2000 亿参数的大语言模型，两台 Project DIGITS 叠加可支持处理 4050 亿参数的大语言模型。由英伟达与联发科联合打造。联发科在基于 Arm 架构的 SoC 设计领域经验丰富，为 GB10 带来出色的能效和连接性能 ，助力其适用于桌面环境</p></blockquote>
+<p>NVIDIA GB10 Grace Blackwell 超级芯片：应用于 NVIDIA 的个人 AI 超级计算机 NVIDIA® Project DIGITS。由 Blackwell GPU 和 Grace CPU 组成，其中 Grace CPU 有 20 个 Arm 核心，配备 128GB LPDDR5X 内存和 4TB NVMe SSD，能运行超 2000 亿参数的大语言模型，两台 Project DIGITS 叠加可支持处理 4050 亿参数的大语言模型。由英伟达与联发科联合打造。联发科在基于 Arm 架构的 SoC 设计领域经验丰富，为 GB10 带来出色的能效和连接性能 ，助力其适用于桌面环境</p>
+</blockquote>
 <p>再扩展到AI 加速器领域，这里指的就是ASIC 之间的C2C（Chip2Chip） 互联，也是老黄这次极力推销的。这里只从技术的角度来分析，在C2C 互联范围，可能遇到哪些问题。</p>
 <h2 id="再回答第二个问题">再回答第二个问题</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>┌──────────────┐
@@ -443,8 +447,8 @@
   
   <script
     type="text/javascript"
-    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
-    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    src="/js/medium-zoom.min.9531b4a2217a70c5a1fce89c1f81c9ebbdd586708fcd4130b417320c7230c8d6.js"
+    integrity="sha256-lTG0oiF6cMWh/OicH4HJ673VhnCPzUEwtBcyDHIwyNY="
     crossorigin="anonymous"
   ></script></body>
 </html>

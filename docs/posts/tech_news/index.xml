@@ -2,125 +2,160 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>DataCenter on Website of OString</title>
-    <link>http://localhost:1313/posts/tech_news/</link>
+    <link>https://ostring.github.io/posts/tech_news/</link>
     <description>Recent content in DataCenter on Website of OString</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 25 May 2025 21:03:37 +0800</lastBuildDate><atom:link href="http://localhost:1313/posts/tech_news/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 30 May 2025 17:16:10 +0800</lastBuildDate><atom:link href="https://ostring.github.io/posts/tech_news/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>http://localhost:1313/posts/tech_news/amd_buy_silicon_photonic_startup/</link>
-      <pubDate>Thu, 29 May 2025 09:31:47 +0800</pubDate>
+      <link>https://ostring.github.io/posts/tech_news/2025_0530_deepseek_newupdate/</link>
+      <pubDate>Tue, 17 Jun 2025 15:13:08 +0800</pubDate>
       
-      <guid>http://localhost:1313/posts/tech_news/amd_buy_silicon_photonic_startup/</guid>
+      <guid>https://ostring.github.io/posts/tech_news/2025_0530_deepseek_newupdate/</guid>
       
-        <description>&lt;h1 id=&#34;amd-收购硅光子初创公司&#34;&gt;AMD 收购硅光子初创公司&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&#34;2025-05-29-09-16-40.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;AMD 已收购 Enosemi，这是一家设计定制材料以支持硅光子产品开发的初创公司。该交易于周三宣布，具体条款未披露。
-公司官网上的介绍&lt;/p&gt;
+        <description>&lt;h1 id=&#34;deepseek-对国产芯片的价值&#34;&gt;DeepSeek 对国产芯片的价值&lt;/h1&gt;
+&lt;p&gt;DeepSeek 又更新了，0528的版本在代码生成和幻觉消除方面有了比较大的提升：&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Enosemi’s core design IP accelerates time-to-market, reduces risk, and lowers cost for our partners across markets including communications, computing, consumer, and med-tech. The Enosemi team has industry-leading product experience coming from shipping real products to market in volume.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;硅光子技术利用光（光子）传输数据，提供了一种比传统电通信更快、更高效的替代方案。AMD 及其他芯片制造商对此技术的兴趣日益浓厚。据报道，去年年底，AMD 与几家台湾初创公司合作进行硅光子研发。&lt;/p&gt;
-&lt;p&gt;AMD 表示[https://www.amd.com/en/blogs/2025/amd-acquires-enosemi-to-accelerate-co-packaged-optics-innovation.html]，对 Enosemi 的收购将“加速其针对人工智能系统的共封装光学创新”。&lt;/p&gt;
-&lt;p&gt;AMD 技术与工程高级副总裁 Brian Amick 在一篇博客文章中写道：“随着人工智能模型变得越来越大、越来越复杂，对更快、更高效数据传输的需求正在加速。” “Enosemi 作为我们的外部开发合作伙伴，在光子学领域与我们进行了合作，此次收购扩展了这一成功的合作关系。现在，作为 AMD 的一部分，该团队将帮助我们立即扩展能力，以支持和开发各种面向下一代人工智能系统的光子学和共封装光学解决方案。”&lt;/p&gt;
-&lt;p&gt;Enosemi 总部位于硅谷，致力于构建和交付光子集成电路——这种微芯片包含两个或多个形成功能电路的光子组件。Enosemi 由一群科技企业家于 2023 年创立，其中包括 Ari Novack 和 Matthew Streshinsky（两人均具有半导体工程背景），其产品包括光互连等，可将计算和网络组件集成到数据中心内部。
-&lt;img src=&#34;2025-05-29-09-21-05.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+&lt;p&gt;更新后的 R1 模型在数学、编程与通用逻辑等多个基准测评中取得了当前国内所有模型中首屈一指的优异成绩，并且在整体表现上已接近其他国际顶尖模型，如 o3 与 Gemini-2.5-Pro。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;2025-05-30-15-16-53.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;deepseek-带来了什么&#34;&gt;DeepSeek 带来了什么&lt;/h1&gt;
+&lt;h2 id=&#34;模型架构上的确定性带来了软硬件一体化设计的确定性&#34;&gt;模型架构上的确定性，带来了软硬件一体化设计的确定性&lt;/h2&gt;
+&lt;p&gt;在早年间，传统CV/NLP 模型，芯片厂商本着好料用在刀刃上原则，最大化晶体管的利用率，为了支持所谓的主流模型，大多数芯片厂商在初期照着&lt;code&gt;bert&lt;/code&gt; 和 &lt;code&gt;resnet&lt;/code&gt; 规划&lt;code&gt;conv2d&lt;/code&gt;,&lt;code&gt;conv1d&lt;/code&gt; 的卷积算力，以及匹配的带宽，数据流的设计也是偏重于卷积，算力分配上基本也都是以dense 算力为主。再到后来，&lt;code&gt;llama&lt;/code&gt; 系列的开源，Transformer 结构模型慢慢收敛，算力分配上又慢慢向&lt;code&gt;mutmul&lt;/code&gt; 等算子进行建模。&lt;/p&gt;
+&lt;p&gt;除了底层算力配比的层面，在软件架构的层面，以往&lt;code&gt;cv&lt;/code&gt; 类模型和想在&lt;code&gt;llm&lt;/code&gt; 模型相比, 在上层架构上没有太多玩法，基本还是参考TensorRT 的做法，通过图编译的模式，在图层做大面积的fusion，甚至做整图fusion，一招鲜，吃遍天，这类模型通过这种方式基本能打满理论芯片的性能。&lt;/p&gt;
+&lt;p&gt;切到&lt;code&gt;Transformer&lt;/code&gt; 类模型后，其对算力和带宽在&lt;code&gt;prefill&lt;/code&gt; 和&lt;code&gt;decode&lt;/code&gt;阶段的不同偏重，又引申出&lt;code&gt;P-D 分离&lt;/code&gt;等上层框架的适配工作，比如&lt;code&gt;vLLM/SG-lang&lt;/code&gt;等，这些在芯片公司需要有一个独立框架团队类做支撑。&lt;/p&gt;
+&lt;p&gt;DeepSeek 从DeepSeek V3 开始，包括后来的R1初版以及最新的0528 版本，都还是复用一套base架构，这种模型架构上的确
+定性给国产芯片的软硬件一体化指明了优化方向。最近DeepSeek 发表的论文“Insights into DeepSeek-V3: Scaling Challenges and Reflections on Hardware for AI Architectures”[https://arxiv.org/pdf/2505.09343]
+从模型结构探索的角度，给未来芯片设计包括系统设计提供了方向，其中重要的是以下几点：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;发展更精确的低精度计算单元，以支持高效的模型训练和推理。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;实现规模扩展（scale-up）与规模扩张（scale-out）的融合，提升系统的灵活性和可扩展性。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;创新低延迟通信结构，满足大规模模型对高速数据传输的需求。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;关于这几点，论文中DeepSeek 都有自己从模型结构上设计的思考，同时也有具体实践，包括&lt;code&gt;DeepEP&lt;/code&gt; 和&lt;code&gt;MLA&lt;/code&gt; 算子的详细实现。&lt;/p&gt;
+&lt;h2 id=&#34;模型的确定性带来了市场落地的确定性&#34;&gt;模型的确定性，带来了市场落地的确定性&lt;/h2&gt;
+&lt;p&gt;同样是开源模型，为什么&lt;code&gt;llama&lt;/code&gt; 没有做到DeepSeek 这么大的影响，&lt;code&gt;llama&lt;/code&gt; 系列也是开源模型，同时架构也基本完全开放，我想主要有以下几点：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;DeepSeek 不光是开源模型，在开源模型的基础上，释放了大量一线实践的成果，包括上面提到的算子层面，以及系统架构层面，这让广大的上游芯片厂商放心也安心，因为这些都是实实在在可以落地的分析，对比LLaMa，除了模型权重，基本无相关落地的实践guideline，在LLaMa-3 发布后，还有大量翻车的测试结果，也暴露出其对自身模型信心不足；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;LLaMA（1、2、3）使用的是 Meta 研究许可证（Meta Research License），其商用默认不支持，需要特殊许可，而DeepSeek 商用无限制，是真正的开源模型，这也让下游的众多客户可以放开拳脚；&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title></title>
-      <link>http://localhost:1313/posts/tech_news/google_deepmind_hassabis/3_the_man_who_a_g_i_-pilled_google_zh/</link>
-      <pubDate>Wed, 28 May 2025 15:30:01 +0800</pubDate>
+      <link>https://ostring.github.io/posts/tech_news/apple_intellegence_2025/apple_intellegence/</link>
+      <pubDate>Tue, 17 Jun 2025 15:11:13 +0800</pubDate>
       
-      <guid>http://localhost:1313/posts/tech_news/google_deepmind_hassabis/3_the_man_who_a_g_i_-pilled_google_zh/</guid>
+      <guid>https://ostring.github.io/posts/tech_news/apple_intellegence_2025/apple_intellegence/</guid>
       
-        <description>&lt;h1 id=&#34;google-deepmind-ceo-最新采访agi-正在来临&#34;&gt;Google Deepmind CEO 最新采访：AGI 正在来临&lt;/h1&gt;
-&lt;p&gt;原文作者&lt;strong&gt;作者：凯文·罗斯和凯西·牛顿&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;OString 整理并编译&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;最近Google I/O大会上放出的Veo3 又杀死比赛的趋势，据说硅谷很多startup 都有关门的危险，这篇Deepmind &amp;amp; GoogleAI 的一号位的采访显得尤为及时，看下他的观点。&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;em&gt;谷歌 DeepMind 首席执行官德米斯·哈萨比斯表示，“我们非常接近”人类水平的人工智能。之后，一切皆有可能。&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;_page_17_Picture_4.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;作者：凯文·罗斯和凯西·牛顿&lt;/strong&gt; &lt;em&gt;我们共同主持 Hard Fork 播客。&lt;/em&gt; 2025 年 5 月 23 日下午 07:00&lt;/p&gt;
-&lt;p&gt;几年前，大多数谷歌高管不谈论 A.G.I.，即人工通用智能，这是业内对人类水平人工智能系统的术语。即使他们认为 A.G.I. 在技术上可能实现，这个想法也显得过于遥远，几乎不值得讨论。&lt;/p&gt;
-&lt;p&gt;但本周，&lt;a href=&#34;#page-104-0&#34;&gt;在谷歌年度开发者大会上，&lt;/a&gt; A.G.I. 的氛围弥漫。该公司宣布了一系列与谷歌 Gemini A.I. 模型相关的新版本，包括旨在让用户编写 A.I. 生成的电子邮件、创建 A.I. 生成的视频和歌曲，以及在旗舰搜索引擎上与 A.I. 机器人聊天的功能。谷歌的领导者们纷纷猜测更强大的系统何时到来，并预测随着 A.I. 工具变得更加强大和自主，未来将发生深刻的变化。&lt;/p&gt;
-&lt;p&gt;让谷歌&amp;quot;A.G.I. 入脑&amp;quot;的最大功臣是德米斯·哈萨比斯——这是业内对人们沉迷于 A.G.I. 即将到来的概念的简写。&lt;/p&gt;
-&lt;p&gt;哈萨比斯先生是谷歌 DeepMind 的首席执行官，多年来一直梦想着 A.G.I.。2014 年，他通过收购自己共同创立的人工智能初创公司 DeepMind 加入谷歌，哈萨比斯先生是少数几个认真对待 A.G.I. 可能性的 A.I. 领导者之一。&lt;/p&gt;
-&lt;p&gt;如今，他是越来越多竞相构建 A.G.I. 的科技领导者之一，同时也致力于开发其他未达到通用智能水平，但本身同样令人印象深刻的 A.I. 产品。去年，哈萨比斯先生和他的谷歌 DeepMind 同事约翰·M· jumper &lt;a href=&#34;https://www.nytimes.com/2024/10/09/science/nobel-prize-chemistry.html&#34;&gt;因其在 AlphaFold 方面的工作而获得诺贝尔化学奖，&lt;/a&gt; AlphaFold 是一种能够预测蛋白质三维结构的人工智能系统。&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://localhost:1313/posts/tech_news/mistral_ai/what_is_mistral_ai__zh/</link>
-      <pubDate>Mon, 26 May 2025 22:54:15 +0800</pubDate>
-      
-      <guid>http://localhost:1313/posts/tech_news/mistral_ai/what_is_mistral_ai__zh/</guid>
-      
-        <description>&lt;h1 id=&#34;快被遗忘的mistral-ai-的最新动向跟踪&#34;&gt;&lt;strong&gt;快被遗忘的Mistral AI 的最新动向跟踪&lt;/strong&gt;&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&#34;./image.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Mistral AI 自 2023 年创立以来，已筹集了大量资金，其雄心壮志是“将前沿 AI 掌握在每个人手中”。虽然这并非直接针对 OpenAI，但该口号旨在强调该公司对 AI 开放性的倡导。最近Mistral AI 似乎淡出了视野，没有太多动静。&lt;/p&gt;
-&lt;p&gt;最初Mistral AI 出圈是因为其开源并支持MOE模型的创新，最近重新follow 了一下该公司的动向。&lt;/p&gt;
-&lt;p&gt;其 ChatGPT 的替代品，聊天助手 Le Chat，现在也已&lt;a href=&#34;https://techcrunch.com/2025/02/06/mistral-releases-its-ai-assistant-on-ios-and-android/&#34;&gt;在 iOS 和 Android 上提供&lt;/a&gt;。在移动版本发布后的两周内，它达到了 &lt;a href=&#34;https://techcrunch.com/2025/02/19/mistrals-le-chat-tops-1m-downloads-in-just-14-days/&#34;&gt;100 万次下载&lt;/a&gt;，甚至在 iOS App Store 上占据了法国免费下载榜首。&lt;/p&gt;
-&lt;p&gt;除此之外，Mistral AI 还提供了一系列模型，其中包括：&lt;/p&gt;
+        <description>&lt;h1 id=&#34;apple-ai-到底怎么样了&#34;&gt;Apple AI 到底怎么样了&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&#34;./_page_13_Picture_0.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;回顾下上次发布会&#34;&gt;回顾下上次发布会&lt;/h2&gt;
+&lt;p&gt;2024年9月的苹果iPhone 16发布会上了解更多信息。苹果在发布会上宣传了即将推向其设备的一系列AI功能，包括Apple Watch Series 10 的翻译功能、iPhone上的视觉搜索，以及对Siri功能的一些改进。第一波苹果智能功能将于10月底推出，作为iOS 18.1、iPadOS 18.1和macOS Sequoia 15.1 的一部分。&lt;/p&gt;
+&lt;p&gt;这些功能首先在美国英语中推出。苹果随后添加了澳大利亚、加拿大、新西兰、南非和英国英语的本地化版本。对中文、印度英语、新加坡英语、法语、德语、意大利语、日语、韩语、葡萄牙语、西班牙语和越南语的支持将于2025年推出。&lt;/p&gt;
+&lt;p&gt;Apple Intelligence的首波功能于2024年10月通过iOS 18.1、iPadOS 18和macOS Sequoia 15.1更新推出。这些更新包含集成写作工具、图像清理、文章摘要以及重新设计的Siri体验的文字输入。第二波功能随iOS 18.2、iPadOS 18.2和macOS Sequoia 15.2更新推出，包括Genmoji、图像乐园、视觉智能、图像魔杖和ChatGPT集成。&lt;/p&gt;
+&lt;p&gt;当时发布会上宣布的，只要您拥有以下设备中的一种，即可免费使用这些功能：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://techcrunch.com/2024/07/24/mistral-releases-large-2-meta-openai-ai-models/&#34;&gt;Mistral Large 2&lt;/a&gt;，主要的语言大模型，取代了 &lt;a href=&#34;https://techcrunch.com/2024/02/26/mistral-ai-releases-new-model-to-rival-gpt-4-and-its-own-chat-assistant/&#34;&gt;Mistral&lt;/a&gt; &lt;a href=&#34;https://techcrunch.com/2024/02/26/mistral-ai-releases-new-model-to-rival-gpt-4-and-its-own-chat-assistant/&#34;&gt;Large&lt;/a&gt;。&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://mistral.ai/en/news/pixtral-large&#34;&gt;Pixtral Large&lt;/a&gt;，&lt;a href=&#34;https://techcrunch.com/2024/11/18/mistral-unveils-new-ai-models-and-chat-features/&#34;&gt;于 2024 年推出&lt;/a&gt;，是 &lt;a href=&#34;https://techcrunch.com/2024/09/11/mistral-releases-pixtral-its-first-multimodal-model/&#34;&gt;Pixtral 系列&lt;/a&gt; &lt;a href=&#34;https://techcrunch.com/2024/09/11/mistral-releases-pixtral-its-first-multimodal-model/&#34;&gt;多模态模型&lt;/a&gt;的新成员。&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://techcrunch.com/2025/05/07/mistral-claims-its-newest-ai-model-delivers-leading-performance-for-the-price/&#34;&gt;Mistral Medium 3&lt;/a&gt;，于 2025 年 5 月发布，承诺在不牺牲性能的情况下提供效率，最适合编码和 STEM 任务。&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://techcrunch.com/2025/05/21/mistrals-new-devstral-model-was-designed-for-coding/&#34;&gt;Devstral&lt;/a&gt;，一种专为编码设计的 AI 模型，并以 Apache 2.0 许可证公开提供，这意味着可以不受限制地用于商业用途。&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://techcrunch.com/2024/05/29/mistral-releases-its-first-generative-ai-model-for-code/&#34;&gt;Codestral&lt;/a&gt;，一种早期的代码生成 AI 模型，但其许可证禁止商业应用。&lt;/li&gt;
-&lt;li&gt;“Les Ministraux”，一系列&lt;a href=&#34;https://techcrunch.com/2024/10/16/mistral-releases-new-ai-models-optimized-for-edge-devices/&#34;&gt;针对手机等边缘设备优化的&lt;/a&gt;模型。&lt;/li&gt;
-&lt;li&gt;Mistral Saba，&lt;a href=&#34;https://techcrunch.com/2025/02/17/mistral-releases-regional-model-focused-on-arabic-language-and-culture/&#34;&gt;专注于阿拉伯语&lt;/a&gt;。&lt;/li&gt;
+&lt;li&gt;所有iPhone 16机型&lt;/li&gt;
+&lt;li&gt;iPhone 15 Pro Max (A17 Pro)&lt;/li&gt;
+&lt;li&gt;iPhone 15 Pro (A17 Pro)&lt;/li&gt;
+&lt;li&gt;iPad Pro (M1及后续机型)&lt;/li&gt;
+&lt;li&gt;iPad Air (M1及后续机型)&lt;/li&gt;
+&lt;li&gt;iPad mini (A17及后续机型)&lt;/li&gt;
+&lt;li&gt;MacBook Air (M1及后续机型)&lt;/li&gt;
+&lt;li&gt;MacBook Pro (M1及后续机型)&lt;/li&gt;
+&lt;li&gt;iMac (M1及后续机型)&lt;/li&gt;
+&lt;li&gt;Mac mini (M1及后续机型)&lt;/li&gt;
+&lt;li&gt;Mac Studio (M1 Max及后续机型)&lt;/li&gt;
+&lt;li&gt;Mac Pro (M2 Ultra)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;2025 年 3 月，该公司&lt;a href=&#34;https://techcrunch.com/2025/03/06/mistrals-new-ocr-api-turns-any-pdf-document-into-an-ai-ready-markdown-file/&#34;&gt;推出了 Mistral OCR&lt;/a&gt;，这是一种光学字符识别 (OCR) API，可以将任何 PDF 转换为文本文件，以便 AI 模型更易于提取信息。&lt;/p&gt;</description>
+&lt;p&gt;但是，由于标准版机型的芯片组存在不足，只有iPhone 15 Pro版本才能使用该功能。&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title></title>
-      <link>http://localhost:1313/posts/tech_news/ai_agent/manus/</link>
-      <pubDate>Sun, 25 May 2025 21:04:47 +0800</pubDate>
+      <link>https://ostring.github.io/posts/tech_news/apple_wwdc2025/16_everything_apple_plans_to_show_at_its_ios_26-focus_zh/</link>
+      <pubDate>Tue, 17 Jun 2025 15:11:13 +0800</pubDate>
       
-      <guid>http://localhost:1313/posts/tech_news/ai_agent/manus/</guid>
+      <guid>https://ostring.github.io/posts/tech_news/apple_wwdc2025/16_everything_apple_plans_to_show_at_its_ios_26-focus_zh/</guid>
       
-        <description>&lt;p&gt;&lt;img src=&#34;2025-05-25-21-04-45.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+        <description>&lt;h1 id=&#34;苹果wwdc-2025-前瞻&#34;&gt;&lt;strong&gt;苹果WWDC 2025 前瞻&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&#34;_page_183_Picture_3.jpeg&#34; alt=&#34;&#34;&gt;
+马上苹果公司将于太平洋时间周一上午10点开始的主题演讲将介绍iPhone、iPad、Mac、Apple TV和Apple Watch的重新设计的[软件界面]，以及对Vision Pro头显的少量改进。从市场上搜集到的所有关于Apple 即将发布所有信息，尤其是有关与AI 方面，Apple 在端侧AI 的部署方面明显是落后于国内手机厂商半个身位了，年初Apple Intelligence 的发布看来并没有起到很好的助推作用。&lt;/p&gt;
+&lt;h2 id=&#34;版本号命名变更&#34;&gt;版本号命名变更&lt;/h2&gt;
+&lt;p&gt;作为端到端大修的一部分，该公司还对其软件品牌进行了全面变更，将从版本号改为基于年份的系统。这意味着苹果将推出iOS 26、iPadOS 26、tvOS 26、visionOS 26、macOS 26和watchOS 26——以2026年命名。在内部，这些操作系统分别被称为Luck、Charisma、Discovery、Cheer和Nepali。&lt;/p&gt;
+&lt;p&gt;Mac操作系统仍将保留其加州地标主题，今年的版本被称为[macOS Tahoe]。虽然设计变更将构成主题演讲的重要部分。&lt;/p&gt;
+&lt;h2 id=&#34;ai-方面&#34;&gt;AI 方面&lt;/h2&gt;
+&lt;p&gt;关于Apple Intelligence人工智能战略。在这方面，苹果将允许第三方开发者开始利用[其大型语言模型]——生成式人工智能的基础。该公司还将推出[iPad增强功能]，使该设备更适合办公使用，并为Mac推出重要的新功能。&lt;/p&gt;
+&lt;p&gt;苹果去年推出其人工智能平台的速度已经很慢，并且无限期地推迟了Siri语音助手的改进。在其困境的症状中，它最近对其人工智能业务的管理层进行了改组，将Siri和机器人团队从其人工智能主管的指挥下移除。&lt;/p&gt;
+&lt;p&gt;苹果公司还面临来自前同事乔尼·艾夫（Jony Ive）的潜在竞争。前设计主管乔尼·艾夫曾帮助创造了最初的iMac、iPod、iPhone、iPad和Apple Watch，他已与OpenAI的Sam Altman合作开发新的硬件设备。三星电子公司也在更深入地进军人工智能领域，计划与初创公司Perplexity建立[广泛的合作关系]。&lt;/p&gt;
+&lt;h4 id=&#34;新的ai相关功能&#34;&gt;&lt;strong&gt;新的AI相关功能：&lt;/strong&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;消费者可以看到的最显著的人工智能升级将是系统范围内的翻译功能的推动。该公司几年前推出了其翻译应用程序，现在该功能作为Apple Intelligence功能集成到其操作系统中。主要用途将是实时翻译电话和短信。同时，该公司还在准备为[佩戴AirPods的用户提供实时对话翻译]。多年来，谷歌一直在Android上提供许多这些功能。&lt;/li&gt;
+&lt;li&gt;开发人员方面最重大的AI相关公告将是该公司[首次开放其基础模型]，即为Apple Intelligence提供动力的大型语言模型。这将允许外部应用程序创建者使用苹果公司用来创建写作工具、Genmoji自定义表情符号及其摘要技术的相同技术来构建他们自己的人工智能功能。&lt;/li&gt;
+&lt;li&gt;Genmoji是更受欢迎的Apple Intelligence功能之一，它正在进行小幅升级。用户将首次能够通过组合一对现有的标准表情符号来创建Genmoji（例如，将篮球和垃圾桶变成一个篮球进入垃圾桶）。&lt;/li&gt;
+&lt;li&gt;公司将推出升级版的快捷指令应用程序，该应用程序允许用户为其操作系统上的操作创建快捷指令。它将使用Apple Intelligence模型。&lt;/li&gt;
+&lt;li&gt;苹果公司还开发了其基础模型的升级版本，计划将其用于设备端和云端。开发人员将可以访问设备端版本。&lt;/li&gt;
+&lt;li&gt;苹果公司正在[准备一种电池优化模式]，该模式使用人工智能来节省其iPhone的电量。不过，这项功能可能会晚些时候推出，因为它与该公司更薄的iPhone 17机型一起开发，而该机型计划于今年晚些时候发布。这项技术非常适合该设备，因为该手机的电池将会更小。&lt;/li&gt;
+&lt;li&gt;苹果公司一直在努力添加谷歌的Gemini软件作为OpenAI的ChatGPT的替代品，后者与Siri和写作工具配合使用。尽管Alphabet首席执行官桑达尔·皮查伊[暗示]一项协议即将达成，但苹果公司目前没有计划在WWDC上宣布这种集成（在此事方面可能不会有任何公开行动，直到美国司法部对谷歌与苹果的搜索协议做出裁决）。&lt;/li&gt;
+&lt;li&gt;[该公司被推迟的Siri升级]最终将能够利用个人数据和设备内容，以及更精确地控制应用程序和应用程序内功能。这仍然是遥远的事情，该公司不计划在今年的活动上展示任何重要的Siri新功能。一个进一步改进的语音助手（内部代号为LLM Siri）可能至少还需要一两年才能推出。&lt;/li&gt;
+&lt;li&gt;苹果公司正在努力改进日历应用程序，以便在其所有平台上发布。它最初计划今年推出该软件，但由于推迟，现在计划用于后续的操作系统。明年很可能被称为iOS 27和macOS 27的软件已经在开发中。这些升级在内部分别被称为Buttercup和Honeycrisp。&lt;/li&gt;
+&lt;li&gt;苹果公司还一直在努力彻底改进其健康应用程序，这与代号为Mulberry的基于人工智能的医生服务相关。两者都不会在WWDC上展示，并且由于延迟，可能最早也要到明年年底才能全面发布，作为Buttercup的一部分。今年将会有较小的变化。&lt;/li&gt;
+&lt;li&gt;去年，该公司宣布了Swift Assist，这是一个Xcode功能，可以使用Apple Intelligence来完成代码行。由于幻觉——人工智能编造信息的问题——和其他问题，它从未发布。解决方案：一个新的Xcode版本，它利用第三方的LLM，无论是在远程还是存储在Mac本地。苹果公司已经在内部使用初创公司Anthropic的Claude。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;操作系统设计和功能&#34;&gt;&lt;strong&gt;操作系统设计和功能：&lt;/strong&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;最引人注目的公告将是所有苹果操作系统的全新界面，包括CarPlay。这款内部代号为Solarium的新外观基于Vision Pro头显上的软件visionOS。主要的界面元素将是数字玻璃。为了向不会对外使用的代号致敬，在整个操作系统中将更多地使用光线和透明度。工具栏和标签栏的外观将有所不同，应用程序图标和其他按钮也将重新设计。还特别注重弹出菜单的使用，这意味着用户可以点击一个按钮来快速获得其他选项列表。在Mac上，菜单栏和窗口按钮也将获得全新的设计。&lt;/li&gt;
+&lt;li&gt;虽然有传言称应用程序图标将采用圆形设计，以与Apple Watch和Vision Pro上的样式相匹配，但iPhone和iPad上的形状基本保持不变。&lt;/li&gt;
+&lt;li&gt;iPhone、iPad和Mac上的小部件——用于在主屏幕上自定义显示天气数据、股票行情和约会的视图——已重新设计以匹配新的界面。但它们的功能与今天基本相同，并非用户体验中的主要部分。&lt;/li&gt;
+&lt;li&gt;虽然iOS和iPadOS上的大多数核心应用程序除了设计变更外不会进行全面改版，但其中三个应用程序将进行重大改进：电话、Safari和相机应用程序。&lt;/li&gt;
+&lt;li&gt;自2007年最初版本的iPhone OS以来，电话应用程序的变化不大。对于iOS 26，苹果公司正在引入一个新视图，它将收藏夹联系人、最近通话和语音邮件组合到一个可滚动的窗口中。这种现代化的方法是可选的，用户可以通过电话应用程序本身中的一个按钮切换到传统界面。&lt;/li&gt;
+&lt;li&gt;Safari的外观将得到大幅更新，其特点是更透明和玻璃状的地址栏。&lt;/li&gt;
+&lt;li&gt;相机应用程序将进行改进，重点是简化。苹果公司近年来添加了几个新的照片和视频拍摄选项——包括空间视频、全景和慢动作录制——这使得今天的界面有点笨拙。在iOS 26和iPadOS 26中，苹果公司正在重新考虑这种方法。&lt;/li&gt;
+&lt;li&gt;信息也获得了显著升级，重点是追赶Meta的WhatsApp和其他现代消息应用程序。两个主要变化是能够创建投票和设置背景图片。背景将在设备之间同步，包括其他用户的设备，这意味着你和正在聊天的人拥有相同的外观。&lt;/li&gt;
+&lt;li&gt;苹果公司首次将它长期以来的macOS预览应用程序带到iPadOS和iOS，为iPad和iPhone用户提供了一种内部的PDF管理、注释和编辑解决方案。该软件的外观与Mac版本相似，其启动屏幕与Pages和Keynote等应用程序的风格相同。它在屏幕顶部包含一个大型徽标，宣传预览名称，并在其下方显示文档选项库。该应用程序将预安装，而不是通过App Store启动。&lt;/li&gt;
+&lt;li&gt;另一个预安装的应用程序是游戏。它将游戏下载和对苹果Arcade平台的访问集中在一个地方，看起来像是一个以游戏为中心的App Store版本。该应用程序有五个标签：主页、Arcade、一起玩、资料库和搜索。在任天堂Switch 2发布之后，苹果公司希望这款新应用程序能够使其移动设备在游戏行业中占据更大的份额。但这款新应用不太可能奏效，而且相当乏味。&lt;/li&gt;
+&lt;li&gt;Apple Vision Pro将[支持眼部滚动]——一种在文档和网页以及原生和第三方应用程序中上下滚动的新方法。&lt;/li&gt;
+&lt;li&gt;苹果公司还准备为Vision Pro提供所谓的魔杖支持。这意味着客户将能够使用第三方手柄控制器，例如索尼集团公司为PlayStation VR游戏机销售的控制器。这些手柄与标准游戏控制器不同，可以用来模拟特定的手部动作。它们非常适合游戏，并且可以创建一个虚拟魔杖来导航visionOS。&lt;/li&gt;
+&lt;li&gt;苹果公司正在彻底改造iPad上的多任务功能，使其更像Mac。新的功能可能需要用户连接到键盘和触控板，例如该公司的妙控键盘。&lt;/li&gt;
+&lt;li&gt;Apple Pencil正在升级，包含一个数字芦苇书法笔。与此同时，iOS和iPadOS上的键盘将包括一个双向模式，以便在阿拉伯语和英语之间切换。&lt;/li&gt;
+&lt;li&gt;公司正在计划一项功能，用于在设备之间同步受限无线网络详细信息。这意味着如果您在一台设备上登录健身房、酒店或办公大楼，它将自动在其他设备上登录。&lt;/li&gt;
+&lt;/ul&gt;</description>
       
     </item>
     
     <item>
       <title></title>
-      <link>http://localhost:1313/posts/tech_news/ai_illumination/a_illumination/</link>
-      <pubDate>Sun, 25 May 2025 20:41:52 +0800</pubDate>
+      <link>https://ostring.github.io/posts/tech_news/openai_gpto3pro/gpto3_pro/</link>
+      <pubDate>Wed, 11 Jun 2025 14:10:27 +0800</pubDate>
       
-      <guid>http://localhost:1313/posts/tech_news/ai_illumination/a_illumination/</guid>
+      <guid>https://ostring.github.io/posts/tech_news/openai_gpto3pro/gpto3_pro/</guid>
       
-        <description>&lt;p&gt;image.png&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;2025-05-25-20-38-32.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;h1 id=&#34;ai-幻觉&#34;&gt;AI 幻觉&lt;/h1&gt;
-&lt;p&gt;Agent最近势头正兴，但似乎所有人已经把model 当成一个可靠的Agent/助手来使用，最终呈现效果挺惊艳，惊艳的外表下，很少看到其生成内容准确性的评估，人类都是视觉动物，更关注HTML/CSS的视觉效果。最近试用了fellou/扣子空间/manus/flowith /skywork这些市面上流行的智能体（朋友给力，第一时间给到码），这里不谈使用体验，只从大面上看Task执行过程，以及最终生成效果。总体上这些通用智能体执行成功率都不算高，中间可能有AI幻觉觉的原因。成功的结果看，视觉设计都足以打动人心，超出预期，执行过程的任务拆解和分配都符合预期，这个过程可以认为是AI 幻觉得到抑制。最终生成的内容看，基本通过web检索得到了对齐。这种担忧其实不光是我本人，&lt;/p&gt;
+        <description>&lt;h1 id=&#34;openai-o3-pro的一些反馈&#34;&gt;OpenAI O3 pro的一些反馈&lt;/h1&gt;
+&lt;p&gt;OpenAI 最近推出了 GPT-3 Pro，这是他们迄今为止最强大的 AI 模型。&lt;/p&gt;
+&lt;p&gt;GPT-3 Pro 是 GPT-3 的一个升级版本。GPT-3 是一个推理模型，在今年早些时候发布。与传统的 AI 模型不同，推理模型能够一步一步地解决问题，这使得它在物理、数学和编程等领域表现更加可靠。
+从本周二开始，GPT-3 Pro 将面向 ChatGPT Pro 和团队用户开放，取代之前的 GPT-1 Pro 模型。企业用户和教育用户将在下周获得访问权限。同时，GPT-3 Pro 也已经可以在 OpenAI 的开发者 API 中使用了。&lt;/p&gt;
+&lt;p&gt;在 API 使用方面，GPT-3 Pro 的定价是：每百万个输入标记收费 20 美元，每百万个输出标记收费 80 美元。输入标记是指输入到模型中的内容，输出标记则是模型根据输入生成的内容。 o3 系列价格下调 80%，当前定价为每百万输入/输出令牌 2/8 美元（此前为 8/40 美元），并为缓存输入令牌提供 75% 的折扣。o3 的每令牌价格与 GPT-4.1 相当，与 Gemini 2.5 Pro 和 Claude 4 Sonnet 价格相近，但比 Claude 4 Opus 便宜 8 倍。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;谷歌DeepMind首席执行官德米斯·哈萨比斯（Demis Hassabis）本周称，当前AI模型存在太多“漏洞”，连明显问题都会答错。例如，本月初，一位代表Anthropic的律师在法庭文件中使用Claude生成引用文献时，AI因“幻觉”编造内容，迫使该律师当庭道歉。p所以AI 幻觉是否还是通用智能AGI，更具体一点，眼下通用智能体的障碍。&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h1 id=&#34;人类幻觉其实超出ai幻觉&#34;&gt;人类幻觉其实超出AI幻觉&lt;/h1&gt;
-&lt;p&gt;最近Claude 发布了opus4和sonet4旗舰模型，Anthropic首席执行官达里奥·阿莫代伊（Dario Amodei）在公司首届开发者活动“Code with Claude”的新闻发布会上称：如今的AI模型“幻觉”（即编造内容并当作真实信息呈现）的发生率低于人类。他认为，AI幻觉并非Anthropic实现AGI（人类水平或更强的人工智能）之路上的限制。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;“这取决于测量方式，但我怀疑AI模型的幻觉频率可能比人类低，只是它们产生幻觉的方式更出人意料。”Authropic作为行业内对AGI最乐观的领导者之一，他去年在一篇广泛传播的论文中预测AGI可能最早于2026年到来，并在发布会上表示正看到相关进展“全面推进”，认为AI发展“没有明显障碍”。&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h1 id=&#34;agent-实验&#34;&gt;Agent 实验&lt;/h1&gt;
-&lt;p&gt;目前难以验证Amodei的说法，主要原因是大多数幻觉基准测试是让AI模型相互竞争（交叉验证），而非将模型与人类进行对比。不过，目前的检索增强技术似乎有助于降低幻觉发生率，比如让AI模型能够访问网页搜索功能。另外，像OpenAI的GPT - 4.5等一些AI模型，在基准测试中的幻觉率明显低于早期系统。在Agent这类应用中，出现幻觉其实是致命的，个人猜测agent执行流成功率不高就是这个原因，比如使用skywork下发一段prompt：Agent工作原理和技术解析。中间执行还挺顺利，包括和用户的交互。但是呢，之后直接撂挑子不干了，llm 报错：手动摊手🤷
-最后目前的处理AI幻觉的方法总感觉治标不治本，如果单次对话，这类幻觉确实如Anthropic CEO所说，幻觉在可控范围，但是如果需要做到Agent 通用智能体，MCP之间的token 指令准确度的要求又上升一个台阶。目前我的做法Agent 用LLM一般都在最后一个环节做summary，其他环节尽可能AI生成代码，使用代码处理，保证中间结果准确，同时最后问题定位也方便。否则面对智能体的报错，毫无办法。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;2025-05-25-20-40-40.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;2025-05-25-20-40-50.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;h1 id=&#34;最后&#34;&gt;最后&lt;/h1&gt;
-&lt;p&gt;目前的处理AI幻觉的方法总感觉治标不治本，如果单次对话，这类幻觉确实如Anthropic CEO所说，幻觉在可控范围，但是如果需要做到Agent 通用智能体，MCP之间的token 指令准确度的要求又上升一个台阶。目前我的做法Agent 用LLM一般都在最后一个环节做summary，其他环节尽可能AI生成代码，使用代码处理，保证中间结果准确，同时最后问题定位也方便。否则面对智能体的报错，毫无办法。&lt;/p&gt;</description>
+&lt;p&gt;一百万个输入标记大约相当于 75 万个单词，比《战争与和平》这本书还要长一些。&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title></title>
-      <link>http://localhost:1313/posts/tech_news/2025_5takeaway_computex/2025_computex_5takeaway/</link>
-      <pubDate>Thu, 22 May 2025 23:09:29 +0800</pubDate>
+      <link>https://ostring.github.io/posts/tech_news/2025_5takeaway_computex/2025_computex_5takeaway/</link>
+      <pubDate>Fri, 30 May 2025 17:16:10 +0800</pubDate>
       
-      <guid>http://localhost:1313/posts/tech_news/2025_5takeaway_computex/2025_computex_5takeaway/</guid>
+      <guid>https://ostring.github.io/posts/tech_news/2025_5takeaway_computex/2025_computex_5takeaway/</guid>
       
         <description>&lt;h1 id=&#34;2025台北国际电脑展亚洲最大ai科技展的五大看点&#34;&gt;&lt;strong&gt;2025台北国际电脑展：亚洲最大AI科技展的五大看点&lt;/strong&gt;&lt;/h1&gt;
 &lt;p&gt;&lt;img src=&#34;./_page_135_Picture_0.jpeg&#34; alt=&#34;&#34;&gt;
@@ -141,7 +176,8 @@
 &lt;p&gt;黄仁勋是少数几个公开谈论这一点的管理者之一，他说中国在软件开发方面“令人难以置信”，并且有资源来弥补任何技术差距。&lt;/p&gt;
 &lt;p&gt;DeepSeek还普及了推理模型，这需要更多的原始计算能力。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;黄仁勋本周告诉记者：“因此，现在的推理模型不是一次性的，而是数百次的。DeepSeek将计算需求增加了可能100到1000倍。”&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;黄仁勋本周告诉记者：“因此，现在的推理模型不是一次性的，而是数百次的。DeepSeek将计算需求增加了可能100到1000倍。”&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h4 id=&#34;中国的影响巨大&#34;&gt;&lt;strong&gt;中国的影响巨大&lt;/strong&gt;&lt;/h4&gt;
 &lt;p&gt;最受关注的头条新闻集中在英伟达的微妙处境上，因为美国正在推行旨在遏制中国科技崛起的芯片限制。这种情况在周三达到了高潮，当时黄仁勋称这种努力是“失败的”，并呼吁华盛顿&lt;a href=&#34;https://www.bloomberg.com/news/articles/2025-05-21/nvidia-ceo-urges-us-to-lower-barriers-to-50-billion-china-arena&#34;&gt;让步&lt;/a&gt;。&lt;/p&gt;
 &lt;p&gt;他警告说，如果美国不允许英伟达在中国境内销售，H等本土公司将填补这一空白。黄仁勋说：“当地公司非常有才华，也非常坚定。出口管制给予了他们精神、能量和政府支持，以加速他们的发展。”&lt;/p&gt;
@@ -156,6 +192,118 @@
 &lt;p&gt;对于科技投资者来说，最紧迫的问题之一是：我们是否高估了对数据中心的需求？从英伟达到Meta Platforms公司和微软公司，科技股在2025年出现了剧烈波动，部分原因在于这种总体的不确定性。&lt;/p&gt;
 &lt;p&gt;可以肯定的是，大多数与会者直接受益于为数据中心和AI开发提供动力所需的服务器和组件的支出。英伟达的CEO呼应了这种观点。&lt;/p&gt;
 &lt;p&gt;黄仁勋说：“我们已经投入了数千亿美元，进入了数万亿美元的人工智能基础设施建设中。”&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ostring.github.io/posts/tech_news/ai_agent/manus/</link>
+      <pubDate>Fri, 30 May 2025 17:16:10 +0800</pubDate>
+      
+      <guid>https://ostring.github.io/posts/tech_news/ai_agent/manus/</guid>
+      
+        <description>&lt;p&gt;&lt;img src=&#34;2025-05-25-21-04-45.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ostring.github.io/posts/tech_news/ai_illumination/a_illumination/</link>
+      <pubDate>Fri, 30 May 2025 17:16:10 +0800</pubDate>
+      
+      <guid>https://ostring.github.io/posts/tech_news/ai_illumination/a_illumination/</guid>
+      
+        <description>&lt;p&gt;image.png&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;2025-05-25-20-38-32.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;ai-幻觉&#34;&gt;AI 幻觉&lt;/h1&gt;
+&lt;p&gt;Agent最近势头正兴，但似乎所有人已经把model 当成一个可靠的Agent/助手来使用，最终呈现效果挺惊艳，惊艳的外表下，很少看到其生成内容准确性的评估，人类都是视觉动物，更关注HTML/CSS的视觉效果。最近试用了fellou/扣子空间/manus/flowith /skywork这些市面上流行的智能体（朋友给力，第一时间给到码），这里不谈使用体验，只从大面上看Task执行过程，以及最终生成效果。总体上这些通用智能体执行成功率都不算高，中间可能有AI幻觉觉的原因。成功的结果看，视觉设计都足以打动人心，超出预期，执行过程的任务拆解和分配都符合预期，这个过程可以认为是AI 幻觉得到抑制。最终生成的内容看，基本通过web检索得到了对齐。这种担忧其实不光是我本人，&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;谷歌DeepMind首席执行官德米斯·哈萨比斯（Demis Hassabis）本周称，当前AI模型存在太多“漏洞”，连明显问题都会答错。例如，本月初，一位代表Anthropic的律师在法庭文件中使用Claude生成引用文献时，AI因“幻觉”编造内容，迫使该律师当庭道歉。p所以AI 幻觉是否还是通用智能AGI，更具体一点，眼下通用智能体的障碍。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&#34;人类幻觉其实超出ai幻觉&#34;&gt;人类幻觉其实超出AI幻觉&lt;/h1&gt;
+&lt;p&gt;最近Claude 发布了opus4和sonet4旗舰模型，Anthropic首席执行官达里奥·阿莫代伊（Dario Amodei）在公司首届开发者活动“Code with Claude”的新闻发布会上称：如今的AI模型“幻觉”（即编造内容并当作真实信息呈现）的发生率低于人类。他认为，AI幻觉并非Anthropic实现AGI（人类水平或更强的人工智能）之路上的限制。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“这取决于测量方式，但我怀疑AI模型的幻觉频率可能比人类低，只是它们产生幻觉的方式更出人意料。”Authropic作为行业内对AGI最乐观的领导者之一，他去年在一篇广泛传播的论文中预测AGI可能最早于2026年到来，并在发布会上表示正看到相关进展“全面推进”，认为AI发展“没有明显障碍”。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&#34;agent-实验&#34;&gt;Agent 实验&lt;/h1&gt;
+&lt;p&gt;目前难以验证Amodei的说法，主要原因是大多数幻觉基准测试是让AI模型相互竞争（交叉验证），而非将模型与人类进行对比。不过，目前的检索增强技术似乎有助于降低幻觉发生率，比如让AI模型能够访问网页搜索功能。另外，像OpenAI的GPT - 4.5等一些AI模型，在基准测试中的幻觉率明显低于早期系统。在Agent这类应用中，出现幻觉其实是致命的，个人猜测agent执行流成功率不高就是这个原因，比如使用skywork下发一段prompt：Agent工作原理和技术解析。中间执行还挺顺利，包括和用户的交互。但是呢，之后直接撂挑子不干了，llm 报错：手动摊手🤷
+最后目前的处理AI幻觉的方法总感觉治标不治本，如果单次对话，这类幻觉确实如Anthropic CEO所说，幻觉在可控范围，但是如果需要做到Agent 通用智能体，MCP之间的token 指令准确度的要求又上升一个台阶。目前我的做法Agent 用LLM一般都在最后一个环节做summary，其他环节尽可能AI生成代码，使用代码处理，保证中间结果准确，同时最后问题定位也方便。否则面对智能体的报错，毫无办法。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;2025-05-25-20-40-40.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;2025-05-25-20-40-50.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;最后&#34;&gt;最后&lt;/h1&gt;
+&lt;p&gt;目前的处理AI幻觉的方法总感觉治标不治本，如果单次对话，这类幻觉确实如Anthropic CEO所说，幻觉在可控范围，但是如果需要做到Agent 通用智能体，MCP之间的token 指令准确度的要求又上升一个台阶。目前我的做法Agent 用LLM一般都在最后一个环节做summary，其他环节尽可能AI生成代码，使用代码处理，保证中间结果准确，同时最后问题定位也方便。否则面对智能体的报错，毫无办法。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ostring.github.io/posts/tech_news/amd_buy_silicon_photonic_startup/</link>
+      <pubDate>Fri, 30 May 2025 17:16:10 +0800</pubDate>
+      
+      <guid>https://ostring.github.io/posts/tech_news/amd_buy_silicon_photonic_startup/</guid>
+      
+        <description>&lt;h1 id=&#34;amd-收购硅光子初创公司&#34;&gt;AMD 收购硅光子初创公司&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&#34;2025-05-29-09-16-40.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;AMD 已收购 Enosemi，这是一家设计定制材料以支持硅光子产品开发的初创公司。该交易于周三宣布，具体条款未披露。
+公司官网上的介绍&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Enosemi’s core design IP accelerates time-to-market, reduces risk, and lowers cost for our partners across markets including communications, computing, consumer, and med-tech. The Enosemi team has industry-leading product experience coming from shipping real products to market in volume.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;硅光子技术利用光（光子）传输数据，提供了一种比传统电通信更快、更高效的替代方案。AMD 及其他芯片制造商对此技术的兴趣日益浓厚。据报道，去年年底，AMD 与几家台湾初创公司合作进行硅光子研发。&lt;/p&gt;
+&lt;p&gt;AMD 表示[https://www.amd.com/en/blogs/2025/amd-acquires-enosemi-to-accelerate-co-packaged-optics-innovation.html]，对 Enosemi 的收购将“加速其针对人工智能系统的共封装光学创新”。&lt;/p&gt;
+&lt;p&gt;AMD 技术与工程高级副总裁 Brian Amick 在一篇博客文章中写道：“随着人工智能模型变得越来越大、越来越复杂，对更快、更高效数据传输的需求正在加速。” “Enosemi 作为我们的外部开发合作伙伴，在光子学领域与我们进行了合作，此次收购扩展了这一成功的合作关系。现在，作为 AMD 的一部分，该团队将帮助我们立即扩展能力，以支持和开发各种面向下一代人工智能系统的光子学和共封装光学解决方案。”&lt;/p&gt;
+&lt;p&gt;Enosemi 总部位于硅谷，致力于构建和交付光子集成电路——这种微芯片包含两个或多个形成功能电路的光子组件。Enosemi 由一群科技企业家于 2023 年创立，其中包括 Ari Novack 和 Matthew Streshinsky（两人均具有半导体工程背景），其产品包括光互连等，可将计算和网络组件集成到数据中心内部。
+&lt;img src=&#34;2025-05-29-09-21-05.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ostring.github.io/posts/tech_news/google_deepmind_hassabis/3_the_man_who_a_g_i_-pilled_google_zh/</link>
+      <pubDate>Fri, 30 May 2025 17:16:10 +0800</pubDate>
+      
+      <guid>https://ostring.github.io/posts/tech_news/google_deepmind_hassabis/3_the_man_who_a_g_i_-pilled_google_zh/</guid>
+      
+        <description>&lt;h1 id=&#34;google-deepmind-ceo-最新采访agi-正在来临&#34;&gt;Google Deepmind CEO 最新采访：AGI 正在来临&lt;/h1&gt;
+&lt;p&gt;原文作者&lt;strong&gt;作者：凯文·罗斯和凯西·牛顿&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;OString 整理并编译&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;最近Google I/O大会上放出的Veo3 又杀死比赛的趋势，据说硅谷很多startup 都有关门的危险，这篇Deepmind &amp;amp; GoogleAI 的一号位的采访显得尤为及时，看下他的观点。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;em&gt;谷歌 DeepMind 首席执行官德米斯·哈萨比斯表示，“我们非常接近”人类水平的人工智能。之后，一切皆有可能。&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;_page_17_Picture_4.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;作者：凯文·罗斯和凯西·牛顿&lt;/strong&gt; &lt;em&gt;我们共同主持 Hard Fork 播客。&lt;/em&gt; 2025 年 5 月 23 日下午 07:00&lt;/p&gt;
+&lt;p&gt;几年前，大多数谷歌高管不谈论 A.G.I.，即人工通用智能，这是业内对人类水平人工智能系统的术语。即使他们认为 A.G.I. 在技术上可能实现，这个想法也显得过于遥远，几乎不值得讨论。&lt;/p&gt;
+&lt;p&gt;但本周，&lt;a href=&#34;#page-104-0&#34;&gt;在谷歌年度开发者大会上，&lt;/a&gt; A.G.I. 的氛围弥漫。该公司宣布了一系列与谷歌 Gemini A.I. 模型相关的新版本，包括旨在让用户编写 A.I. 生成的电子邮件、创建 A.I. 生成的视频和歌曲，以及在旗舰搜索引擎上与 A.I. 机器人聊天的功能。谷歌的领导者们纷纷猜测更强大的系统何时到来，并预测随着 A.I. 工具变得更加强大和自主，未来将发生深刻的变化。&lt;/p&gt;
+&lt;p&gt;让谷歌&amp;quot;A.G.I. 入脑&amp;quot;的最大功臣是德米斯·哈萨比斯——这是业内对人们沉迷于 A.G.I. 即将到来的概念的简写。&lt;/p&gt;
+&lt;p&gt;哈萨比斯先生是谷歌 DeepMind 的首席执行官，多年来一直梦想着 A.G.I.。2014 年，他通过收购自己共同创立的人工智能初创公司 DeepMind 加入谷歌，哈萨比斯先生是少数几个认真对待 A.G.I. 可能性的 A.I. 领导者之一。&lt;/p&gt;
+&lt;p&gt;如今，他是越来越多竞相构建 A.G.I. 的科技领导者之一，同时也致力于开发其他未达到通用智能水平，但本身同样令人印象深刻的 A.I. 产品。去年，哈萨比斯先生和他的谷歌 DeepMind 同事约翰·M· jumper &lt;a href=&#34;https://www.nytimes.com/2024/10/09/science/nobel-prize-chemistry.html&#34;&gt;因其在 AlphaFold 方面的工作而获得诺贝尔化学奖，&lt;/a&gt; AlphaFold 是一种能够预测蛋白质三维结构的人工智能系统。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ostring.github.io/posts/tech_news/mistral_ai/what_is_mistral_ai__zh/</link>
+      <pubDate>Fri, 30 May 2025 17:16:10 +0800</pubDate>
+      
+      <guid>https://ostring.github.io/posts/tech_news/mistral_ai/what_is_mistral_ai__zh/</guid>
+      
+        <description>&lt;h1 id=&#34;快被遗忘的mistral-ai-的最新动向跟踪&#34;&gt;&lt;strong&gt;快被遗忘的Mistral AI 的最新动向跟踪&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&#34;./image.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Mistral AI 自 2023 年创立以来，已筹集了大量资金，其雄心壮志是“将前沿 AI 掌握在每个人手中”。虽然这并非直接针对 OpenAI，但该口号旨在强调该公司对 AI 开放性的倡导。最近Mistral AI 似乎淡出了视野，没有太多动静。&lt;/p&gt;
+&lt;p&gt;最初Mistral AI 出圈是因为其开源并支持MOE模型的创新，最近重新follow 了一下该公司的动向。&lt;/p&gt;
+&lt;p&gt;其 ChatGPT 的替代品，聊天助手 Le Chat，现在也已&lt;a href=&#34;https://techcrunch.com/2025/02/06/mistral-releases-its-ai-assistant-on-ios-and-android/&#34;&gt;在 iOS 和 Android 上提供&lt;/a&gt;。在移动版本发布后的两周内，它达到了 &lt;a href=&#34;https://techcrunch.com/2025/02/19/mistrals-le-chat-tops-1m-downloads-in-just-14-days/&#34;&gt;100 万次下载&lt;/a&gt;，甚至在 iOS App Store 上占据了法国免费下载榜首。&lt;/p&gt;
+&lt;p&gt;除此之外，Mistral AI 还提供了一系列模型，其中包括：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://techcrunch.com/2024/07/24/mistral-releases-large-2-meta-openai-ai-models/&#34;&gt;Mistral Large 2&lt;/a&gt;，主要的语言大模型，取代了 &lt;a href=&#34;https://techcrunch.com/2024/02/26/mistral-ai-releases-new-model-to-rival-gpt-4-and-its-own-chat-assistant/&#34;&gt;Mistral&lt;/a&gt; &lt;a href=&#34;https://techcrunch.com/2024/02/26/mistral-ai-releases-new-model-to-rival-gpt-4-and-its-own-chat-assistant/&#34;&gt;Large&lt;/a&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://mistral.ai/en/news/pixtral-large&#34;&gt;Pixtral Large&lt;/a&gt;，&lt;a href=&#34;https://techcrunch.com/2024/11/18/mistral-unveils-new-ai-models-and-chat-features/&#34;&gt;于 2024 年推出&lt;/a&gt;，是 &lt;a href=&#34;https://techcrunch.com/2024/09/11/mistral-releases-pixtral-its-first-multimodal-model/&#34;&gt;Pixtral 系列&lt;/a&gt; &lt;a href=&#34;https://techcrunch.com/2024/09/11/mistral-releases-pixtral-its-first-multimodal-model/&#34;&gt;多模态模型&lt;/a&gt;的新成员。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://techcrunch.com/2025/05/07/mistral-claims-its-newest-ai-model-delivers-leading-performance-for-the-price/&#34;&gt;Mistral Medium 3&lt;/a&gt;，于 2025 年 5 月发布，承诺在不牺牲性能的情况下提供效率，最适合编码和 STEM 任务。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://techcrunch.com/2025/05/21/mistrals-new-devstral-model-was-designed-for-coding/&#34;&gt;Devstral&lt;/a&gt;，一种专为编码设计的 AI 模型，并以 Apache 2.0 许可证公开提供，这意味着可以不受限制地用于商业用途。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://techcrunch.com/2024/05/29/mistral-releases-its-first-generative-ai-model-for-code/&#34;&gt;Codestral&lt;/a&gt;，一种早期的代码生成 AI 模型，但其许可证禁止商业应用。&lt;/li&gt;
+&lt;li&gt;“Les Ministraux”，一系列&lt;a href=&#34;https://techcrunch.com/2024/10/16/mistral-releases-new-ai-models-optimized-for-edge-devices/&#34;&gt;针对手机等边缘设备优化的&lt;/a&gt;模型。&lt;/li&gt;
+&lt;li&gt;Mistral Saba，&lt;a href=&#34;https://techcrunch.com/2025/02/17/mistral-releases-regional-model-focused-on-arabic-language-and-culture/&#34;&gt;专注于阿拉伯语&lt;/a&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;2025 年 3 月，该公司&lt;a href=&#34;https://techcrunch.com/2025/03/06/mistrals-new-ocr-api-turns-any-pdf-document-into-an-ai-ready-markdown-file/&#34;&gt;推出了 Mistral OCR&lt;/a&gt;，这是一种光学字符识别 (OCR) API，可以将任何 PDF 转换为文本文件，以便 AI 模型更易于提取信息。&lt;/p&gt;</description>
       
     </item>
     

@@ -1,0 +1,514 @@
+<!doctype html>
+<html
+  dir="ltr"
+  lang="en"
+  data-theme=""
+  
+    class="html theme--light"
+  
+><head>
+  <meta charset="utf-8" />
+  <title>
+    OString
+
+    
+
+  </title>
+
+  <meta name="generator" content="Hugo 0.152.2"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="author" content="OString" />
+  <meta
+    name="description"
+    content="Welcome to OString&#39;s Website"
+  />
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/scss/main.min.8d4fad7e6916ad2e291e8d97ada157c70350d6d7150fea137e7243340967befb.css"
+      integrity="sha256-jU&#43;tfmkWrS4pHo2XraFXxwNQ1tcVD&#43;oTfnJDNAlnvvs="
+      crossorigin="anonymous"
+      type="text/css"
+    />
+  
+
+  
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.73ccfdf28df555e11009c13c20ced067af3cb021504cba43644c705930428b00.css"
+    integrity="sha256-c8z98o31VeEQCcE8IM7QZ688sCFQTLpDZExwWTBCiwA="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/fontawesome.min.137b1cf3cea9a8adb7884343a9a5ddddf4280f59153f74dc782fb7f7bf0d0519.css"
+    integrity="sha256-E3sc886pqK23iENDqaXd3fQoD1kVP3TceC&#43;3978NBRk="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/solid.min.e65dc5b48fb5f39b142360c57c3a215744c94e56c755c929cc3e88fe12aab4d3.css"
+    integrity="sha256-5l3FtI&#43;185sUI2DFfDohV0TJTlbHVckpzD6I/hKqtNM="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/regular.min.6f4f16d58da1c82c0c3a3436e021a3d39b4742f741192c546e73e947eacfd92f.css"
+    integrity="sha256-b08W1Y2hyCwMOjQ24CGj05tHQvdBGSxUbnPpR&#43;rP2S8="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/brands.min.e10425ad768bc98ff1fb272a0ac8420f9d1ba22f0612c08ff1010c95080ffe7e.css"
+    integrity="sha256-4QQlrXaLyY/x&#43;ycqCshCD50boi8GEsCP8QEMlQgP/n4="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+
+  <link rel="canonical" href="https://ostring.github.io/posts/solution/rag/" />
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js"
+    integrity="sha256-&#43;RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.8724ddf9268dee451060f191961647573c7f592fbccc6d858746236b3f915813.js"
+      integrity="sha256-hyTd&#43;SaN7kUQYPGRlhZHVzx/WS&#43;8zG2Fh0Yjaz&#43;RWBM="
+      crossorigin="anonymous"
+    ></script>
+  
+
+  
+
+  
+
+  
+
+
+  
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Website of OString">
+  <meta name="twitter:description" content="工具/平台 数据源集成 分块策略 向量库适配 多轮问答 插件/Agent 调用 UI 管理 IMA Copilot ✅ 强（结构化数据融合） ✅ 智能分段 ✅ 腾讯自研 or 第三方 ✅ ✅ Agent 串联流程 ✅ 企业级 LangChain &#43; LlamaIndex ✅ 丰富 ✅ 可配置 ✅ Faiss, Qdrant, Pinecone 等 ✅ ✅ AgentExecutor &#43; Tool use ❌ 需自建 RAGFlow ✅ 支持多源接入 ✅ 中文语义分块优化 ✅ 向量库可选 ✅ ✅ 支持 Tool Call ✅ 提供 Web UI Haystack ✅ 文档 &#43; API ✅ Smart chunking ✅ 多向量库 ✅ ✅ ✅ Gradio 接口 MiniMax &#43; Udesk ✅ 工单系统 ❓ ✅ 自研 ✅ ❌ ✅ 百度 AgentBuilder ✅ 百度云数据源 ✅ ✅ 自家向量库 ✅ ✅ 插件模式 ✅ 可视化 阿里 通义 ✅ OSS/钉钉 ✅ 支持中文结构分块 ✅ ✅ ✅ ✅ all in one 平台 工具名 定位 是否开源 特点 AnythingLLM 内网文档问答平台 ✅ 简洁界面，快速上传文档即可问答 PrivateGPT 私有 GPT 文档助手 ✅ 完全本地，无需联网 FlowiseAI RAG 可视化工具 ✅ 支持 LangChain block 流程图 ChatDOC（类产品） 快速文档 QA ❌ SaaS 简单上传 PDF 即问答 Weaviate / Qdrant Studio 向量库 &#43; UI ✅ 面向向量化数据管理">
+
+
+
+  
+  <meta property="og:url" content="https://ostring.github.io/posts/solution/rag/">
+  <meta property="og:site_name" content="Website of OString">
+  <meta property="og:title" content="Website of OString">
+  <meta property="og:description" content="工具/平台 数据源集成 分块策略 向量库适配 多轮问答 插件/Agent 调用 UI 管理 IMA Copilot ✅ 强（结构化数据融合） ✅ 智能分段 ✅ 腾讯自研 or 第三方 ✅ ✅ Agent 串联流程 ✅ 企业级 LangChain &#43; LlamaIndex ✅ 丰富 ✅ 可配置 ✅ Faiss, Qdrant, Pinecone 等 ✅ ✅ AgentExecutor &#43; Tool use ❌ 需自建 RAGFlow ✅ 支持多源接入 ✅ 中文语义分块优化 ✅ 向量库可选 ✅ ✅ 支持 Tool Call ✅ 提供 Web UI Haystack ✅ 文档 &#43; API ✅ Smart chunking ✅ 多向量库 ✅ ✅ ✅ Gradio 接口 MiniMax &#43; Udesk ✅ 工单系统 ❓ ✅ 自研 ✅ ❌ ✅ 百度 AgentBuilder ✅ 百度云数据源 ✅ ✅ 自家向量库 ✅ ✅ 插件模式 ✅ 可视化 阿里 通义 ✅ OSS/钉钉 ✅ 支持中文结构分块 ✅ ✅ ✅ ✅ all in one 平台 工具名 定位 是否开源 特点 AnythingLLM 内网文档问答平台 ✅ 简洁界面，快速上传文档即可问答 PrivateGPT 私有 GPT 文档助手 ✅ 完全本地，无需联网 FlowiseAI RAG 可视化工具 ✅ 支持 LangChain block 流程图 ChatDOC（类产品） 快速文档 QA ❌ SaaS 简单上传 PDF 即问答 Weaviate / Qdrant Studio 向量库 &#43; UI ✅ 面向向量化数据管理">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-11-23T14:36:48+08:00">
+    <meta property="article:modified_time" content="2025-11-23T14:36:48+08:00">
+
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "posts",
+        "name": "",
+        "headline": "",
+        "alternativeHeadline": "",
+        "description": "
+      
+        \u003ctable\u003e\n  \u003cthead\u003e\n      \u003ctr\u003e\n          \u003cth\u003e工具\/平台\u003c\/th\u003e\n          \u003cth\u003e数据源集成\u003c\/th\u003e\n          \u003cth\u003e分块策略\u003c\/th\u003e\n          \u003cth\u003e向量库适配\u003c\/th\u003e\n          \u003cth\u003e多轮问答\u003c\/th\u003e\n          \u003cth\u003e插件\/Agent 调用\u003c\/th\u003e\n          \u003cth\u003eUI 管理\u003c\/th\u003e\n      \u003c\/tr\u003e\n  \u003c\/thead\u003e\n  \u003ctbody\u003e\n      \u003ctr\u003e\n          \u003ctd\u003eIMA Copilot\u003c\/td\u003e\n          \u003ctd\u003e✅ 强（结构化数据融合）\u003c\/td\u003e\n          \u003ctd\u003e✅ 智能分段\u003c\/td\u003e\n          \u003ctd\u003e✅ 腾讯自研 or 第三方\u003c\/td\u003e\n          \u003ctd\u003e✅\u003c\/td\u003e\n          \u003ctd\u003e✅ Agent 串联流程\u003c\/td\u003e\n          \u003ctd\u003e✅ 企业级\u003c\/td\u003e\n      \u003c\/tr\u003e\n      \u003ctr\u003e\n          \u003ctd\u003eLangChain \u002b LlamaIndex\u003c\/td\u003e\n          \u003ctd\u003e✅ 丰富\u003c\/td\u003e\n          \u003ctd\u003e✅ 可配置\u003c\/td\u003e\n          \u003ctd\u003e✅ Faiss, Qdrant, Pinecone 等\u003c\/td\u003e\n          \u003ctd\u003e✅\u003c\/td\u003e\n          \u003ctd\u003e✅ AgentExecutor \u002b Tool use\u003c\/td\u003e\n          \u003ctd\u003e❌ 需自建\u003c\/td\u003e\n      \u003c\/tr\u003e\n      \u003ctr\u003e\n          \u003ctd\u003eRAGFlow\u003c\/td\u003e\n          \u003ctd\u003e✅ 支持多源接入\u003c\/td\u003e\n          \u003ctd\u003e✅ 中文语义分块优化\u003c\/td\u003e\n          \u003ctd\u003e✅ 向量库可选\u003c\/td\u003e\n          \u003ctd\u003e✅\u003c\/td\u003e\n          \u003ctd\u003e✅ 支持 Tool Call\u003c\/td\u003e\n          \u003ctd\u003e✅ 提供 Web UI\u003c\/td\u003e\n      \u003c\/tr\u003e\n      \u003ctr\u003e\n          \u003ctd\u003eHaystack\u003c\/td\u003e\n          \u003ctd\u003e✅ 文档 \u002b API\u003c\/td\u003e\n          \u003ctd\u003e✅ Smart chunking\u003c\/td\u003e\n          \u003ctd\u003e✅ 多向量库\u003c\/td\u003e\n          \u003ctd\u003e✅\u003c\/td\u003e\n          \u003ctd\u003e✅\u003c\/td\u003e\n          \u003ctd\u003e✅ Gradio 接口\u003c\/td\u003e\n      \u003c\/tr\u003e\n      \u003ctr\u003e\n          \u003ctd\u003eMiniMax \u002b Udesk\u003c\/td\u003e\n          \u003ctd\u003e✅ 工单系统\u003c\/td\u003e\n          \u003ctd\u003e❓\u003c\/td\u003e\n          \u003ctd\u003e✅ 自研\u003c\/td\u003e\n          \u003ctd\u003e✅\u003c\/td\u003e\n          \u003ctd\u003e❌\u003c\/td\u003e\n          \u003ctd\u003e✅\u003c\/td\u003e\n      \u003c\/tr\u003e\n      \u003ctr\u003e\n          \u003ctd\u003e百度 AgentBuilder\u003c\/td\u003e\n          \u003ctd\u003e✅ 百度云数据源\u003c\/td\u003e\n          \u003ctd\u003e✅\u003c\/td\u003e\n          \u003ctd\u003e✅ 自家向量库\u003c\/td\u003e\n          \u003ctd\u003e✅\u003c\/td\u003e\n          \u003ctd\u003e✅ 插件模式\u003c\/td\u003e\n          \u003ctd\u003e✅ 可视化\u003c\/td\u003e\n      \u003c\/tr\u003e\n      \u003ctr\u003e\n          \u003ctd\u003e阿里 通义\u003c\/td\u003e\n          \u003ctd\u003e✅ OSS\/钉钉\u003c\/td\u003e\n          \u003ctd\u003e✅ 支持中文结构分块\u003c\/td\u003e\n          \u003ctd\u003e✅\u003c\/td\u003e\n          \u003ctd\u003e✅\u003c\/td\u003e\n          \u003ctd\u003e✅\u003c\/td\u003e\n          \u003ctd\u003e✅\u003c\/td\u003e\n      \u003c\/tr\u003e\n  \u003c\/tbody\u003e\n\u003c\/table\u003e\n\u003ch1 id=\u0022all-in-one-平台\u0022\u003eall in one 平台\u003c\/h1\u003e\n\u003ctable\u003e\n  \u003cthead\u003e\n      \u003ctr\u003e\n          \u003cth\u003e工具名\u003c\/th\u003e\n          \u003cth\u003e定位\u003c\/th\u003e\n          \u003cth\u003e是否开源\u003c\/th\u003e\n          \u003cth\u003e特点\u003c\/th\u003e\n      \u003c\/tr\u003e\n  \u003c\/thead\u003e\n  \u003ctbody\u003e\n      \u003ctr\u003e\n          \u003ctd\u003e\u003cstrong\u003eAnythingLLM\u003c\/strong\u003e\u003c\/td\u003e\n          \u003ctd\u003e内网文档问答平台\u003c\/td\u003e\n          \u003ctd\u003e✅\u003c\/td\u003e\n          \u003ctd\u003e简洁界面，快速上传文档即可问答\u003c\/td\u003e\n      \u003c\/tr\u003e\n      \u003ctr\u003e\n          \u003ctd\u003e\u003cstrong\u003ePrivateGPT\u003c\/strong\u003e\u003c\/td\u003e\n          \u003ctd\u003e私有 GPT 文档助手\u003c\/td\u003e\n          \u003ctd\u003e✅\u003c\/td\u003e\n          \u003ctd\u003e完全本地，无需联网\u003c\/td\u003e\n      \u003c\/tr\u003e\n      \u003ctr\u003e\n          \u003ctd\u003e\u003cstrong\u003eFlowiseAI\u003c\/strong\u003e\u003c\/td\u003e\n          \u003ctd\u003eRAG 可视化工具\u003c\/td\u003e\n          \u003ctd\u003e✅\u003c\/td\u003e\n          \u003ctd\u003e支持 LangChain block 流程图\u003c\/td\u003e\n      \u003c\/tr\u003e\n      \u003ctr\u003e\n          \u003ctd\u003e\u003cstrong\u003eChatDOC（类产品）\u003c\/strong\u003e\u003c\/td\u003e\n          \u003ctd\u003e快速文档 QA\u003c\/td\u003e\n          \u003ctd\u003e❌ SaaS\u003c\/td\u003e\n          \u003ctd\u003e简单上传 PDF 即问答\u003c\/td\u003e\n      \u003c\/tr\u003e\n      \u003ctr\u003e\n          \u003ctd\u003e\u003cstrong\u003eWeaviate \/ Qdrant Studio\u003c\/strong\u003e\u003c\/td\u003e\n          \u003ctd\u003e向量库 \u002b UI\u003c\/td\u003e\n          \u003ctd\u003e✅\u003c\/td\u003e\n          \u003ctd\u003e面向向量化数据管理\u003c\/td\u003e\n      \u003c\/tr\u003e\n  \u003c\/tbody\u003e\n\u003c\/table\u003e
+
+
+      
+
+
+    ",
+        "license": "",
+        
+        "inLanguage": "en",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/ostring.github.io\/posts\/solution\/rag\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "OString"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "OString"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "OString"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "OString"
+        },
+        "dateCreated": "2025-11-23T14:36:48.01Z",
+        "datePublished": "2025-11-23T14:36:48.00Z",
+        "dateModified": "2025-11-23T14:36:48.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "OString",
+            "url": "https://ostring.github.io/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/ostring.github.io\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+      ]
+
+    ,
+        "url" : "https:\/\/ostring.github.io\/posts\/solution\/rag\/",
+        "wordCount" : "152",
+        "genre" : [ ],
+        "keywords" : [ ]
+    }
+  </script>
+
+
+</head>
+<body class="body">
+    <div class="wrapper">
+      <aside
+        
+          class="wrapper__sidebar"
+        
+      ><div
+  class="sidebar
+    animated fadeInDown
+  "
+>
+  <div class="sidebar__content">
+    <div class="sidebar__introduction">
+      <img
+        class="sidebar__introduction-profileimage"
+        src="/images/profile.jpg"
+        alt="profile picture"
+      />
+      
+        <div class="sidebar__introduction-title">
+          <a href="/"></a>
+        </div>
+      
+      <div class="sidebar__introduction-description">
+        <p>Welcome to OString's Website</p>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      
+    </ul>
+  </div><footer class="footer footer__sidebar">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        OString
+        2025
+      
+    </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.9531b4a2217a70c5a1fce89c1f81c9ebbdd586708fcd4130b417320c7230c8d6.js"
+    integrity="sha256-lTG0oiF6cMWh/OicH4HJ673VhnCPzUEwtBcyDHIwyNY="
+    crossorigin="anonymous"
+  ></script></div>
+</aside>
+      <main
+        
+          class="wrapper__main"
+        
+      >
+        <header class="header"><div
+  class="
+    animated fadeInDown
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+  </a>
+  <nav class="nav">
+    <ul class="nav__list" id="navMenu">
+      
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/"
+              
+              title=""
+              >Home</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/posts/data_center/"
+              
+              title=""
+              >DataCenter</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/posts/tech_news/"
+              
+              title=""
+              >TechNews</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/about/"
+              
+              title=""
+              >About</a
+            >
+          </li>
+        
+
+      
+    </ul>
+    <ul class="nav__list nav__list--end">
+      
+      
+        <li class="nav__list-item">
+          <div class="themeswitch">
+            <a title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </li>
+      
+    </ul>
+  </nav>
+</div>
+</header>
+  <div
+    class="post 
+      animated fadeInDown
+    "
+  >
+    
+    <div class="post__content">
+      
+        <h1></h1>
+      
+      <table>
+  <thead>
+      <tr>
+          <th>工具/平台</th>
+          <th>数据源集成</th>
+          <th>分块策略</th>
+          <th>向量库适配</th>
+          <th>多轮问答</th>
+          <th>插件/Agent 调用</th>
+          <th>UI 管理</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>IMA Copilot</td>
+          <td>✅ 强（结构化数据融合）</td>
+          <td>✅ 智能分段</td>
+          <td>✅ 腾讯自研 or 第三方</td>
+          <td>✅</td>
+          <td>✅ Agent 串联流程</td>
+          <td>✅ 企业级</td>
+      </tr>
+      <tr>
+          <td>LangChain + LlamaIndex</td>
+          <td>✅ 丰富</td>
+          <td>✅ 可配置</td>
+          <td>✅ Faiss, Qdrant, Pinecone 等</td>
+          <td>✅</td>
+          <td>✅ AgentExecutor + Tool use</td>
+          <td>❌ 需自建</td>
+      </tr>
+      <tr>
+          <td>RAGFlow</td>
+          <td>✅ 支持多源接入</td>
+          <td>✅ 中文语义分块优化</td>
+          <td>✅ 向量库可选</td>
+          <td>✅</td>
+          <td>✅ 支持 Tool Call</td>
+          <td>✅ 提供 Web UI</td>
+      </tr>
+      <tr>
+          <td>Haystack</td>
+          <td>✅ 文档 + API</td>
+          <td>✅ Smart chunking</td>
+          <td>✅ 多向量库</td>
+          <td>✅</td>
+          <td>✅</td>
+          <td>✅ Gradio 接口</td>
+      </tr>
+      <tr>
+          <td>MiniMax + Udesk</td>
+          <td>✅ 工单系统</td>
+          <td>❓</td>
+          <td>✅ 自研</td>
+          <td>✅</td>
+          <td>❌</td>
+          <td>✅</td>
+      </tr>
+      <tr>
+          <td>百度 AgentBuilder</td>
+          <td>✅ 百度云数据源</td>
+          <td>✅</td>
+          <td>✅ 自家向量库</td>
+          <td>✅</td>
+          <td>✅ 插件模式</td>
+          <td>✅ 可视化</td>
+      </tr>
+      <tr>
+          <td>阿里 通义</td>
+          <td>✅ OSS/钉钉</td>
+          <td>✅ 支持中文结构分块</td>
+          <td>✅</td>
+          <td>✅</td>
+          <td>✅</td>
+          <td>✅</td>
+      </tr>
+  </tbody>
+</table>
+<h1 id="all-in-one-平台">all in one 平台</h1>
+<table>
+  <thead>
+      <tr>
+          <th>工具名</th>
+          <th>定位</th>
+          <th>是否开源</th>
+          <th>特点</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>AnythingLLM</strong></td>
+          <td>内网文档问答平台</td>
+          <td>✅</td>
+          <td>简洁界面，快速上传文档即可问答</td>
+      </tr>
+      <tr>
+          <td><strong>PrivateGPT</strong></td>
+          <td>私有 GPT 文档助手</td>
+          <td>✅</td>
+          <td>完全本地，无需联网</td>
+      </tr>
+      <tr>
+          <td><strong>FlowiseAI</strong></td>
+          <td>RAG 可视化工具</td>
+          <td>✅</td>
+          <td>支持 LangChain block 流程图</td>
+      </tr>
+      <tr>
+          <td><strong>ChatDOC（类产品）</strong></td>
+          <td>快速文档 QA</td>
+          <td>❌ SaaS</td>
+          <td>简单上传 PDF 即问答</td>
+      </tr>
+      <tr>
+          <td><strong>Weaviate / Qdrant Studio</strong></td>
+          <td>向量库 + UI</td>
+          <td>✅</td>
+          <td>面向向量化数据管理</td>
+      </tr>
+  </tbody>
+</table>
+</div>
+    <div class="post__footer">
+      
+
+      
+    </div>
+
+    
+  </div>
+
+      </main>
+    </div><footer class="footer footer__base">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        OString
+        2025
+      
+    </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.9531b4a2217a70c5a1fce89c1f81c9ebbdd586708fcd4130b417320c7230c8d6.js"
+    integrity="sha256-lTG0oiF6cMWh/OicH4HJ673VhnCPzUEwtBcyDHIwyNY="
+    crossorigin="anonymous"
+  ></script></body>
+</html>

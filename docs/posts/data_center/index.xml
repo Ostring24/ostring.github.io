@@ -2,17 +2,28 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>DataCenter on Website of OString</title>
-    <link>http://localhost:1313/posts/data_center/</link>
+    <link>https://ostring.github.io/posts/data_center/</link>
     <description>Recent content in DataCenter on Website of OString</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 22 May 2025 22:16:08 +0800</lastBuildDate><atom:link href="http://localhost:1313/posts/data_center/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 30 May 2025 17:16:10 +0800</lastBuildDate><atom:link href="https://ostring.github.io/posts/data_center/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>http://localhost:1313/posts/data_center/nvidia_fusion/nvdia_fusion/</link>
-      <pubDate>Fri, 23 May 2025 11:46:26 +0800</pubDate>
+      <link>https://ostring.github.io/posts/data_center/interconnnect_protocol/cxl/</link>
+      <pubDate>Fri, 06 Jun 2025 11:59:04 +0800</pubDate>
       
-      <guid>http://localhost:1313/posts/data_center/nvidia_fusion/nvdia_fusion/</guid>
+      <guid>https://ostring.github.io/posts/data_center/interconnnect_protocol/cxl/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ostring.github.io/posts/data_center/nvidia_fusion/nvdia_fusion/</link>
+      <pubDate>Fri, 30 May 2025 17:16:10 +0800</pubDate>
+      
+      <guid>https://ostring.github.io/posts/data_center/nvidia_fusion/nvdia_fusion/</guid>
       
         <description>&lt;h1 id=&#34;nvidia-fusion&#34;&gt;Nvidia Fusion&lt;/h1&gt;
 &lt;p&gt;Jenson Huang 今天抛出了绣球，接下来第一个问题：其他厂商家的黄花闺女能否看的上。
@@ -22,28 +33,32 @@
 &lt;h2 id=&#34;先回答第一个问题&#34;&gt;先回答第一个问题&lt;/h2&gt;
 &lt;p&gt;从公开的消息看，目前接下这颗绣球的有几家厂商：&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;英伟达已为该计划聚集了众多合作伙伴，包括高通和富士通，它们将把这项技术集成到各自的 CPU 中。NVLink Fusion 还将扩展至定制 AI 加速器领域，因此英伟达已吸引包括 Marvell、联发科在内的多家芯片合作伙伴，以及芯片软件设计公司新思科技（Synopsys）和楷登电子（Cadence）加入 NVLink Fusion 生态系统。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;英伟达已为该计划聚集了众多合作伙伴，包括高通和富士通，它们将把这项技术集成到各自的 CPU 中。NVLink Fusion 还将扩展至定制 AI 加速器领域，因此英伟达已吸引包括 Marvell、联发科在内的多家芯片合作伙伴，以及芯片软件设计公司新思科技（Synopsys）和楷登电子（Cadence）加入 NVLink Fusion 生态系统。&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;高通最近证实，其正在将自有定制服务器 CPU 推向市场，尽管细节仍不明确，但该公司与 NVLink 生态系统的合作将使其新 CPU 能够搭乘英伟达快速扩张的 AI 生态系统的顺风车。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;高通最近证实，其正在将自有定制服务器 CPU 推向市场，尽管细节仍不明确，但该公司与 NVLink 生态系统的合作将使其新 CPU 能够搭乘英伟达快速扩张的 AI 生态系统的顺风车。&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;富士通也一直在致力于将其搭载 3D 堆叠 CPU 核心和内存的 144 核 Monaka CPU 推向市场。富士通 CTO Vivek Mahajan 表示：“富士通的下一代处理器 FUJITSU-MONAKA 是一款基于 Arm 架构的 2 纳米 CPU，旨在实现极高的能效。将我们的技术与英伟达架构直接连接，标志着我们在通过世界领先的计算技术推动 AI 发展的愿景中迈出了重要一步，为新型可扩展、自主且可持续的 AI 系统铺平了道路。”&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;富士通也一直在致力于将其搭载 3D 堆叠 CPU 核心和内存的 144 核 Monaka CPU 推向市场。富士通 CTO Vivek Mahajan 表示：“富士通的下一代处理器 FUJITSU-MONAKA 是一款基于 Arm 架构的 2 纳米 CPU，旨在实现极高的能效。将我们的技术与英伟达架构直接连接，标志着我们在通过世界领先的计算技术推动 AI 发展的愿景中迈出了重要一步，为新型可扩展、自主且可持续的 AI 系统铺平了道路。”&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;从目前来看，Nvlink 可撬动的生态还只局限在Die2Die 的范围，在Die2Die 互联的选择上，Nvlink 不是唯一选择，另外也不是最优解。联发科已经和NVdia 有过深入合作，之前的&lt;code&gt;GB10&lt;/code&gt;现在看来已经试水了Nvlink fusion生态合作模式，由联发科基于Arm SoC CPU 的功底，结合Blackwell 的GPU 通过Nvlink 互联。另外一家Marvell，基本是全开放生态，各种联盟都来者不拒，本就是CSP chip Maker，工具箱越丰富越好。说白了，通过联发科的合作先打个窝，吸引其他厂商，在D2D 范围内还处于刚起步的状态。&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title></title>
-      <link>http://localhost:1313/posts/data_center/server_cooling_evolution/server_cooling_evolution/</link>
-      <pubDate>Thu, 22 May 2025 22:12:04 +0800</pubDate>
+      <link>https://ostring.github.io/posts/data_center/server_cooling_evolution/server_cooling_evolution/</link>
+      <pubDate>Fri, 30 May 2025 17:16:10 +0800</pubDate>
       
-      <guid>http://localhost:1313/posts/data_center/server_cooling_evolution/server_cooling_evolution/</guid>
+      <guid>https://ostring.github.io/posts/data_center/server_cooling_evolution/server_cooling_evolution/</guid>
       
         <description>&lt;h1 id=&#34;服务器散热进化史&#34;&gt;服务器散热进化史&lt;/h1&gt;
 &lt;h3 id=&#34;液冷方案崛起&#34;&gt;液冷方案崛起&lt;/h3&gt;
 &lt;p&gt;最近在关注美股，围观行业大佬分析NV 供应链体系，注意到一家公司VRT， 这家公司是NV 的独家液冷方案提供商。最近VRT 的股价青云直上，一家做液冷方案的公司护城河到底有多深，散热方案在整个行业中处于什么位置，这些问题是我想了解的。&lt;/p&gt;
 &lt;p&gt;NV 的技术路线图从A100/H100 到最新GB200 的体系，TDP 也从300~700W 跃升到1000W 的门槛，以往的风冷方案在散热效率上显得非常力不从心。从2019 年的数据来看，国内IDC 能耗43%用于 IT 设备散热， 基本与 45%的 IT 设备自身能耗持平，这在低碳的大背景下，与IDC 行业追求的PUE 小于1.3 相背离。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;全国数据中心 PUE 平均水平为 1.49，传统风冷数据中心 PUE 在 1.5&lt;del&gt;1.8（1kW 的服务器正常运转需 1.5&lt;/del&gt;1.8kW 电量）&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;全国数据中心 PUE 平均水平为 1.49，传统风冷数据中心 PUE 在 1.5&lt;del&gt;1.8（1kW 的服务器正常运转需 1.5&lt;/del&gt;1.8kW 电量）&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h3 id=&#34;传统风冷&#34;&gt;传统风冷&lt;/h3&gt;
 &lt;p&gt;从目前所有可见的消息来看，提高目前IDC风冷方案散热效率都是大势所趋，液冷方案呼之欲出，想要部署密度极高机架（30kW以上）的设施在是否使用液冷方面几乎没有选择余地。无论如何配置或优化系统，风冷都无法提供维持IT系统可靠性所需的散热能力。在边缘计算和核心数据中心都是如此。我们先来看看液冷方案相比于风冷有哪些优势：&lt;/p&gt;
 &lt;ul&gt;
