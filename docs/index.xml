@@ -6,11 +6,22 @@
     <description>Recent content on Website of OString</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 23 Nov 2025 14:43:55 +0800</lastBuildDate><atom:link href="https://ostring.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 28 Nov 2025 12:23:57 +0800</lastBuildDate><atom:link href="https://ostring.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://ostring.github.io/posts/data_center/interconnnect_protocol/cxl/</link>
+      <pubDate>Fri, 28 Nov 2025 12:23:57 +0800</pubDate>
+      
+      <guid>https://ostring.github.io/posts/data_center/interconnnect_protocol/cxl/</guid>
+      
+        <description></description>
+      
+    </item>
+    
     <item>
       <title></title>
       <link>https://ostring.github.io/posts/invest/ai_agents/nber_agent_suvery/</link>
-      <pubDate>Sun, 23 Nov 2025 14:43:55 +0800</pubDate>
+      <pubDate>Fri, 28 Nov 2025 12:23:57 +0800</pubDate>
       
       <guid>https://ostring.github.io/posts/invest/ai_agents/nber_agent_suvery/</guid>
       
@@ -63,8 +74,33 @@
     
     <item>
       <title></title>
+      <link>https://ostring.github.io/posts/invest/cursor/cursor_analysis/</link>
+      <pubDate>Fri, 28 Nov 2025 12:23:57 +0800</pubDate>
+      
+      <guid>https://ostring.github.io/posts/invest/cursor/cursor_analysis/</guid>
+      
+        <description>&lt;h1 id=&#34;cursor-已经成为了llm-的入口&#34;&gt;cursor 已经成为了LLM 的入口&lt;/h1&gt;
+&lt;p&gt;Cursor 的 B 轮融资中，Thrive Capital、Andreessen Horowitz、Benchmark 等顶级风投机构参与了投资&lt;/p&gt;
+&lt;h1 id=&#34;替代&#34;&gt;替代&lt;/h1&gt;
+&lt;p&gt;Z2U 是一个在线市场，允许用户购买和出售 Cursor 账号。如果你不想直接购买 Cursor 的订阅服务，但又希望使用其高级功能，可以通过 Z2U 购买 Pro 或 Business 版本的账号。Z2U 提供了有竞争力的定价策略，并且平台本身被认为是可靠的，因此是一个值得考虑的途径&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ostring.github.io/posts/invest/gpu_industry_company/gpu_invest/</link>
+      <pubDate>Fri, 28 Nov 2025 12:23:57 +0800</pubDate>
+      
+      <guid>https://ostring.github.io/posts/invest/gpu_industry_company/gpu_invest/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://ostring.github.io/posts/solution/rag/</link>
-      <pubDate>Sun, 23 Nov 2025 14:36:48 +0800</pubDate>
+      <pubDate>Fri, 28 Nov 2025 12:23:57 +0800</pubDate>
       
       <guid>https://ostring.github.io/posts/solution/rag/</guid>
       
@@ -189,6 +225,41 @@
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ostring.github.io/posts/tech_news/openai_gpto3pro/gpto3_pro/</link>
+      <pubDate>Fri, 28 Nov 2025 12:23:57 +0800</pubDate>
+      
+      <guid>https://ostring.github.io/posts/tech_news/openai_gpto3pro/gpto3_pro/</guid>
+      
+        <description>&lt;h1 id=&#34;openai-o3-pro的一些反馈&#34;&gt;OpenAI O3 pro的一些反馈&lt;/h1&gt;
+&lt;p&gt;OpenAI 最近推出了 GPT-3 Pro，这是他们迄今为止最强大的 AI 模型。&lt;/p&gt;
+&lt;p&gt;GPT-3 Pro 是 GPT-3 的一个升级版本。GPT-3 是一个推理模型，在今年早些时候发布。与传统的 AI 模型不同，推理模型能够一步一步地解决问题，这使得它在物理、数学和编程等领域表现更加可靠。
+从本周二开始，GPT-3 Pro 将面向 ChatGPT Pro 和团队用户开放，取代之前的 GPT-1 Pro 模型。企业用户和教育用户将在下周获得访问权限。同时，GPT-3 Pro 也已经可以在 OpenAI 的开发者 API 中使用了。&lt;/p&gt;
+&lt;p&gt;在 API 使用方面，GPT-3 Pro 的定价是：每百万个输入标记收费 20 美元，每百万个输出标记收费 80 美元。输入标记是指输入到模型中的内容，输出标记则是模型根据输入生成的内容。 o3 系列价格下调 80%，当前定价为每百万输入/输出令牌 2/8 美元（此前为 8/40 美元），并为缓存输入令牌提供 75% 的折扣。o3 的每令牌价格与 GPT-4.1 相当，与 Gemini 2.5 Pro 和 Claude 4 Sonnet 价格相近，但比 Claude 4 Opus 便宜 8 倍。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;一百万个输入标记大约相当于 75 万个单词，比《战争与和平》这本书还要长一些。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ostring.github.io/posts/tech_news/tesla_robotaxi_launch/</link>
+      <pubDate>Fri, 28 Nov 2025 12:23:57 +0800</pubDate>
+      
+      <guid>https://ostring.github.io/posts/tech_news/tesla_robotaxi_launch/</guid>
+      
+        <description>&lt;h1 id=&#34;tesla-robotaxi上路-实际乘坐体验&#34;&gt;Tesla Robotaxi上路: 实际乘坐体验&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&#34;2025-06-23-08-58-06.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Tesla在2025年6月22日这个星期天，终于在德克萨斯州奥斯汀推出了它长期承诺的Robotaxi服务，这标志着公司进入了一个充满挑战的新时代。服务一开始就非常有限，只对一小部分受邀用户开放，这些人大多是特斯拉的忠实支持者或社交媒体影响者，他们通过一个专门的Tesla应用来召唤车辆。这些早期用户被邀请下载应用，并在奥斯汀的特定地理围栏区域内体验服务，区域覆盖了城市南部和东南部的一小块地方，但不包括机场。服务时间从早上6点到午夜，但如果遇到恶劣天气，比如大雨或强风，车辆可能会暂停运行，以确保安全。&lt;/p&gt;
+&lt;p&gt;车辆使用的是2025款Model Y SUV，外观和普通消费者版本几乎一样，但内部搭载了更先进的软件系统，这是Tesla所谓的“无监督”版Full Self-Driving技术，旨在实现完全自动驾驶。有趣的是，每辆车的前排乘客座位上都坐着一名Tesla员工，作为“安全监控员”，他们不能直接控制方向盘或刹车，但可以在紧急情况下介入或联系远程支持团队。费用是固定的4.20美元，这个数字似乎是Elon Musk对《银河系漫游指南》的致敬，因为书中“42”是生命意义的答案。一些受邀用户在社交媒体上分享了他们的体验视频，显示车辆在停车、避让行人等任务上表现平稳，但也有人报告说，在行驶中车辆突然刹车，可能与路过警车有关，这引发了外界对技术可靠性的疑问。&lt;/p&gt;
+&lt;p&gt;这次推出是Elon Musk近十年承诺的兑现，他早在2016年就暗示Tesla车辆能变成自动驾驶出租车，并在2019年预言2020年会有100万辆上路，但都未能实现。现在，投资者们将Robotaxi视为Tesla的救命稻草，因为公司近期全球销售下滑，部分原因是Musk的政治活动——他支持前总统特朗普和右翼事业，疏远了自由派买家。Tesla的市值高达1万亿美元，很大程度上依赖于Musk的AI和自动驾驶愿景，但分析师们警告说，这次有限推出远未达到预期，也落后于竞争对手。例如，Waymo已经在奥斯汀运营商业服务，与Uber合作，而Zoox、Volkswagen和Avride等公司也在当地测试自动驾驶车辆，它们使用激光雷达和雷达等多传感器系统，而Tesla只依赖摄像头，这被专家批评为在低光条件下可能出问题。&lt;/p&gt;
+&lt;p&gt;服务推出前就面临多重挑战。联邦公路交通安全管理局（NHTSA）正在调查Tesla技术是否在雾、灰尘或强光下容易失效，并已要求公司提供详细运营计划。在德克萨斯州，尽管当地法规对自动驾驶车辆较宽松，但七名民主党州议员曾写信要求推迟推出，以等待新安全法规生效。公众反应也复杂，奥斯汀居民中有人抗议，担心自动驾驶车辆会“接管”城市街道，影响安全；同时，Tesla试图通过封锁公共记录请求来保密细节，比如拒绝向德州交通部披露信息，这增加了透明度担忧。&lt;/p&gt;
+&lt;p&gt;未来，Tesla计划扩大服务，Musk说几个月内车辆数会从初始的10-20辆增加到上千辆，并最终推出名为Cybercab的专用车辆，它没有方向盘或踏板，专为出租车设计。更宏大的愿景是让现有Tesla车主将车辆升级为自动驾驶出租车，在空闲时赚取收入，但分析师质疑这个想法的可行性，因为人们可能不愿分享私人车辆。Tesla还面临内部压力，比如承诺在6月底前推出更实惠的新车型，但原型车尚未亮相，订单也未开放。&lt;/p&gt;
+&lt;p&gt;总的来说，这次Robotaxi推出是Tesla的关键一步，但它暴露了技术、监管和公众信任的短板。如果成功，它可能重塑交通行业；如果失败，则会加剧公司困境，毕竟竞争对手们已在全美多个城市稳步推进类似服务。&lt;/p&gt;</description>
       
     </item>
     
@@ -612,59 +683,6 @@
 &lt;li&gt;Apple Pencil正在升级，包含一个数字芦苇书法笔。与此同时，iOS和iPadOS上的键盘将包括一个双向模式，以便在阿拉伯语和英语之间切换。&lt;/li&gt;
 &lt;li&gt;公司正在计划一项功能，用于在设备之间同步受限无线网络详细信息。这意味着如果您在一台设备上登录健身房、酒店或办公大楼，它将自动在其他设备上登录。&lt;/li&gt;
 &lt;/ul&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://ostring.github.io/posts/tech_news/openai_gpto3pro/gpto3_pro/</link>
-      <pubDate>Wed, 11 Jun 2025 14:10:27 +0800</pubDate>
-      
-      <guid>https://ostring.github.io/posts/tech_news/openai_gpto3pro/gpto3_pro/</guid>
-      
-        <description>&lt;h1 id=&#34;openai-o3-pro的一些反馈&#34;&gt;OpenAI O3 pro的一些反馈&lt;/h1&gt;
-&lt;p&gt;OpenAI 最近推出了 GPT-3 Pro，这是他们迄今为止最强大的 AI 模型。&lt;/p&gt;
-&lt;p&gt;GPT-3 Pro 是 GPT-3 的一个升级版本。GPT-3 是一个推理模型，在今年早些时候发布。与传统的 AI 模型不同，推理模型能够一步一步地解决问题，这使得它在物理、数学和编程等领域表现更加可靠。
-从本周二开始，GPT-3 Pro 将面向 ChatGPT Pro 和团队用户开放，取代之前的 GPT-1 Pro 模型。企业用户和教育用户将在下周获得访问权限。同时，GPT-3 Pro 也已经可以在 OpenAI 的开发者 API 中使用了。&lt;/p&gt;
-&lt;p&gt;在 API 使用方面，GPT-3 Pro 的定价是：每百万个输入标记收费 20 美元，每百万个输出标记收费 80 美元。输入标记是指输入到模型中的内容，输出标记则是模型根据输入生成的内容。 o3 系列价格下调 80%，当前定价为每百万输入/输出令牌 2/8 美元（此前为 8/40 美元），并为缓存输入令牌提供 75% 的折扣。o3 的每令牌价格与 GPT-4.1 相当，与 Gemini 2.5 Pro 和 Claude 4 Sonnet 价格相近，但比 Claude 4 Opus 便宜 8 倍。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;一百万个输入标记大约相当于 75 万个单词，比《战争与和平》这本书还要长一些。&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://ostring.github.io/posts/invest/gpu_industry_company/gpu_invest/</link>
-      <pubDate>Wed, 11 Jun 2025 11:44:22 +0800</pubDate>
-      
-      <guid>https://ostring.github.io/posts/invest/gpu_industry_company/gpu_invest/</guid>
-      
-        <description></description>
-      
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://ostring.github.io/posts/invest/cursor/cursor_analysis/</link>
-      <pubDate>Wed, 11 Jun 2025 11:12:28 +0800</pubDate>
-      
-      <guid>https://ostring.github.io/posts/invest/cursor/cursor_analysis/</guid>
-      
-        <description>&lt;h1 id=&#34;cursor-已经成为了llm-的入口&#34;&gt;cursor 已经成为了LLM 的入口&lt;/h1&gt;
-&lt;p&gt;Cursor 的 B 轮融资中，Thrive Capital、Andreessen Horowitz、Benchmark 等顶级风投机构参与了投资&lt;/p&gt;
-&lt;h1 id=&#34;替代&#34;&gt;替代&lt;/h1&gt;
-&lt;p&gt;Z2U 是一个在线市场，允许用户购买和出售 Cursor 账号。如果你不想直接购买 Cursor 的订阅服务，但又希望使用其高级功能，可以通过 Z2U 购买 Pro 或 Business 版本的账号。Z2U 提供了有竞争力的定价策略，并且平台本身被认为是可靠的，因此是一个值得考虑的途径&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://ostring.github.io/posts/data_center/interconnnect_protocol/cxl/</link>
-      <pubDate>Fri, 06 Jun 2025 11:59:04 +0800</pubDate>
-      
-      <guid>https://ostring.github.io/posts/data_center/interconnnect_protocol/cxl/</guid>
-      
-        <description></description>
       
     </item>
     

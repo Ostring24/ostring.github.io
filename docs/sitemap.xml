@@ -2,17 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://ostring.github.io/posts/data_center/interconnnect_protocol/cxl/</loc>
+    <lastmod>2025-11-28T12:23:57+08:00</lastmod>
+  </url><url>
     <loc>https://ostring.github.io/posts/invest/ai_agents/nber_agent_suvery/</loc>
-    <lastmod>2025-11-23T14:43:55+08:00</lastmod>
+    <lastmod>2025-11-28T12:23:57+08:00</lastmod>
   </url><url>
-    <loc>https://ostring.github.io/posts/</loc>
-    <lastmod>2025-11-23T14:43:55+08:00</lastmod>
+    <loc>https://ostring.github.io/posts/invest/cursor/cursor_analysis/</loc>
+    <lastmod>2025-11-28T12:23:57+08:00</lastmod>
   </url><url>
-    <loc>https://ostring.github.io/</loc>
-    <lastmod>2025-11-23T14:43:55+08:00</lastmod>
+    <loc>https://ostring.github.io/posts/invest/gpu_industry_company/gpu_invest/</loc>
+    <lastmod>2025-11-28T12:23:57+08:00</lastmod>
   </url><url>
     <loc>https://ostring.github.io/posts/solution/rag/</loc>
-    <lastmod>2025-11-23T14:36:48+08:00</lastmod>
+    <lastmod>2025-11-28T12:23:57+08:00</lastmod>
+  </url><url>
+    <loc>https://ostring.github.io/posts/tech_news/openai_gpto3pro/gpto3_pro/</loc>
+    <lastmod>2025-11-28T12:23:57+08:00</lastmod>
+  </url><url>
+    <loc>https://ostring.github.io/posts/tech_news/tesla_robotaxi_launch/</loc>
+    <lastmod>2025-11-28T12:23:57+08:00</lastmod>
+  </url><url>
+    <loc>https://ostring.github.io/posts/</loc>
+    <lastmod>2025-11-28T12:23:57+08:00</lastmod>
+  </url><url>
+    <loc>https://ostring.github.io/</loc>
+    <lastmod>2025-11-28T12:23:57+08:00</lastmod>
   </url><url>
     <loc>https://ostring.github.io/posts/tech_news/2025_0530_deepseek_newupdate/</loc>
     <lastmod>2025-06-17T15:13:08+08:00</lastmod>
@@ -28,18 +43,6 @@
   </url><url>
     <loc>https://ostring.github.io/posts/tech_news/apple_wwdc2025/16_everything_apple_plans_to_show_at_its_ios_26-focus_zh/</loc>
     <lastmod>2025-06-17T15:11:13+08:00</lastmod>
-  </url><url>
-    <loc>https://ostring.github.io/posts/tech_news/openai_gpto3pro/gpto3_pro/</loc>
-    <lastmod>2025-06-11T14:10:27+08:00</lastmod>
-  </url><url>
-    <loc>https://ostring.github.io/posts/invest/gpu_industry_company/gpu_invest/</loc>
-    <lastmod>2025-06-11T11:44:22+08:00</lastmod>
-  </url><url>
-    <loc>https://ostring.github.io/posts/invest/cursor/cursor_analysis/</loc>
-    <lastmod>2025-06-11T11:12:28+08:00</lastmod>
-  </url><url>
-    <loc>https://ostring.github.io/posts/data_center/interconnnect_protocol/cxl/</loc>
-    <lastmod>2025-06-06T11:59:04+08:00</lastmod>
   </url><url>
     <loc>https://ostring.github.io/about/me/</loc>
     <lastmod>2025-05-30T17:16:10+08:00</lastmod>

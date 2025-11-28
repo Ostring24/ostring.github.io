@@ -6,11 +6,11 @@
     <description>Recent content in Posts on Website of OString</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 23 Nov 2025 14:43:55 +0800</lastBuildDate><atom:link href="https://ostring.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 28 Nov 2025 12:23:57 +0800</lastBuildDate><atom:link href="https://ostring.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
       <link>https://ostring.github.io/posts/invest/ai_agents/nber_agent_suvery/</link>
-      <pubDate>Sun, 23 Nov 2025 14:43:55 +0800</pubDate>
+      <pubDate>Fri, 28 Nov 2025 12:23:57 +0800</pubDate>
       
       <guid>https://ostring.github.io/posts/invest/ai_agents/nber_agent_suvery/</guid>
       
@@ -63,8 +63,33 @@
     
     <item>
       <title></title>
+      <link>https://ostring.github.io/posts/invest/cursor/cursor_analysis/</link>
+      <pubDate>Fri, 28 Nov 2025 12:23:57 +0800</pubDate>
+      
+      <guid>https://ostring.github.io/posts/invest/cursor/cursor_analysis/</guid>
+      
+        <description>&lt;h1 id=&#34;cursor-已经成为了llm-的入口&#34;&gt;cursor 已经成为了LLM 的入口&lt;/h1&gt;
+&lt;p&gt;Cursor 的 B 轮融资中，Thrive Capital、Andreessen Horowitz、Benchmark 等顶级风投机构参与了投资&lt;/p&gt;
+&lt;h1 id=&#34;替代&#34;&gt;替代&lt;/h1&gt;
+&lt;p&gt;Z2U 是一个在线市场，允许用户购买和出售 Cursor 账号。如果你不想直接购买 Cursor 的订阅服务，但又希望使用其高级功能，可以通过 Z2U 购买 Pro 或 Business 版本的账号。Z2U 提供了有竞争力的定价策略，并且平台本身被认为是可靠的，因此是一个值得考虑的途径&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ostring.github.io/posts/invest/gpu_industry_company/gpu_invest/</link>
+      <pubDate>Fri, 28 Nov 2025 12:23:57 +0800</pubDate>
+      
+      <guid>https://ostring.github.io/posts/invest/gpu_industry_company/gpu_invest/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://ostring.github.io/posts/solution/rag/</link>
-      <pubDate>Sun, 23 Nov 2025 14:36:48 +0800</pubDate>
+      <pubDate>Fri, 28 Nov 2025 12:23:57 +0800</pubDate>
       
       <guid>https://ostring.github.io/posts/solution/rag/</guid>
       
@@ -486,31 +511,6 @@
 &lt;li&gt;基于embedding feature并行分布式，同时又会引入卡间通信的开销，因此这部分也会面临通信bound 的挑战&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://i-blog.csdnimg.cn/direct/d2bcae6ea5a84aae836a8cda35a351c3.png&#34; alt=&#34;分布式通信&#34;&gt;&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://ostring.github.io/posts/invest/gpu_industry_company/gpu_invest/</link>
-      <pubDate>Wed, 11 Jun 2025 11:44:22 +0800</pubDate>
-      
-      <guid>https://ostring.github.io/posts/invest/gpu_industry_company/gpu_invest/</guid>
-      
-        <description></description>
-      
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://ostring.github.io/posts/invest/cursor/cursor_analysis/</link>
-      <pubDate>Wed, 11 Jun 2025 11:12:28 +0800</pubDate>
-      
-      <guid>https://ostring.github.io/posts/invest/cursor/cursor_analysis/</guid>
-      
-        <description>&lt;h1 id=&#34;cursor-已经成为了llm-的入口&#34;&gt;cursor 已经成为了LLM 的入口&lt;/h1&gt;
-&lt;p&gt;Cursor 的 B 轮融资中，Thrive Capital、Andreessen Horowitz、Benchmark 等顶级风投机构参与了投资&lt;/p&gt;
-&lt;h1 id=&#34;替代&#34;&gt;替代&lt;/h1&gt;
-&lt;p&gt;Z2U 是一个在线市场，允许用户购买和出售 Cursor 账号。如果你不想直接购买 Cursor 的订阅服务，但又希望使用其高级功能，可以通过 Z2U 购买 Pro 或 Business 版本的账号。Z2U 提供了有竞争力的定价策略，并且平台本身被认为是可靠的，因此是一个值得考虑的途径&lt;/p&gt;</description>
       
     </item>
     
